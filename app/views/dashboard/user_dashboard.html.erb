@@ -1,0 +1,67 @@
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">My Dashboard</h1>
+
+  <!-- Display Wallet Balance -->
+  <div class="bg-white rounded-lg shadow p-6 mb-8">
+    <h2 class="text-xl font-semibold mb-4">Wallet Balance</h2>
+    <p class="text-2xl font-bold">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
+  </div>
+
+  <% if @active_loan.present? %>
+    <div class="bg-white rounded-lg shadow p-6 mb-8">
+      <h2 class="text-xl font-semibold mb-4">Active Loan</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-50 p-4 rounded">
+          <p class="text-gray-600">Amount</p>
+          <p class="text-2xl font-bold">$<%= number_with_precision(@active_loan.amount, precision: 2) %></p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded">
+          <p class="text-gray-600">Interest Rate</p>
+          <p class="text-2xl font-bold"><%= @active_loan.interest_rate %>%</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded">
+          <p class="text-gray-600">Status</p>
+          <p class="text-2xl font-bold capitalize"><%= @active_loan.state %></p>
+        </div>
+      </div>
+
+      <%= link_to "View Details", loan_path(@active_loan), class: "mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+    </div>
+  <% else %>
+    <div class="bg-white rounded-lg shadow p-6 mb-8">
+      <h2 class="text-xl font-semibold mb-4">No Active Loans</h2>
+      <p class="text-gray-600 mb-4">You currently don't have any active loans.</p>
+      <%= link_to "Request New Loan", new_loan_path, class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+    </div>
+  <% end %>
+
+  <% if @closed_loans.any? %>
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">Loan History</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full">
+          <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+          </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+          <% @closed_loans.each do |loan| %>
+            <tr>
+              <td class="px-6 py-4">$<%= number_with_precision(loan.amount, precision: 2) %></td>
+              <td class="px-6 py-4 capitalize"><%= loan.state %></td>
+              <td class="px-6 py-4"><%= loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
+              <td class="px-6 py-4">
+                <%= link_to "View", loan_path(loan), class: "text-blue-600 hover:text-blue-900" %>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <% end %>
+</div>

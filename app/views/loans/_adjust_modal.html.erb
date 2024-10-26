@@ -1,0 +1,20 @@
+<!-- views/loans/_adjust_modal.html.erb -->
+<div id="adjustModal-<%= loan.id %>" class="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75 hidden">
+  <div class="bg-white rounded-lg p-6 w-full max-w-md mx-auto">
+    <h3 class="text-xl font-semibold mb-4">Adjust Loan</h3>
+    <%= form_with(model: loan, url: accept_with_adjustment_loan_path(loan), method: :patch, local: true) do |f| %>
+      <div class="mb-4">
+        <%= f.label :amount, "Loan Amount", class: "block text-sm font-medium text-gray-700" %>
+        <%= f.number_field :amount, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm" %>
+      </div>
+      <div class="mb-4">
+        <%= f.label :interest_rate, "Interest Rate (%)", class: "block text-sm font-medium text-gray-700" %>
+        <%= f.number_field :interest_rate, step: 0.01, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm" %>
+      </div>
+      <div class="flex justify-end">
+        <button type="button" class="px-4 py-2 bg-gray-300 text-gray-700 rounded mr-2" onclick="toggleModal(<%= loan.id %>)">Cancel</button>
+        <%= f.submit "Save Changes", class: "px-4 py-2 bg-blue-600 text-white rounded" %>
+      </div>
+    <% end %>
+  </div>
+</div>

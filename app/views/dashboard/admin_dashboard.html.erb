@@ -1,0 +1,23 @@
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">Admin Dashboard</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white rounded-lg shadow p-6">
+      <h3 class="text-lg font-semibold mb-2">Pending Requests</h3>
+      <p class="text-3xl font-bold text-blue-600"><%= Loan.where(state: 'requested').count %></p>
+      <%= link_to "View All", admin_index_loans_path(filter: 'requested'), class: "mt-4 text-sm text-blue-600 hover:text-blue-900" %>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6">
+      <h3 class="text-lg font-semibold mb-2">Active Loans</h3>
+      <p class="text-3xl font-bold text-green-600"><%= Loan.where(state: 'open').count %></p>
+      <%= link_to "View All", admin_index_loans_path(filter: 'open'), class: "mt-4 text-sm text-blue-600 hover:text-blue-900" %>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6">
+      <h3 class="text-lg font-semibold mb-2">Adjustment Requests</h3>
+      <p class="text-3xl font-bold text-yellow-600"><%= Loan.where(state: 'readjustment_requested').count %></p>
+      <%= link_to "View All", admin_index_loans_path(filter: 'readjustment_requested'), class: "mt-4 text-sm text-blue-600 hover:text-blue-900" %>
+    </div>
+  </div>
+</div>

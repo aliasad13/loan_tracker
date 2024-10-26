@@ -1,0 +1,15 @@
+<div class="mt-8">
+  <% if @requested_loans.any? %>
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Pending Requests</h2>
+      <%= render partial: 'loans/admin_loan', collection: @requested_loans, as: :loan %>
+    </div>
+  <% end %>
+
+  <% if @adjustment_pending_loans.any? %>
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Pending Adjustments</h2>
+      <%= render partial: 'loans/admin_loan', collection: @adjustment_pending_loans, as: :loan %>
+    </div>
+  <% end %>
+</div>

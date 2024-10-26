@@ -4,7 +4,7 @@ class Loan < ApplicationRecord
 
   validates :amount, presence: true, numericality: { greater_than: 0 }
   validates :interest_rate, presence: true, numericality: { greater_than: 0 }
-  validate :no_active_loan, on: :create
+  # validate :no_active_loan, on: :create
 
   include AASM
 
@@ -20,14 +20,14 @@ class Loan < ApplicationRecord
     state :closed
 
     event :approve do
-      transitions from: :requested, to: :approved
+      transitions from: [:requested], to: :approved
     end
 
     event :reject do
-      transitions from: [:requested, :readjustment_requested], to: :rejected
+      transitions from: [:requested, :readjustment_requested, :waiting_for_adjustment_acceptance], to: :rejected
     end
 
-    event :adjust do # from admin to user, accepted with a readjustment, when the user sends a request. Now the admin will wait for user's response
+    event :accept_with_adjustment do # from admin to user, accepted with a readjustment, when the user sends a request. Now the admin will wait for user's response
       transitions from: [:requested, :readjustment_requested],
                   to: :waiting_for_adjustment_acceptance
     end
