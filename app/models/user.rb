@@ -1,6 +1,10 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+
+  after_create :create_wallet
+
+  has_one :wallet
+  has_many :loans
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
@@ -21,5 +25,20 @@ class User < ApplicationRecord
   #why new_record?
   # after initialize will run after instantiating new and existing record. to limit this to only new record
   # instantiating existing: user = User.find(1), instantiating new record: user = User.new
+
+  def active_loan
+    loans.find_by(state: Loan::ACTIVE_STATES)
+  end
+
+  def can_request_loan?
+    !active_loan.present?
+  end
+
+  private
+
+  def create_wallet
+    initial_balance = admin? ? 1000000 : 10000
+    create_wallet!(balance: initial_balance) #The create_wallet! method is automatically provided by Rails through the has_one association in your User model.
+  end
 
 end

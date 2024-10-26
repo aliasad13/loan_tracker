@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_26_052723) do
+ActiveRecord::Schema.define(version: 2024_10_26_085002) do
+
+  create_table "loan_adjustments", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.bigint "loan_id", null: false
+    t.decimal "previous_amount", precision: 10
+    t.decimal "new_amount", precision: 10
+    t.decimal "previous_interest_rate", precision: 10
+    t.decimal "new_interest_rate", precision: 10
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["loan_id"], name: "index_loan_adjustments_on_loan_id"
+  end
+
+  create_table "loans", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.decimal "amount", precision: 10
+    t.decimal "interest_rate", precision: 10
+    t.string "state"
+    t.bigint "user_id", null: false
+    t.decimal "total_amount_due", precision: 10
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_loans_on_user_id"
+  end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -25,4 +47,15 @@ ActiveRecord::Schema.define(version: 2024_10_26_052723) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "wallets", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.decimal "balance", precision: 10
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_wallets_on_user_id"
+  end
+
+  add_foreign_key "loan_adjustments", "loans"
+  add_foreign_key "loans", "users"
+  add_foreign_key "wallets", "users"
 end

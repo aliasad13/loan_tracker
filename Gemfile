@@ -26,6 +26,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'cancancan'
+gem 'aasm'
 
 
 group :development, :test do
