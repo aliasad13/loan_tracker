@@ -1,0 +1,215 @@
+2024-10-26T09:39:44.400Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T09:39:44.405Z pid=15914 tid=1fa class=InterestCalculatorJob jid=023b2949341f3a63b275b17f INFO: start
+2024-10-26T09:39:44.458Z pid=15914 tid=1fa class=InterestCalculatorJob jid=023b2949341f3a63b275b17f elapsed=0.053 INFO: fail
+2024-10-26T09:39:44.472Z pid=15914 tid=1fa WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"023b2949341f3a63b275b17f","created_at":1729935584.4017005,"enqueued_at":1729935584.4029512}}
+2024-10-26T09:39:44.474Z pid=15914 tid=1fa WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:39:44.474Z pid=15914 tid=1fa WARN: 
+2024-10-26T09:40:32.411Z pid=15914 tid=1ii class=InterestCalculatorJob jid=023b2949341f3a63b275b17f INFO: start
+2024-10-26T09:40:32.412Z pid=15914 tid=1ii class=InterestCalculatorJob jid=023b2949341f3a63b275b17f elapsed=0.001 INFO: fail
+2024-10-26T09:40:32.430Z pid=15914 tid=1ii WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"023b2949341f3a63b275b17f","created_at":1729935584.4017005,"enqueued_at":1729935632.411457,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729935584.4723415,"retry_count":1,"retried_at":1729935605.4589958}}
+2024-10-26T09:40:32.432Z pid=15914 tid=1ii WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:40:32.432Z pid=15914 tid=1ii WARN: 
+2024-10-26T09:41:12.682Z pid=15914 tid=1he class=InterestCalculatorJob jid=023b2949341f3a63b275b17f INFO: start
+2024-10-26T09:41:12.689Z pid=15914 tid=1he class=InterestCalculatorJob jid=023b2949341f3a63b275b17f elapsed=0.007 INFO: fail
+2024-10-26T09:41:12.727Z pid=15914 tid=1he WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"023b2949341f3a63b275b17f","created_at":1729935584.4017005,"enqueued_at":1729935672.6803305,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729935584.4723415,"retry_count":2,"retried_at":1729935632.4302044}}
+2024-10-26T09:41:12.729Z pid=15914 tid=1he WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:41:12.729Z pid=15914 tid=1he WARN: 
+2024-10-26T09:44:44.510Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T09:44:44.512Z pid=15914 tid=1kq class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 INFO: start
+2024-10-26T09:44:44.521Z pid=15914 tid=1kq class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 elapsed=0.009 INFO: fail
+2024-10-26T09:44:44.558Z pid=15914 tid=1kq WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"059fea12ef5bb614148c96c0","created_at":1729935884.5108316,"enqueued_at":1729935884.5109951}}
+2024-10-26T09:44:44.560Z pid=15914 tid=1kq WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:44:44.560Z pid=15914 tid=1kq WARN: 
+2024-10-26T09:45:08.753Z pid=15914 tid=1jm class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 INFO: start
+2024-10-26T09:45:08.759Z pid=15914 tid=1jm class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 elapsed=0.007 INFO: fail
+2024-10-26T09:45:08.804Z pid=15914 tid=1jm WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"059fea12ef5bb614148c96c0","created_at":1729935884.5108316,"enqueued_at":1729935908.7512593,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729935884.557966,"retry_count":0}}
+2024-10-26T09:45:08.806Z pid=15914 tid=1jm WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:45:08.807Z pid=15914 tid=1jm WARN: 
+2024-10-26T09:46:20.066Z pid=15914 tid=sq class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 INFO: start
+2024-10-26T09:46:20.069Z pid=15914 tid=sq class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 elapsed=0.003 INFO: fail
+2024-10-26T09:46:20.111Z pid=15914 tid=sq WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"059fea12ef5bb614148c96c0","created_at":1729935884.5108316,"enqueued_at":1729935980.0644288,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729935884.557966,"retry_count":2,"retried_at":1729935936.6552653}}
+2024-10-26T09:46:20.113Z pid=15914 tid=sq WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:46:20.114Z pid=15914 tid=sq WARN: 
+2024-10-26T09:49:44.586Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T09:49:44.589Z pid=15914 tid=v6 class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 INFO: start
+2024-10-26T09:49:44.600Z pid=15914 tid=v6 class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 elapsed=0.011 INFO: fail
+2024-10-26T09:49:44.643Z pid=15914 tid=v6 WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f4764a0aeefbeb46b1a7e974","created_at":1729936184.5875785,"enqueued_at":1729936184.5877714}}
+2024-10-26T09:49:44.652Z pid=15914 tid=v6 WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:49:44.653Z pid=15914 tid=v6 WARN: 
+2024-10-26T09:50:38.772Z pid=15914 tid=uy class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 INFO: start
+2024-10-26T09:50:38.921Z pid=15914 tid=uy class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 elapsed=0.15 INFO: fail
+2024-10-26T09:50:38.935Z pid=15914 tid=uy WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f4764a0aeefbeb46b1a7e974","created_at":1729936184.5875785,"enqueued_at":1729936238.7705371,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729936184.6400707,"retry_count":1,"retried_at":1729936207.41596}}
+2024-10-26T09:50:38.936Z pid=15914 tid=uy WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:50:38.937Z pid=15914 tid=uy WARN: 
+2024-10-26T09:51:34.995Z pid=15914 tid=zi class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 INFO: start
+2024-10-26T09:51:34.998Z pid=15914 tid=zi class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 elapsed=0.004 INFO: fail
+2024-10-26T09:51:35.067Z pid=15914 tid=zi WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f4764a0aeefbeb46b1a7e974","created_at":1729936184.5875785,"enqueued_at":1729936294.991744,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936184.6400707,"retry_count":2,"retried_at":1729936238.9348288}}
+2024-10-26T09:51:35.074Z pid=15914 tid=zi WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:51:35.076Z pid=15914 tid=zi WARN: 
+2024-10-26T09:52:42.075Z pid=15914 tid=ye class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 INFO: start
+2024-10-26T09:52:42.076Z pid=15914 tid=ye class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 elapsed=0.001 INFO: fail
+2024-10-26T09:52:42.094Z pid=15914 tid=ye WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"059fea12ef5bb614148c96c0","created_at":1729935884.5108316,"enqueued_at":1729936362.0746734,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729935884.557966,"retry_count":4,"retried_at":1729936090.0646534}}
+2024-10-26T09:52:42.096Z pid=15914 tid=ye WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:52:42.097Z pid=15914 tid=ye WARN: 
+2024-10-26T09:53:50.401Z pid=15914 tid=zy class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 INFO: start
+2024-10-26T09:53:50.574Z pid=15914 tid=zy class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 elapsed=0.173 INFO: fail
+2024-10-26T09:53:50.588Z pid=15914 tid=zy WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f4764a0aeefbeb46b1a7e974","created_at":1729936184.5875785,"enqueued_at":1729936430.398992,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936184.6400707,"retry_count":3,"retried_at":1729936295.065181}}
+2024-10-26T09:53:50.589Z pid=15914 tid=zy WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:53:50.590Z pid=15914 tid=zy WARN: 
+2024-10-26T09:54:44.610Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T09:54:44.613Z pid=15914 tid=142 class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 INFO: start
+2024-10-26T09:54:44.623Z pid=15914 tid=142 class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 elapsed=0.01 INFO: fail
+2024-10-26T09:54:44.684Z pid=15914 tid=142 WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"8a78653605b062ecc4477e15","created_at":1729936484.6113355,"enqueued_at":1729936484.6114986}}
+2024-10-26T09:54:44.691Z pid=15914 tid=142 WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:54:44.693Z pid=15914 tid=142 WARN: 
+2024-10-26T09:55:03.377Z pid=15914 tid=13u class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 INFO: start
+2024-10-26T09:55:03.384Z pid=15914 tid=13u class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 elapsed=0.007 INFO: fail
+2024-10-26T09:55:03.427Z pid=15914 tid=13u WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"8a78653605b062ecc4477e15","created_at":1729936484.6113355,"enqueued_at":1729936503.3757756,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936484.682594,"retry_count":0}}
+2024-10-26T09:55:03.429Z pid=15914 tid=13u WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:55:03.429Z pid=15914 tid=13u WARN: 
+2024-10-26T09:56:21.897Z pid=15914 tid=16a class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 INFO: start
+2024-10-26T09:56:21.902Z pid=15914 tid=16a class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 elapsed=0.005 INFO: fail
+2024-10-26T09:56:21.927Z pid=15914 tid=16a WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"8a78653605b062ecc4477e15","created_at":1729936484.6113355,"enqueued_at":1729936581.8950746,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729936484.682594,"retry_count":2,"retried_at":1729936540.4059737}}
+2024-10-26T09:56:21.930Z pid=15914 tid=16a WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:56:21.930Z pid=15914 tid=16a WARN: 
+2024-10-26T09:58:27.118Z pid=15914 tid=ea class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 INFO: start
+2024-10-26T09:58:27.253Z pid=15914 tid=ea class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 elapsed=0.135 INFO: fail
+2024-10-26T09:58:27.266Z pid=15914 tid=ea WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"8a78653605b062ecc4477e15","created_at":1729936484.6113355,"enqueued_at":1729936707.117612,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936484.682594,"retry_count":3,"retried_at":1729936581.9263878}}
+2024-10-26T09:58:27.267Z pid=15914 tid=ea WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:58:27.268Z pid=15914 tid=ea WARN: 
+2024-10-26T09:58:59.338Z pid=15914 tid=iu class=InterestCalculatorJob jid=023b2949341f3a63b275b17f INFO: start
+2024-10-26T09:58:59.488Z pid=15914 tid=iu class=InterestCalculatorJob jid=023b2949341f3a63b275b17f elapsed=0.15 INFO: fail
+2024-10-26T09:58:59.501Z pid=15914 tid=iu WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"023b2949341f3a63b275b17f","created_at":1729935584.4017005,"enqueued_at":1729936739.33576,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729935584.4723415,"retry_count":5,"retried_at":1729936079.8845394}}
+2024-10-26T09:58:59.503Z pid=15914 tid=iu WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:58:59.503Z pid=15914 tid=iu WARN: 
+2024-10-26T09:59:04.716Z pid=15914 tid=mq class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 INFO: start
+2024-10-26T09:59:04.721Z pid=15914 tid=mq class=InterestCalculatorJob jid=f4764a0aeefbeb46b1a7e974 elapsed=0.005 INFO: fail
+2024-10-26T09:59:04.759Z pid=15914 tid=mq WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f4764a0aeefbeb46b1a7e974","created_at":1729936184.5875785,"enqueued_at":1729936744.713397,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936184.6400707,"retry_count":4,"retried_at":1729936430.58774}}
+2024-10-26T09:59:04.761Z pid=15914 tid=mq WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T09:59:04.761Z pid=15914 tid=mq WARN: 
+2024-10-26T09:59:44.368Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T10:00:06.967Z pid=15914 tid=oa class=InterestCalculatorJob jid=21e55ba5f2f63b01e7275f1c INFO: start
+2024-10-26T10:00:06.975Z pid=15914 tid=oa class=InterestCalculatorJob jid=21e55ba5f2f63b01e7275f1c elapsed=0.008 INFO: fail
+2024-10-26T10:00:07.008Z pid=15914 tid=oa WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"21e55ba5f2f63b01e7275f1c","created_at":1729936784.3683164,"enqueued_at":1729936806.9658508,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729936784.3851514,"retry_count":0}}
+2024-10-26T10:00:07.010Z pid=15914 tid=oa WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:00:07.011Z pid=15914 tid=oa WARN: 
+2024-10-26T10:01:27.635Z pid=15914 tid=n6 class=InterestCalculatorJob jid=21e55ba5f2f63b01e7275f1c INFO: start
+2024-10-26T10:01:27.639Z pid=15914 tid=n6 class=InterestCalculatorJob jid=21e55ba5f2f63b01e7275f1c elapsed=0.005 INFO: fail
+2024-10-26T10:01:27.690Z pid=15914 tid=n6 WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"21e55ba5f2f63b01e7275f1c","created_at":1729936784.3683164,"enqueued_at":1729936887.6332016,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729936784.3851514,"retry_count":2,"retried_at":1729936829.073927}}
+2024-10-26T10:01:27.692Z pid=15914 tid=n6 WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:01:27.692Z pid=15914 tid=n6 WARN: 
+2024-10-26T10:03:48.986Z pid=15914 tid=qi class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 INFO: start
+2024-10-26T10:03:49.131Z pid=15914 tid=qi class=InterestCalculatorJob jid=8a78653605b062ecc4477e15 elapsed=0.145 INFO: fail
+2024-10-26T10:03:49.144Z pid=15914 tid=qi WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"8a78653605b062ecc4477e15","created_at":1729936484.6113355,"enqueued_at":1729937028.9859376,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729936484.682594,"retry_count":4,"retried_at":1729936707.2659416}}
+2024-10-26T10:03:49.145Z pid=15914 tid=qi WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:03:49.146Z pid=15914 tid=qi WARN: 
+2024-10-26T10:04:14.200Z pid=15914 tid=1i class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 INFO: start
+2024-10-26T10:04:14.208Z pid=15914 tid=1i class=InterestCalculatorJob jid=059fea12ef5bb614148c96c0 elapsed=0.007 INFO: fail
+2024-10-26T10:04:14.247Z pid=15914 tid=1i WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"059fea12ef5bb614148c96c0","created_at":1729935884.5108316,"enqueued_at":1729937054.1986492,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729935884.557966,"retry_count":5,"retried_at":1729936362.0939178}}
+2024-10-26T10:04:14.249Z pid=15914 tid=1i WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:04:14.250Z pid=15914 tid=1i WARN: 
+2024-10-26T10:04:44.406Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T10:04:44.407Z pid=15914 tid=32 class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 INFO: start
+2024-10-26T10:04:44.409Z pid=15914 tid=32 class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 elapsed=0.002 INFO: fail
+2024-10-26T10:04:44.422Z pid=15914 tid=32 WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"689355a9afdaba660fc6bde7","created_at":1729937084.4068506,"enqueued_at":1729937084.406894}}
+2024-10-26T10:04:44.430Z pid=15914 tid=32 WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:04:44.430Z pid=15914 tid=32 WARN: 
+2024-10-26T10:05:14.284Z pid=15914 tid=5a class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 INFO: start
+2024-10-26T10:05:14.287Z pid=15914 tid=5a class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 elapsed=0.003 INFO: fail
+2024-10-26T10:05:14.298Z pid=15914 tid=5a WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"689355a9afdaba660fc6bde7","created_at":1729937084.4068506,"enqueued_at":1729937114.2836902,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729937084.4225457,"retry_count":0}}
+2024-10-26T10:05:14.299Z pid=15914 tid=5a WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:05:14.299Z pid=15914 tid=5a WARN: 
+2024-10-26T10:08:58.597Z pid=15914 tid=46 class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 INFO: start
+2024-10-26T10:08:58.751Z pid=15914 tid=46 class=InterestCalculatorJob jid=689355a9afdaba660fc6bde7 elapsed=0.153 INFO: fail
+2024-10-26T10:08:58.764Z pid=15914 tid=46 WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"689355a9afdaba660fc6bde7","created_at":1729937084.4068506,"enqueued_at":1729937338.5958529,"error_message":"uninitialized constant InterestCalculatorJob","error_class":"NameError","failed_at":1729937084.4225457,"retry_count":3,"retried_at":1729937214.5493731}}
+2024-10-26T10:08:58.766Z pid=15914 tid=46 WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:08:58.766Z pid=15914 tid=46 WARN: 
+2024-10-26T10:09:44.516Z pid=15914 tid=1eq INFO: queueing InterestCalculatorJob (interest_calculator)
+2024-10-26T10:09:44.519Z pid=15914 tid=7e class=InterestCalculatorJob jid=f138faeb0297771110c3deca INFO: start
+2024-10-26T10:09:44.528Z pid=15914 tid=7e class=InterestCalculatorJob jid=f138faeb0297771110c3deca elapsed=0.009 INFO: fail
+2024-10-26T10:09:44.570Z pid=15914 tid=7e WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f138faeb0297771110c3deca","created_at":1729937384.51773,"enqueued_at":1729937384.5178902}}
+2024-10-26T10:09:44.572Z pid=15914 tid=7e WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:09:44.573Z pid=15914 tid=7e WARN: 
+2024-10-26T10:10:03.705Z pid=15914 tid=9u class=InterestCalculatorJob jid=f138faeb0297771110c3deca INFO: start
+2024-10-26T10:10:03.709Z pid=15914 tid=9u class=InterestCalculatorJob jid=f138faeb0297771110c3deca elapsed=0.004 INFO: fail
+2024-10-26T10:10:03.753Z pid=15914 tid=9u WARN: {"context":"Job raised exception","job":{"retry":true,"queue":"default","class":"InterestCalculatorJob","args":[],"jid":"f138faeb0297771110c3deca","created_at":1729937384.51773,"enqueued_at":1729937403.7038178,"error_message":"uninitialized constant InterestCalculatorJob\n\n                klass = Object.const_get(job_hash[\"class\"])\n                              ^^^^^^^^^^","error_class":"NameError","failed_at":1729937384.570328,"retry_count":0}}
+2024-10-26T10:10:03.755Z pid=15914 tid=9u WARN: NameError: uninitialized constant InterestCalculatorJob
+
+                klass = Object.const_get(job_hash["class"])
+                              ^^^^^^^^^^
+2024-10-26T10:10:03.756Z pid=15914 tid=9u WARN: 

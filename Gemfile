@@ -27,6 +27,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'cancancan'
 gem 'aasm'
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
 
 
 group :development, :test do

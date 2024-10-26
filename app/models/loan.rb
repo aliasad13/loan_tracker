@@ -65,6 +65,19 @@ class Loan < ApplicationRecord
   # Loan.requested                 # Lists all loans in requested state
   # Loan.approved                 # Lists all approved loans
 
+  def total_interest_accrued
+    return 0 unless open?
+    (total_amount_due || amount) - amount
+  end
+
+  def formatted_total_interest
+    total_interest_accrued.round(2)
+  end
+
+  def formatted_total_amount
+    (total_amount_due || amount).round(2)
+  end
+
   private
 
   def no_active_loan
