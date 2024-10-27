@@ -1,6 +1,7 @@
 class DashboardController < ApplicationController
   def index
     if current_user.admin?
+      @wallet_balance = current_user.wallet&.balance || 0
       render 'admin_dashboard'
     else
       @active_loans = current_user.loans.where(state: Loan::ACTIVE_STATES)

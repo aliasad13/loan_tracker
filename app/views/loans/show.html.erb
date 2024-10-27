@@ -33,14 +33,10 @@
         <p class="text-gray-600">Created at</p>
         <p class="text-2xl font-bold"><%= @loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
       </div>
-
-      <!-- Conditional Actions based on Loan State -->
-      <% if @loan.state == 'waiting_for_adjustment_acceptance' %>
         <div class="bg-gray-50 p-4 rounded">
           <p class="text-gray-600">Actions</p>
           <%= render 'loan_action_buttons', loan: @loan %>
         </div>
-      <% end %>
     </div>
 
 <% if @adjustments.any? %>
@@ -63,6 +59,7 @@
         <%#= button_to "Repay Loan", repay_loan_path(@loan), method: :patch, class: "inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700" %>
         <button onclick="toggleRepayModal(<%= @loan.id %>)" class="inline-block px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700">Repay</button>
         <%= render 'repay_loan_modal', loan: @loan, name: 'Repay Loan' %>
+        <%= link_to "View Transaction History", transaction_history_loan_path(@loan), class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
       <% end %>
     </div>
   </div>

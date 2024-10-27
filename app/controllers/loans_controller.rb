@@ -7,7 +7,7 @@ class LoansController < ApplicationController
     if current_user.admin?
       redirect_to admin_index_loans_path
     else
-      @loans = current_user.loans
+      @loans = current_user.loans.page(params[:page]).per(5)
     end
   end
 
@@ -20,7 +20,7 @@ class LoansController < ApplicationController
       @loans = Loan.where(state: 'readjustment_requested')
     elsif filter == 'open'
       @loans = Loan.where(state: 'open')
-    end
+    end.paginate(page: params[:page], per_page: 5)
   end
 
   def show
@@ -68,8 +68,10 @@ class LoansController < ApplicationController
 
   def open_loan
     if @loan and @loan.open_loan!
+      new_wallet_balance = @loan.user.wallet.balance + @loan.amount
+      @loan.user.wallet.update(balance: new_wallet_balance)
       CalculateInterestJob.perform_later(@loan.id)
-      redirect_to loans_path, notice: 'Loan opened successfully.'
+      redirect_to loans_path, notice: 'Loan opened successfully. Amount Credited to account'
     else
       redirect_to loans_path, alert: 'Unable to open loan.'
     end
@@ -111,13 +113,49 @@ class LoansController < ApplicationController
   end
 
   def repay
+    payment_amount = loan_params[:payment_amount].to_f
+    if @loan
+      loan_user = @loan.user
+      admin_user = User.where(role: 'admin').first
+      user_wallet_balance = loan_user.wallet.balance
+      user_wallet_balance_after_pay = user_wallet_balance - payment_amount
+      if user_wallet_balance_after_pay <= 0.0
+        loan_user.wallet.update(balance: 0.0)
+        admin_new_balance = admin_user.wallet.balance + user_wallet_balance
+        admin.wallet.update(balance: admin_new_balance)
+        @loan.update(total_amount_due: 0.00)
+        @loan.loan_transactions.create(transaction_amount: user_wallet_balance)
+        @loan.close!
+        redirect_to loan_path(@loan), notice: 'We have closed the loan, congratulations'
+      else
+        @loan.user.wallet.update(balance: user_wallet_balance_after_pay)
+        admin_new_balance = admin_user.wallet.balance + payment_amount
+        admin_user.wallet.update(balance: admin_new_balance)
+        balance_loan_due_amount = @loan.total_amount_due - payment_amount
+        @loan.update(total_amount_due: balance_loan_due_amount)
+        @loan.loan_transactions.create(transaction_amount: payment_amount)
+        if @loan.total_amount_due.zero?
+          @loan.close!
+          redirect_to loan_path(@loan), notice: "Congratulations, full amount paid and Loan closed"
+        else
+          redirect_to loan_path(@loan), notice: "#{payment_amount} deducted from your wallet. Loan Balance: #{balance_loan_due_amount}"
+        end
+      end
+    else
+      redirect_to loans_path, alert: 'Unable to repay.'
+    end
+  end
 
+  def transaction_history
+    if @loan
+      @loan_transactions = @loan.loan_transactions
+    end
   end
 
   private
 
   def loan_params
-    params.require(:loan).permit(:amount, :interest_rate, :total_amount_due)
+    params.require(:loan).permit(:amount, :interest_rate, :total_amount_due, :payment_amount)
   end
 
   def set_loan

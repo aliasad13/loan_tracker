@@ -1,0 +1,26 @@
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">Transaction History</h1>
+
+  <div class="bg-white rounded-lg shadow p-6">
+    <% if @loan_transactions.present? %>
+      <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+        <thead>
+        <tr class="border-b bg-gray-50">
+          <th class="text-left py-2 px-4 font-semibold text-gray-700">Amount</th>
+          <th class="text-left py-2 px-4 font-semibold text-gray-700">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @loan_transactions.each do |transaction| %>
+          <tr class="border-b">
+            <td class="py-2 px-4 text-gray-700"><%= number_to_currency(transaction.transaction_amount) %></td>
+            <td class="py-2 px-4 text-gray-700"><%= transaction.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <p class="text-gray-500">No transactions available for this loan.</p>
+    <% end %>
+  </div>
+</div>

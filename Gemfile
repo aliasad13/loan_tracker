@@ -29,6 +29,7 @@ gem 'cancancan'
 gem 'aasm'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+gem 'kaminari'
 
 
 group :development, :test do

@@ -1,14 +1,15 @@
-<div id="repayModal-<%= loan.id %>" class="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75 hidden">
-  <div class="bg-white rounded-lg p-6 w-full max-w-md mx-auto">
-    <h3 class="text-xl font-semibold mb-4">Repay Loan</h3>
-    <%= form_with(model: loan, url: repay_loan_path(loan), method: :patch, local: true) do |f| %>
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">Repay Loan</h1>
+
+  <div class="bg-white rounded-lg shadow p-6 w-full max-w-md mx-auto">
+    <%= form_with(url: repay_loan_path, method: :patch, scope: :loan, local: true) do |f| %>
       <div class="mb-4">
-        <%= f.label :total_due_amount, "Loan Amount", class: "block text-sm font-medium text-gray-700" %>
-        <%= f.number_field :amount, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm" %>
+        <%= f.label :payment_amount, "Payment Amount", class: "block text-sm font-medium text-gray-700" %>
+        <%= f.text_field :payment_amount, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm", value: loan.total_amount_due || ''  %>
       </div>
+      <%= hidden_field_tag :id, value: loan.id %>
       <div class="flex justify-end">
-        <button type="button" class="px-4 py-2 bg-gray-300 text-gray-700 rounded mr-2" onclick="toggleModal(<%= loan.id %>)">Cancel</button>
-        <%= f.submit "Save Changes", class: "px-4 py-2 bg-blue-600 text-white rounded" %>
+        <%= f.submit "Submit Payment", class: "px-4 py-2 bg-blue-600 text-white rounded" %>
       </div>
     <% end %>
   </div>

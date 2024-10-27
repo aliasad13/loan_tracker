@@ -29,11 +29,15 @@
           </tr>
         <% end %>
         </tbody>
+        <% if @loans.any? %>
+          <%= paginate @loans %>
+        <% end %>
       </table>
-    <% else %>
+  <% else %>
       <div class="p-6 text-center text-gray-500">
         <p>You haven't requested any loans yet.</p>
       </div>
     <% end %>
   </div>
+
 </div>

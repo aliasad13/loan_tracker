@@ -24,6 +24,7 @@ Rails.application.routes.draw do
       patch :repay
       patch :open_loan
       patch :close_loan
+      get :transaction_history
     end
     collection do
       get :admin_index  # For admin to see all loans

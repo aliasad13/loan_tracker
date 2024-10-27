@@ -1,6 +1,7 @@
 class Loan < ApplicationRecord
   belongs_to :user
   has_many :loan_adjustments, dependent: :destroy
+  has_many :loan_transactions, dependent: :destroy
 
   validates :amount, presence: true, numericality: { greater_than: 0 }
   validates :interest_rate, presence: true, numericality: { greater_than: 0 }
@@ -65,9 +66,13 @@ class Loan < ApplicationRecord
   # Loan.requested                 # Lists all loans in requested state
   # Loan.approved                 # Lists all approved loans
 
+  def total_amount_paid
+    loan_transactions ? loan_transactions.sum(&:transaction_amount) : 0.0
+  end
+
   def total_interest_accrued
     return 0 unless open?
-    (total_amount_due || amount) - amount
+    total_amount_due - (amount - total_amount_paid)
   end
 
   def formatted_total_interest

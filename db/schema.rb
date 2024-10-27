@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_27_043809) do
+ActiveRecord::Schema.define(version: 2024_10_27_075821) do
 
   create_table "loan_adjustments", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
     t.bigint "loan_id", null: false
@@ -21,6 +21,14 @@ ActiveRecord::Schema.define(version: 2024_10_27_043809) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["loan_id"], name: "index_loan_adjustments_on_loan_id"
+  end
+
+  create_table "loan_transactions", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.bigint "loan_id", null: false
+    t.decimal "transaction_amount", precision: 15, scale: 2
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["loan_id"], name: "index_loan_transactions_on_loan_id"
   end
 
   create_table "loans", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
@@ -57,6 +65,7 @@ ActiveRecord::Schema.define(version: 2024_10_27_043809) do
   end
 
   add_foreign_key "loan_adjustments", "loans"
+  add_foreign_key "loan_transactions", "loans"
   add_foreign_key "loans", "users"
   add_foreign_key "wallets", "users"
 end
