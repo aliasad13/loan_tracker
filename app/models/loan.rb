@@ -20,7 +20,7 @@ class Loan < ApplicationRecord
     state :closed
 
     event :approve do
-      transitions from: [:requested], to: :approved
+      transitions from: :requested, to: :approved
     end
 
     event :reject do

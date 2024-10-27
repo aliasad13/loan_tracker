@@ -4,5 +4,5 @@
 :scheduler:
   :schedule:
     interest_calculator:
-      every: '5m'
-      class: 'InterestCalculatorJob'
+      every: '1m'
+      class: 'CalculateInterestJob'

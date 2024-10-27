@@ -2,8 +2,8 @@ class User < ApplicationRecord
 
   after_create :create_wallet
 
-  has_one :wallet
-  has_many :loans
+  has_one :wallet, dependent: :destroy
+  has_many :loans, dependent: :destroy
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable

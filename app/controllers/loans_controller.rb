@@ -1,7 +1,7 @@
 class LoansController < ApplicationController
   load_and_authorize_resource  #what does this do
   before_action :set_loan, only: [:show, :reject, :accept_adjustment, :accept_with_adjustment,
-                                  :request_readjustment, :open_loan, :close_loan]
+                                  :request_readjustment, :open_loan, :close_loan, :repay]
 
   def index
     if current_user.admin?
@@ -59,6 +59,7 @@ class LoansController < ApplicationController
 
   def accept_adjustment
     if @loan and @loan.accept_adjustment!
+      CalculateInterestJob.perform_later(@loan.id)
       redirect_to loans_path, notice: 'Loan accepted successfully.'
     else
       redirect_to loans_path, alert: 'Unable to accept loan.'
@@ -66,7 +67,8 @@ class LoansController < ApplicationController
   end
 
   def open_loan
-    if @loan and @loan.open!
+    if @loan and @loan.open_loan!
+      CalculateInterestJob.perform_later(@loan.id)
       redirect_to loans_path, notice: 'Loan opened successfully.'
     else
       redirect_to loans_path, alert: 'Unable to open loan.'
@@ -74,7 +76,7 @@ class LoansController < ApplicationController
   end
 
   def close_loan
-    if @loan and @loan.close!
+    if @loan and @loan.close_loan!
       redirect_to loans_path, notice: 'Loan closed successfully.'
     else
       redirect_to loans_path, alert: 'Unable to close loan.'
@@ -108,10 +110,14 @@ class LoansController < ApplicationController
     end
   end
 
+  def repay
+
+  end
+
   private
 
   def loan_params
-    params.require(:loan).permit(:amount, :interest_rate)
+    params.require(:loan).permit(:amount, :interest_rate, :total_amount_due)
   end
 
   def set_loan

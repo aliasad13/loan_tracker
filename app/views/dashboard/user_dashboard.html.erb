@@ -7,26 +7,28 @@
     <p class="text-2xl font-bold">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
   </div>
 
-  <% if @active_loan.present? %>
+  <% if @active_loans.present? %>
+    <% @active_loans.each do |active_loan| %>
     <div class="bg-white rounded-lg shadow p-6 mb-8">
       <h2 class="text-xl font-semibold mb-4">Active Loan</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="bg-gray-50 p-4 rounded">
           <p class="text-gray-600">Amount</p>
-          <p class="text-2xl font-bold">$<%= number_with_precision(@active_loan.amount, precision: 2) %></p>
+          <p class="text-2xl font-bold">$<%= number_with_precision(active_loan.amount, precision: 2) %></p>
         </div>
         <div class="bg-gray-50 p-4 rounded">
           <p class="text-gray-600">Interest Rate</p>
-          <p class="text-2xl font-bold"><%= @active_loan.interest_rate %>%</p>
+          <p class="text-2xl font-bold"><%= active_loan.interest_rate %>%</p>
         </div>
         <div class="bg-gray-50 p-4 rounded">
           <p class="text-gray-600">Status</p>
-          <p class="text-2xl font-bold capitalize"><%= @active_loan.state %></p>
+          <p class="text-2xl font-bold capitalize"><%= active_loan.state %></p>
         </div>
       </div>
 
-      <%= link_to "View Details", loan_path(@active_loan), class: "mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+      <%= link_to "View Details", loan_path(active_loan), class: "mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
     </div>
+      <% end %>
   <% else %>
     <div class="bg-white rounded-lg shadow p-6 mb-8">
       <h2 class="text-xl font-semibold mb-4">No Active Loans</h2>

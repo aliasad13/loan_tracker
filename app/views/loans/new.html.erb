@@ -2,7 +2,7 @@
   <h1 class="text-3xl font-bold mb-8">Request a New Loan</h1>
 
   <div class="bg-white rounded-lg shadow p-6">
-    <%= form_with(model: @loan, local: true) do |form| %>
+    <%= form_with(model: @loan, local: true, html: { onsubmit: "setTotalAmountDue()" }) do |form| %>
       <% if @loan.errors.any? %>
         <div class="mb-4">
           <div class="font-medium text-red-600">
@@ -21,6 +21,9 @@
         <%= form.number_field :amount, class: "mt-1 block w-full border-gray-300 rounded-md shadow-sm", step: "0.01", placeholder: "Enter loan amount" %>
       </div>
 
+      <%= form.hidden_field :total_amount_due, id: "total_amount_due" %>
+
+
       <div class="mb-4">
         <%= form.label :interest_rate, class: "block text-gray-700" %>
         <%= form.number_field :interest_rate, class: "mt-1 block w-full border-gray-300 rounded-md shadow-sm", step: "0.01", placeholder: "Enter interest rate (%)" %>
@@ -33,3 +36,10 @@
     <% end %>
   </div>
 </div>
+
+<script>
+    function setTotalAmountDue() {
+        const amount = parseFloat(document.getElementById("loan_amount").value) || 0;
+        document.getElementById("total_amount_due").value = amount;
+    }
+</script>

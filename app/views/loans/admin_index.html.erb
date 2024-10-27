@@ -23,7 +23,7 @@
               <td class="px-6 py-4"><%= loan.user.email %></td>
               <td class="px-6 py-4">$<%= number_with_precision(loan.amount, precision: 2) %></td>
               <td class="px-6 py-4"><%= loan.interest_rate %>%</td>
-              <td class="px-6 py-4"><%= loan.created_at.strftime("%B %d, %Y") %></td>
+              <td class="px-6 py-4"><%= loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
               <td class="px-6 py-4"><%= loan.state %></td>
               <td class="px-6 py-4 space-x-2">
                 <%= render 'loan_action_buttons', loan: loan %>
