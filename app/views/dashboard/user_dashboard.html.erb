@@ -1,22 +1,22 @@
-<div class="container mx-auto px-4 py-8">
-  <h1 class="text-3xl font-bold mb-8">My Dashboard</h1>
+<div class="container mx-auto px-4 py-8 bg-gray-900 text-gray-100">
+  <h1 class="text-3xl font-bold mb-8 text-white">My Dashboard</h1>
 
-  <div class="bg-white rounded-lg shadow p-6 mb-8">
-    <h2 class="text-xl font-semibold mb-4">Wallet Balance</h2>
-    <p class="text-2xl font-bold">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
+  <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
+    <h2 class="text-xl font-semibold mb-4 text-gray-100">Wallet Balance</h2>
+    <p class="text-2xl font-bold text-green-400">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
   </div>
 
   <% if @active_loans.present? %>
-    <div class="bg-white rounded-lg shadow p-6 mb-8">
-      <h2 class="text-xl font-semibold mb-4">Active Loans</h2>
-      <p class="text-gray-600 mb-4"><%= "You currently have #{@active_loans.count} Active Loans" %></p>
-      <%= link_to "View All", active_loans_loans_path, class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4 text-gray-100">Active Loans</h2>
+      <p class="text-gray-400 mb-4"><%= "You currently have #{@active_loans.count} Active Loans" %></p>
+      <%= link_to "View All", active_loans_loans_path, class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-150" %>
     </div>
   <% else %>
-    <div class="bg-white rounded-lg shadow p-6 mb-8">
-      <h2 class="text-xl font-semibold mb-4">No Active Loans</h2>
-      <p class="text-gray-600 mb-4">You currently don't have any active loans.</p>
-      <%= link_to "Request New Loan", new_loan_path, class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
+      <h2 class="text-xl font-semibold mb-4 text-gray-100">No Active Loans</h2>
+      <p class="text-gray-400 mb-4">You currently don't have any active loans.</p>
+      <%= link_to "Request New Loan", new_loan_path, class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-150" %>
     </div>
   <% end %>
 

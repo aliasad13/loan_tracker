@@ -1,53 +1,53 @@
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8 bg-gray-900">
   <div class="mb-8">
-    <%= link_to "← Back", :back, class: "text-blue-600 hover:text-blue-900" %>
+    <%= link_to "← Back", :back, class: "text-blue-400 hover:text-blue-300 transition duration-150" %>
   </div>
 
-  <div class="bg-white rounded-lg shadow p-6">
-    <h1 class="text-3xl font-bold mb-6">Loan Details</h1>
+  <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+    <h1 class="text-3xl font-bold mb-6 text-white">Loan Details</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Amount</p>
-        <p class="text-2xl font-bold">$<%= number_with_precision(@loan.amount, precision: 2) %></p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Amount</p>
+        <p class="text-2xl font-bold text-gray-100">$<%= number_with_precision(@loan.amount, precision: 2) %></p>
       </div>
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Interest Rate</p>
-        <p class="text-2xl font-bold"><%= @loan.interest_rate %>%</p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Interest Rate</p>
+        <p class="text-2xl font-bold text-gray-100"><%= @loan.interest_rate %>%</p>
       </div>
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Status</p>
-        <p class="text-2xl font-bold capitalize"><%= @loan.state %></p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Status</p>
+        <p class="text-2xl font-bold capitalize text-gray-100"><%= (@loan.state).humanize %></p>
       </div>
 
       <!-- New section for Total Interest and Total Amount with Interest -->
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Total Interest Accrued</p>
-        <p class="text-2xl font-bold">$<%= @loan.formatted_total_interest %></p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Total Interest Accrued</p>
+        <p class="text-2xl font-bold text-gray-100">$<%= @loan.formatted_total_interest %></p>
       </div>
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Total Amount with Interest</p>
-        <p class="text-2xl font-bold">$<%= @loan.formatted_total_amount %></p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Total Amount with Interest</p>
+        <p class="text-2xl font-bold text-gray-100">$<%= @loan.formatted_total_amount %></p>
       </div>
-      <div class="bg-gray-50 p-4 rounded">
-        <p class="text-gray-600">Created at</p>
-        <p class="text-2xl font-bold"><%= @loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Created at</p>
+        <p class="text-2xl font-bold text-gray-100"><%= @loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
       </div>
-        <div class="bg-gray-50 p-4 rounded">
-          <p class="text-gray-600">Actions</p>
-          <%= render 'loan_action_buttons', loan: @loan %>
-        </div>
+      <div class="bg-gray-900 p-4 rounded border border-gray-700">
+        <p class="text-gray-400">Actions</p>
+        <%= render 'loan_action_buttons', loan: @loan %>
+      </div>
     </div>
 
-<% if @adjustments.any? %>
+    <% if @adjustments.any? %>
       <div class="mt-8">
-        <h2 class="text-xl font-semibold mb-4">Adjustment History</h2>
-        <div class="bg-gray-50 rounded p-4">
+        <h2 class="text-xl font-semibold mb-4 text-white">Adjustment History</h2>
+        <div class="bg-gray-900 rounded p-4 border border-gray-700">
           <% @adjustments.each do |adjustment| %>
             <div class="mb-4 last:mb-0">
-              <p class="font-medium"><%= adjustment.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
-              <p class="text-gray-600">Amount adjusted from $<%= number_with_precision(adjustment.previous_amount, precision: 2) %> to $<%= number_with_precision(adjustment.new_amount, precision: 2) %></p>
-              <p class="text-gray-600">Interest adjusted from $<%= adjustment.previous_interest_rate %> to $<%= number_with_precision(adjustment.new_interest_rate, precision: 2) %></p>
+              <p class="font-medium text-gray-200"><%= adjustment.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
+              <p class="text-gray-400">Amount adjusted from $<%= number_with_precision(adjustment.previous_amount, precision: 2) %> to $<%= number_with_precision(adjustment.new_amount, precision: 2) %></p>
+              <p class="text-gray-400">Interest adjusted from $<%= adjustment.previous_interest_rate %> to $<%= number_with_precision(adjustment.new_interest_rate, precision: 2) %></p>
             </div>
           <% end %>
         </div>
@@ -56,10 +56,12 @@
 
     <div class="mt-8 space-x-4">
       <% if @loan.state == 'open' %>
-        <%#= button_to "Repay Loan", repay_loan_path(@loan), method: :patch, class: "inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700" %>
-        <button onclick="toggleRepayModal(<%= @loan.id %>)" class="inline-block px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700">Repay</button>
+        <% unless current_user.admin? %>
+        <button onclick="toggleRepayModal(<%= @loan.id %>)" class="inline-block px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition duration-150">Repay</button>
         <%= render 'repay_loan_modal', loan: @loan, name: 'Repay Loan' %>
-        <%= link_to "View Transaction History", transaction_history_loan_path(@loan), class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+          <% end %>
+        <%= link_to "View Transaction History", transaction_history_loan_path(@loan),
+                    class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-150" %>
       <% end %>
     </div>
   </div>

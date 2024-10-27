@@ -14,7 +14,7 @@
       <% @closed_loans.each do |loan| %>
         <tr>
           <td class="px-6 py-4">$<%= number_with_precision(loan.amount, precision: 2) %></td>
-          <td class="px-6 py-4 capitalize"><%= loan.state %></td>
+          <td class="px-6 py-4 capitalize"><%= (loan.state).humanize %></td>
           <td class="px-6 py-4"><%= loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
           <td class="px-6 py-4">
             <%= link_to "View", loan_path(loan), class: "text-blue-600 hover:text-blue-900" %>

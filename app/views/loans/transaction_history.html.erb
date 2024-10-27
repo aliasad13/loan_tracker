@@ -1,26 +1,32 @@
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8 bg-gray-900 text-gray-100">
   <h1 class="text-3xl font-bold mb-8">Transaction History</h1>
 
-  <div class="bg-white rounded-lg shadow p-6">
+  <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
     <% if @loan_transactions.present? %>
-      <table class="min-w-full bg-white border border-gray-200 rounded-lg">
-        <thead>
-        <tr class="border-b bg-gray-50">
-          <th class="text-left py-2 px-4 font-semibold text-gray-700">Amount</th>
-          <th class="text-left py-2 px-4 font-semibold text-gray-700">Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        <% @loan_transactions.each do |transaction| %>
-          <tr class="border-b">
-            <td class="py-2 px-4 text-gray-700"><%= number_to_currency(transaction.transaction_amount) %></td>
-            <td class="py-2 px-4 text-gray-700"><%= transaction.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-gray-800 rounded-lg">
+          <thead>
+          <tr class="border-b border-gray-700 bg-gray-700/50">
+            <th class="text-left py-3 px-4 font-semibold text-gray-200">Amount</th>
+            <th class="text-left py-3 px-4 font-semibold text-gray-200">Date</th>
           </tr>
-        <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+          <% @loan_transactions.each do |transaction| %>
+            <tr class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-150">
+              <td class="py-3 px-4 text-gray-100">
+                <%= number_to_currency(transaction.transaction_amount) %>
+              </td>
+              <td class="py-3 px-4 text-gray-100">
+                <%= transaction.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
     <% else %>
-      <p class="text-gray-500">No transactions available for this loan.</p>
+      <p class="text-gray-400">No transactions available for this loan.</p>
     <% end %>
   </div>
 </div>
