@@ -36,6 +36,10 @@
           <% end %>
           </tbody>
         </table>
+        <div class="px-6 py-4">
+          <%= paginate @loans %>
+        </div>
+
       <% else %>
         <div class="p-6 text-center text-gray-500">
           <p>No pending loan requests.</p>
@@ -43,5 +47,4 @@
       <% end %>
     </div>
   </div>
-  <%= will_paginate @loans %>
 </div>

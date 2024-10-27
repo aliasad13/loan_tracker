@@ -4,9 +4,12 @@ class User < ApplicationRecord
 
   has_one :wallet, dependent: :destroy
   has_many :loans, dependent: :destroy
+  validates :username, presence: true, uniqueness: {case_sensitive: true}
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  attr_accessor :login
+
 
 
   enum role: { admin: 'admin', user: 'user' }
@@ -26,6 +29,16 @@ class User < ApplicationRecord
   # after initialize will run after instantiating new and existing record. to limit this to only new record
   # instantiating existing: user = User.find(1), instantiating new record: user = User.new
 
+
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    if (login = conditions.delete(:login))
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { value: login.downcase }]).first
+    else
+      where(conditions).first
+    end
+  end
+  
   def active_loan
     loans.find_by(state: Loan::ACTIVE_STATES)
   end

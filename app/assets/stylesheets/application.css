@@ -71,3 +71,9 @@
 .pagination .gap {
     border: none;
 }
+
+.main-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

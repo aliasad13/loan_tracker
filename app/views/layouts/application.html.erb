@@ -13,95 +13,10 @@
 </head>
 
 <body class="min-h-screen bg-gray-50">
-<!-- Navigation Bar -->
 <% if user_signed_in? %>
-  <nav class="bg-white shadow-lg relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex">
-          <!-- Logo -->
-          <div class="flex-shrink-0 flex items-center">
-            <%= link_to root_path, class: "text-xl font-bold text-blue-600" do %>
-              LoanTracker
-            <% end %>
-          </div>
-
-          <!-- Navigation Links -->
-          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <% if user_signed_in? %>
-              <%= link_to "Dashboard", authenticated_root_path,
-                          class: "#{current_page?(authenticated_root_path) ?
-                                      'border-blue-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}
-                  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" %>
-
-              <%= link_to "Loans", loans_path,
-                          class: "#{current_page?(loans_path) ?
-                                      'border-blue-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}
-                  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" %>
-            <% end %>
-          </div>
-        </div>
-
-        <!-- Right side buttons -->
-        <div class="hidden sm:ml-6 sm:flex sm:items-center">
-          <% if user_signed_in? %>
-            <div class="ml-3 relative">
-              <div class="flex items-center space-x-4">
-                <span class="text-gray-700"><%= current_user.email %></span>
-                <%= button_to "Sign Out", destroy_user_session_path, method: :delete,
-                              class: "text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium" %>
-              </div>
-            </div>
-          <% else %>
-            <%= link_to "Sign In", new_user_session_path,
-                        class: "text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium" %>
-            <%= link_to "Sign Up", new_user_registration_path,
-                        class: "ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700" %>
-          <% end %>
-        </div>
-
-        <!-- Mobile menu button -->
-        <div class="flex items-center sm:hidden">
-          <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="sm:hidden hidden mobile-menu">
-      <div class="pt-2 pb-3 space-y-1">
-        <% if user_signed_in? %>
-          <%= link_to "Dashboard", authenticated_root_path,
-                      class: "#{current_page?(authenticated_root_path) ?
-                                  'bg-blue-50 border-blue-500 text-blue-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'}
-              block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-
-          <%= link_to "My Loans", loans_path,
-                      class: "#{current_page?(loans_path) ?
-                                  'bg-blue-50 border-blue-500 text-blue-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700'}
-              block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-
-          <%= button_to "Sign Out", destroy_user_session_path, method: :delete,
-                        class: "block w-full text-left px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100" %>
-        <% else %>
-          <%= link_to "Sign In", new_user_session_path,
-                      class: "block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100" %>
-          <%= link_to "Sign Up", new_user_registration_path,
-                      class: "block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100" %>
-        <% end %>
-      </div>
-    </div>
-  </nav>
-
-
+<%= render 'layouts/navbar' %>
 <% end %>
 
-<!-- Flash Messages -->
 <% if notice %>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
     <div class="bg-green-50 border-l-4 border-green-400 p-4">
@@ -136,7 +51,6 @@
   </div>
 <% end %>
 
-<!-- Main Content -->
 <main>
   <%= yield %>
 </main>

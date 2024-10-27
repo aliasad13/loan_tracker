@@ -11227,3 +11227,1043 @@ app/jobs/calculate_interest_job.rb:6:in `perform'
 2024-10-27T10:17:20.537Z pid=5641 tid=h85 class=CalculateInterestJob jid=c70fa83dcecde010579fe769 INFO: Performing CalculateInterestJob (Job ID: ad7085ad-92d1-4145-8e14-87b189cfabf5) from Sidekiq(default) enqueued at 2024-10-27T10:17:20Z
 2024-10-27T10:17:20.552Z pid=5641 tid=h85 class=CalculateInterestJob jid=c70fa83dcecde010579fe769 INFO: Performed CalculateInterestJob (Job ID: ad7085ad-92d1-4145-8e14-87b189cfabf5) from Sidekiq(default) in 13.4ms
 2024-10-27T10:17:20.554Z pid=5641 tid=h85 class=CalculateInterestJob jid=c70fa83dcecde010579fe769 elapsed=0.028 INFO: done
+2024-10-27T10:18:20.614Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:18:20.623Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: bf6a81b4-d737-4dd4-9e79-3fad2eea7ecb) to Sidekiq(default)
+2024-10-27T10:19:01.882Z pid=5641 tid=ukd class=CalculateInterestJob jid=5504755d610758e9f8267528 INFO: start
+2024-10-27T10:19:01.887Z pid=5641 tid=ukd class=CalculateInterestJob jid=5504755d610758e9f8267528 INFO: Performing CalculateInterestJob (Job ID: bf6a81b4-d737-4dd4-9e79-3fad2eea7ecb) from Sidekiq(default) enqueued at 2024-10-27T10:18:20Z
+2024-10-27T10:19:01.901Z pid=5641 tid=ukd class=CalculateInterestJob jid=5504755d610758e9f8267528 INFO: Performed CalculateInterestJob (Job ID: bf6a81b4-d737-4dd4-9e79-3fad2eea7ecb) from Sidekiq(default) in 12.4ms
+2024-10-27T10:19:01.902Z pid=5641 tid=ukd class=CalculateInterestJob jid=5504755d610758e9f8267528 elapsed=0.021 INFO: done
+2024-10-27T10:19:20.459Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:19:20.462Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: f1ce0346-eb16-461d-8ada-0230b8aa5e9b) to Sidekiq(default)
+2024-10-27T10:19:41.332Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8b0f0cfb662920efccbbfe0d INFO: start
+2024-10-27T10:19:41.339Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8b0f0cfb662920efccbbfe0d INFO: Performing CalculateInterestJob (Job ID: f1ce0346-eb16-461d-8ada-0230b8aa5e9b) from Sidekiq(default) enqueued at 2024-10-27T10:19:20Z
+2024-10-27T10:19:41.353Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8b0f0cfb662920efccbbfe0d INFO: Performed CalculateInterestJob (Job ID: f1ce0346-eb16-461d-8ada-0230b8aa5e9b) from Sidekiq(default) in 12.04ms
+2024-10-27T10:19:41.354Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8b0f0cfb662920efccbbfe0d elapsed=0.022 INFO: done
+2024-10-27T10:20:20.587Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:20:20.593Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a3130714-e1ec-48b2-b1ac-24193343ede8) to Sidekiq(default)
+2024-10-27T10:21:20.410Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:21:20.414Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 INFO: start
+2024-10-27T10:21:20.415Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 00406269-ac5f-464b-b23b-5e9971ae4f9a) to Sidekiq(default)
+2024-10-27T10:21:20.632Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 INFO: Performing CalculateInterestJob (Job ID: 00406269-ac5f-464b-b23b-5e9971ae4f9a) from Sidekiq(default) enqueued at 2024-10-27T10:21:20Z
+2024-10-27T10:21:20.637Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:21:20.656Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 INFO: Started calculation for Loan #21
+2024-10-27T10:21:20.680Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1043.29
+2024-10-27T10:21:20.684Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 INFO: Performed CalculateInterestJob (Job ID: 00406269-ac5f-464b-b23b-5e9971ae4f9a) from Sidekiq(default) in 51.8ms
+2024-10-27T10:21:20.684Z pid=5641 tid=h85 class=CalculateInterestJob jid=c964f40669f6591cc602c685 elapsed=0.27 INFO: done
+2024-10-27T10:21:49.040Z pid=5641 tid=ukd class=CalculateInterestJob jid=80ea963ddb6173413e0309de INFO: start
+2024-10-27T10:21:49.189Z pid=5641 tid=ukd class=CalculateInterestJob jid=80ea963ddb6173413e0309de INFO: Performing CalculateInterestJob (Job ID: a3130714-e1ec-48b2-b1ac-24193343ede8) from Sidekiq(default) enqueued at 2024-10-27T10:20:20Z
+2024-10-27T10:21:49.195Z pid=5641 tid=ukd class=CalculateInterestJob jid=80ea963ddb6173413e0309de WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:21:49.214Z pid=5641 tid=ukd class=CalculateInterestJob jid=80ea963ddb6173413e0309de INFO: Performed CalculateInterestJob (Job ID: a3130714-e1ec-48b2-b1ac-24193343ede8) from Sidekiq(default) in 23.87ms
+2024-10-27T10:21:49.214Z pid=5641 tid=ukd class=CalculateInterestJob jid=80ea963ddb6173413e0309de elapsed=0.174 INFO: done
+2024-10-27T10:22:20.542Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:22:20.546Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a4c75e30-b17d-4cfe-987a-c42f7ffe3f00) to Sidekiq(default)
+2024-10-27T10:22:20.548Z pid=5641 tid=ur1 class=CalculateInterestJob jid=ad51b1ffa01b0e9242951232 INFO: start
+2024-10-27T10:22:20.742Z pid=5641 tid=ur1 class=CalculateInterestJob jid=ad51b1ffa01b0e9242951232 INFO: Performing CalculateInterestJob (Job ID: a4c75e30-b17d-4cfe-987a-c42f7ffe3f00) from Sidekiq(default) enqueued at 2024-10-27T10:22:20Z
+2024-10-27T10:22:20.748Z pid=5641 tid=ur1 class=CalculateInterestJob jid=ad51b1ffa01b0e9242951232 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:22:20.766Z pid=5641 tid=ur1 class=CalculateInterestJob jid=ad51b1ffa01b0e9242951232 INFO: Performed CalculateInterestJob (Job ID: a4c75e30-b17d-4cfe-987a-c42f7ffe3f00) from Sidekiq(default) in 23.39ms
+2024-10-27T10:22:20.766Z pid=5641 tid=ur1 class=CalculateInterestJob jid=ad51b1ffa01b0e9242951232 elapsed=0.218 INFO: done
+2024-10-27T10:23:20.398Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:23:20.402Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 230643d0-6e3c-4c30-994b-64fca7fd2816) to Sidekiq(default)
+2024-10-27T10:23:41.304Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f8db6c235ade27960f65f15f INFO: start
+2024-10-27T10:23:41.314Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f8db6c235ade27960f65f15f INFO: Performing CalculateInterestJob (Job ID: 230643d0-6e3c-4c30-994b-64fca7fd2816) from Sidekiq(default) enqueued at 2024-10-27T10:23:20Z
+2024-10-27T10:23:41.328Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f8db6c235ade27960f65f15f INFO: Performed CalculateInterestJob (Job ID: 230643d0-6e3c-4c30-994b-64fca7fd2816) from Sidekiq(default) in 13.02ms
+2024-10-27T10:23:41.332Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f8db6c235ade27960f65f15f elapsed=0.028 INFO: done
+2024-10-27T10:24:20.533Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:24:20.537Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: f3a4b21a-37c8-42f1-95b1-92f70f7e2e1a) to Sidekiq(default)
+2024-10-27T10:25:14.433Z pid=5641 tid=h85 class=CalculateInterestJob jid=ccdfa50d63b35e5e02957824 INFO: start
+2024-10-27T10:25:14.439Z pid=5641 tid=h85 class=CalculateInterestJob jid=ccdfa50d63b35e5e02957824 INFO: Performing CalculateInterestJob (Job ID: f3a4b21a-37c8-42f1-95b1-92f70f7e2e1a) from Sidekiq(default) enqueued at 2024-10-27T10:24:20Z
+2024-10-27T10:25:14.453Z pid=5641 tid=h85 class=CalculateInterestJob jid=ccdfa50d63b35e5e02957824 INFO: Performed CalculateInterestJob (Job ID: f3a4b21a-37c8-42f1-95b1-92f70f7e2e1a) from Sidekiq(default) in 12.54ms
+2024-10-27T10:25:14.456Z pid=5641 tid=h85 class=CalculateInterestJob jid=ccdfa50d63b35e5e02957824 elapsed=0.023 INFO: done
+2024-10-27T10:25:20.647Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:25:20.648Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: f067be58-1508-4183-98f3-cedc81bc13a2) to Sidekiq(default)
+2024-10-27T10:25:20.649Z pid=5641 tid=ukd class=CalculateInterestJob jid=dcbcddbc7bd162d4ca457940 INFO: start
+2024-10-27T10:25:20.652Z pid=5641 tid=ukd class=CalculateInterestJob jid=dcbcddbc7bd162d4ca457940 INFO: Performing CalculateInterestJob (Job ID: f067be58-1508-4183-98f3-cedc81bc13a2) from Sidekiq(default) enqueued at 2024-10-27T10:25:20Z
+2024-10-27T10:25:20.658Z pid=5641 tid=ukd class=CalculateInterestJob jid=dcbcddbc7bd162d4ca457940 INFO: Performed CalculateInterestJob (Job ID: f067be58-1508-4183-98f3-cedc81bc13a2) from Sidekiq(default) in 4.8ms
+2024-10-27T10:25:20.658Z pid=5641 tid=ukd class=CalculateInterestJob jid=dcbcddbc7bd162d4ca457940 elapsed=0.009 INFO: done
+2024-10-27T10:26:20.520Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:26:20.522Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff INFO: start
+2024-10-27T10:26:20.523Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: fecd2aef-a30d-411b-b487-d4184ceff8c4) to Sidekiq(default)
+2024-10-27T10:26:20.533Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff INFO: Performing CalculateInterestJob (Job ID: fecd2aef-a30d-411b-b487-d4184ceff8c4) from Sidekiq(default) enqueued at 2024-10-27T10:26:20Z
+2024-10-27T10:26:20.542Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff INFO: Started calculation for Loan #21
+2024-10-27T10:26:20.629Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff INFO: Interest calculated for Loan #21: Added 3.33, New total: 1046.62
+2024-10-27T10:26:20.638Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff INFO: Performed CalculateInterestJob (Job ID: fecd2aef-a30d-411b-b487-d4184ceff8c4) from Sidekiq(default) in 104.36ms
+2024-10-27T10:26:20.639Z pid=5641 tid=ur1 class=CalculateInterestJob jid=835c206a5b97293aed34adff elapsed=0.117 INFO: done
+2024-10-27T10:27:20.623Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:27:20.624Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6ede76113d7209fc2ff3a0ec INFO: start
+2024-10-27T10:27:20.640Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d3548d0f-abed-4a32-aea8-2c117df75b9c) to Sidekiq(default)
+2024-10-27T10:27:20.793Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6ede76113d7209fc2ff3a0ec INFO: Performing CalculateInterestJob (Job ID: d3548d0f-abed-4a32-aea8-2c117df75b9c) from Sidekiq(default) enqueued at 2024-10-27T10:27:20Z
+2024-10-27T10:27:20.800Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6ede76113d7209fc2ff3a0ec WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:27:20.828Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6ede76113d7209fc2ff3a0ec INFO: Performed CalculateInterestJob (Job ID: d3548d0f-abed-4a32-aea8-2c117df75b9c) from Sidekiq(default) in 34.93ms
+2024-10-27T10:27:20.829Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6ede76113d7209fc2ff3a0ec elapsed=0.205 INFO: done
+2024-10-27T10:28:20.400Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:28:20.402Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 10e5e01e-a3e7-405e-9ff5-989bacea4cc4) to Sidekiq(default)
+2024-10-27T10:28:36.666Z pid=5641 tid=ur1 class=CalculateInterestJob jid=0e1026feabc57fe3027f4339 INFO: start
+2024-10-27T10:28:36.668Z pid=5641 tid=ur1 class=CalculateInterestJob jid=0e1026feabc57fe3027f4339 INFO: Performing CalculateInterestJob (Job ID: 10e5e01e-a3e7-405e-9ff5-989bacea4cc4) from Sidekiq(default) enqueued at 2024-10-27T10:28:20Z
+2024-10-27T10:28:36.672Z pid=5641 tid=ur1 class=CalculateInterestJob jid=0e1026feabc57fe3027f4339 INFO: Performed CalculateInterestJob (Job ID: 10e5e01e-a3e7-405e-9ff5-989bacea4cc4) from Sidekiq(default) in 4.06ms
+2024-10-27T10:28:36.673Z pid=5641 tid=ur1 class=CalculateInterestJob jid=0e1026feabc57fe3027f4339 elapsed=0.006 INFO: done
+2024-10-27T10:29:20.533Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:29:20.534Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 58cbad2f-0b15-4875-9b1b-6224e8a576c2) to Sidekiq(default)
+2024-10-27T10:30:20.364Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:30:20.369Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: efecb999-da88-4643-832c-0b1b324e8bb0) to Sidekiq(default)
+2024-10-27T10:30:20.371Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ae6f741d4f077ccbc2608a46 INFO: start
+2024-10-27T10:30:20.582Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ae6f741d4f077ccbc2608a46 INFO: Performing CalculateInterestJob (Job ID: efecb999-da88-4643-832c-0b1b324e8bb0) from Sidekiq(default) enqueued at 2024-10-27T10:30:20Z
+2024-10-27T10:30:20.588Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ae6f741d4f077ccbc2608a46 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:30:20.607Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ae6f741d4f077ccbc2608a46 INFO: Performed CalculateInterestJob (Job ID: efecb999-da88-4643-832c-0b1b324e8bb0) from Sidekiq(default) in 25.13ms
+2024-10-27T10:30:20.608Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ae6f741d4f077ccbc2608a46 elapsed=0.237 INFO: done
+2024-10-27T10:31:20.509Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:31:20.513Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 70070c35-4e8f-4246-b6ac-e630111d7e54) to Sidekiq(default)
+2024-10-27T10:31:43.243Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 INFO: start
+2024-10-27T10:31:43.457Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 INFO: Performing CalculateInterestJob (Job ID: 70070c35-4e8f-4246-b6ac-e630111d7e54) from Sidekiq(default) enqueued at 2024-10-27T10:31:20Z
+2024-10-27T10:31:43.463Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:31:43.481Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 INFO: Started calculation for Loan #21
+2024-10-27T10:31:43.504Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1049.95
+2024-10-27T10:31:43.508Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 INFO: Performed CalculateInterestJob (Job ID: 70070c35-4e8f-4246-b6ac-e630111d7e54) from Sidekiq(default) in 51.1ms
+2024-10-27T10:31:43.508Z pid=5641 tid=pjd class=CalculateInterestJob jid=a5f45af0a7a06153d6148402 elapsed=0.265 INFO: done
+2024-10-27T10:32:20.641Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:32:20.644Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 764fadc7-ac03-412b-b90b-feafd7b6b9ad) to Sidekiq(default)
+2024-10-27T10:32:53.647Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3f11a6a1b8a0b25f1192a3c7 INFO: start
+2024-10-27T10:32:53.648Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3f11a6a1b8a0b25f1192a3c7 INFO: Performing CalculateInterestJob (Job ID: 58cbad2f-0b15-4875-9b1b-6224e8a576c2) from Sidekiq(default) enqueued at 2024-10-27T10:29:20Z
+2024-10-27T10:32:53.651Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3f11a6a1b8a0b25f1192a3c7 INFO: Performed CalculateInterestJob (Job ID: 58cbad2f-0b15-4875-9b1b-6224e8a576c2) from Sidekiq(default) in 2.97ms
+2024-10-27T10:32:53.651Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3f11a6a1b8a0b25f1192a3c7 elapsed=0.005 INFO: done
+2024-10-27T10:33:20.436Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:33:20.439Z pid=5641 tid=ur1 class=CalculateInterestJob jid=7d7c02adec7060882a879d74 INFO: start
+2024-10-27T10:33:20.440Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 039f0083-737b-4eab-b9e7-649e79c90f45) to Sidekiq(default)
+2024-10-27T10:33:20.450Z pid=5641 tid=ur1 class=CalculateInterestJob jid=7d7c02adec7060882a879d74 INFO: Performing CalculateInterestJob (Job ID: 039f0083-737b-4eab-b9e7-649e79c90f45) from Sidekiq(default) enqueued at 2024-10-27T10:33:20Z
+2024-10-27T10:33:20.465Z pid=5641 tid=ur1 class=CalculateInterestJob jid=7d7c02adec7060882a879d74 INFO: Performed CalculateInterestJob (Job ID: 039f0083-737b-4eab-b9e7-649e79c90f45) from Sidekiq(default) in 13.95ms
+2024-10-27T10:33:20.466Z pid=5641 tid=ur1 class=CalculateInterestJob jid=7d7c02adec7060882a879d74 elapsed=0.027 INFO: done
+2024-10-27T10:34:20.574Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:34:20.575Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e7abacc6-b421-4a2b-a5cf-e077baa9dac2) to Sidekiq(default)
+2024-10-27T10:34:20.575Z pid=5641 tid=ukd class=CalculateInterestJob jid=df9f2b8b024bf7f50000d119 INFO: start
+2024-10-27T10:34:20.577Z pid=5641 tid=ukd class=CalculateInterestJob jid=df9f2b8b024bf7f50000d119 INFO: Performing CalculateInterestJob (Job ID: e7abacc6-b421-4a2b-a5cf-e077baa9dac2) from Sidekiq(default) enqueued at 2024-10-27T10:34:20Z
+2024-10-27T10:34:20.580Z pid=5641 tid=ukd class=CalculateInterestJob jid=df9f2b8b024bf7f50000d119 INFO: Performed CalculateInterestJob (Job ID: e7abacc6-b421-4a2b-a5cf-e077baa9dac2) from Sidekiq(default) in 2.78ms
+2024-10-27T10:34:20.580Z pid=5641 tid=ukd class=CalculateInterestJob jid=df9f2b8b024bf7f50000d119 elapsed=0.005 INFO: done
+2024-10-27T10:35:20.378Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:35:20.382Z pid=5641 tid=qm1 class=CalculateInterestJob jid=2c82ce7111d87e069dcebcc1 INFO: start
+2024-10-27T10:35:20.383Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: cd9ad652-8ab3-48e9-90db-4d500b046ab4) to Sidekiq(default)
+2024-10-27T10:35:20.394Z pid=5641 tid=qm1 class=CalculateInterestJob jid=2c82ce7111d87e069dcebcc1 INFO: Performing CalculateInterestJob (Job ID: cd9ad652-8ab3-48e9-90db-4d500b046ab4) from Sidekiq(default) enqueued at 2024-10-27T10:35:20Z
+2024-10-27T10:35:20.407Z pid=5641 tid=qm1 class=CalculateInterestJob jid=2c82ce7111d87e069dcebcc1 INFO: Performed CalculateInterestJob (Job ID: cd9ad652-8ab3-48e9-90db-4d500b046ab4) from Sidekiq(default) in 11.61ms
+2024-10-27T10:35:20.408Z pid=5641 tid=qm1 class=CalculateInterestJob jid=2c82ce7111d87e069dcebcc1 elapsed=0.026 INFO: done
+2024-10-27T10:36:20.496Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:36:20.499Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1ac530e3528447456391470d INFO: start
+2024-10-27T10:36:20.500Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b6a5556a-88ff-4f77-86d0-31c409ef6d37) to Sidekiq(default)
+2024-10-27T10:36:20.510Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1ac530e3528447456391470d INFO: Performing CalculateInterestJob (Job ID: b6a5556a-88ff-4f77-86d0-31c409ef6d37) from Sidekiq(default) enqueued at 2024-10-27T10:36:20Z
+2024-10-27T10:36:20.524Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1ac530e3528447456391470d INFO: Performed CalculateInterestJob (Job ID: b6a5556a-88ff-4f77-86d0-31c409ef6d37) from Sidekiq(default) in 12.92ms
+2024-10-27T10:36:20.526Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1ac530e3528447456391470d elapsed=0.027 INFO: done
+2024-10-27T10:37:20.624Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:37:20.628Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4a4aa572-b3dd-40e2-aef2-34efbd541e6f) to Sidekiq(default)
+2024-10-27T10:38:01.860Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 INFO: start
+2024-10-27T10:38:01.864Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 INFO: Performing CalculateInterestJob (Job ID: 4a4aa572-b3dd-40e2-aef2-34efbd541e6f) from Sidekiq(default) enqueued at 2024-10-27T10:37:20Z
+2024-10-27T10:38:01.877Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 INFO: Started calculation for Loan #21
+2024-10-27T10:38:01.913Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1053.28
+2024-10-27T10:38:01.921Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 INFO: Performed CalculateInterestJob (Job ID: 4a4aa572-b3dd-40e2-aef2-34efbd541e6f) from Sidekiq(default) in 56.97ms
+2024-10-27T10:38:01.922Z pid=5641 tid=ukd class=CalculateInterestJob jid=f7ac3d28816ddd8601a9c955 elapsed=0.062 INFO: done
+2024-10-27T10:38:20.437Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:38:20.442Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 460f3147-3ce8-472d-9abc-6a8cedef4faf) to Sidekiq(default)
+2024-10-27T10:38:44.674Z pid=5641 tid=h85 class=CalculateInterestJob jid=a813b5b85d9d357d6735efa8 INFO: start
+2024-10-27T10:38:44.719Z pid=5641 tid=h85 class=CalculateInterestJob jid=a813b5b85d9d357d6735efa8 INFO: Performing CalculateInterestJob (Job ID: 460f3147-3ce8-472d-9abc-6a8cedef4faf) from Sidekiq(default) enqueued at 2024-10-27T10:38:20Z
+2024-10-27T10:38:44.734Z pid=5641 tid=h85 class=CalculateInterestJob jid=a813b5b85d9d357d6735efa8 INFO: Performed CalculateInterestJob (Job ID: 460f3147-3ce8-472d-9abc-6a8cedef4faf) from Sidekiq(default) in 13.8ms
+2024-10-27T10:38:44.735Z pid=5641 tid=h85 class=CalculateInterestJob jid=a813b5b85d9d357d6735efa8 elapsed=0.062 INFO: done
+2024-10-27T10:39:20.572Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:39:20.575Z pid=5641 tid=h85 class=CalculateInterestJob jid=a721cd45eea459345ef01c56 INFO: start
+2024-10-27T10:39:20.576Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 87b52909-ed98-4bc7-870d-5d61ceb721fc) to Sidekiq(default)
+2024-10-27T10:39:20.588Z pid=5641 tid=h85 class=CalculateInterestJob jid=a721cd45eea459345ef01c56 INFO: Performing CalculateInterestJob (Job ID: 87b52909-ed98-4bc7-870d-5d61ceb721fc) from Sidekiq(default) enqueued at 2024-10-27T10:39:20Z
+2024-10-27T10:39:20.599Z pid=5641 tid=h85 class=CalculateInterestJob jid=a721cd45eea459345ef01c56 INFO: Performed CalculateInterestJob (Job ID: 87b52909-ed98-4bc7-870d-5d61ceb721fc) from Sidekiq(default) in 10.7ms
+2024-10-27T10:39:20.601Z pid=5641 tid=h85 class=CalculateInterestJob jid=a721cd45eea459345ef01c56 elapsed=0.026 INFO: done
+2024-10-27T10:40:20.399Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:40:20.403Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e7742be9-1150-4dfc-bdc3-1077e1985010) to Sidekiq(default)
+2024-10-27T10:41:12.929Z pid=5641 tid=ukd class=CalculateInterestJob jid=defc70596cb57cc6600cc5ae INFO: start
+2024-10-27T10:41:13.117Z pid=5641 tid=ukd class=CalculateInterestJob jid=defc70596cb57cc6600cc5ae INFO: Performing CalculateInterestJob (Job ID: e7742be9-1150-4dfc-bdc3-1077e1985010) from Sidekiq(default) enqueued at 2024-10-27T10:40:20Z
+2024-10-27T10:41:13.125Z pid=5641 tid=ukd class=CalculateInterestJob jid=defc70596cb57cc6600cc5ae WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:41:13.142Z pid=5641 tid=ukd class=CalculateInterestJob jid=defc70596cb57cc6600cc5ae INFO: Performed CalculateInterestJob (Job ID: e7742be9-1150-4dfc-bdc3-1077e1985010) from Sidekiq(default) in 24.32ms
+2024-10-27T10:41:13.142Z pid=5641 tid=ukd class=CalculateInterestJob jid=defc70596cb57cc6600cc5ae elapsed=0.213 INFO: done
+2024-10-27T10:41:20.549Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:41:20.553Z pid=5641 tid=qm1 class=CalculateInterestJob jid=7deb765a8578aa75d697328f INFO: start
+2024-10-27T10:41:20.554Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 69558021-af6b-4bd1-a721-0b63dbe2f941) to Sidekiq(default)
+2024-10-27T10:41:20.561Z pid=5641 tid=qm1 class=CalculateInterestJob jid=7deb765a8578aa75d697328f INFO: Performing CalculateInterestJob (Job ID: 69558021-af6b-4bd1-a721-0b63dbe2f941) from Sidekiq(default) enqueued at 2024-10-27T10:41:20Z
+2024-10-27T10:41:20.572Z pid=5641 tid=qm1 class=CalculateInterestJob jid=7deb765a8578aa75d697328f INFO: Performed CalculateInterestJob (Job ID: 69558021-af6b-4bd1-a721-0b63dbe2f941) from Sidekiq(default) in 9.23ms
+2024-10-27T10:41:20.572Z pid=5641 tid=qm1 class=CalculateInterestJob jid=7deb765a8578aa75d697328f elapsed=0.02 INFO: done
+2024-10-27T10:42:20.392Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:42:20.401Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: f4de903b-28e4-49f2-b9ef-bedef54bef59) to Sidekiq(default)
+2024-10-27T10:42:20.405Z pid=5641 tid=pjd class=CalculateInterestJob jid=856f93a18016a5a401e2a075 INFO: start
+2024-10-27T10:42:20.417Z pid=5641 tid=pjd class=CalculateInterestJob jid=856f93a18016a5a401e2a075 INFO: Performing CalculateInterestJob (Job ID: f4de903b-28e4-49f2-b9ef-bedef54bef59) from Sidekiq(default) enqueued at 2024-10-27T10:42:20Z
+2024-10-27T10:42:20.443Z pid=5641 tid=pjd class=CalculateInterestJob jid=856f93a18016a5a401e2a075 INFO: Performed CalculateInterestJob (Job ID: f4de903b-28e4-49f2-b9ef-bedef54bef59) from Sidekiq(default) in 24.93ms
+2024-10-27T10:42:20.444Z pid=5641 tid=pjd class=CalculateInterestJob jid=856f93a18016a5a401e2a075 elapsed=0.039 INFO: done
+2024-10-27T10:43:20.546Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:43:20.549Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a817dc3f-ad06-46c5-b0b8-d353022b8a3d) to Sidekiq(default)
+2024-10-27T10:44:11.591Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf INFO: start
+2024-10-27T10:44:11.743Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf INFO: Performing CalculateInterestJob (Job ID: a817dc3f-ad06-46c5-b0b8-d353022b8a3d) from Sidekiq(default) enqueued at 2024-10-27T10:43:20Z
+2024-10-27T10:44:11.748Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:44:11.766Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf INFO: Started calculation for Loan #21
+2024-10-27T10:44:11.790Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf INFO: Interest calculated for Loan #21: Added 3.33, New total: 1056.61
+2024-10-27T10:44:11.796Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf INFO: Performed CalculateInterestJob (Job ID: a817dc3f-ad06-46c5-b0b8-d353022b8a3d) from Sidekiq(default) in 53.12ms
+2024-10-27T10:44:11.797Z pid=5641 tid=ur1 class=CalculateInterestJob jid=496d7fb67edbf207e67d24bf elapsed=0.206 INFO: done
+2024-10-27T10:44:20.390Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:44:20.394Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d415983f-ff01-4dd6-8094-3b867d9bd32b) to Sidekiq(default)
+2024-10-27T10:44:46.777Z pid=5641 tid=ukd class=CalculateInterestJob jid=c91b4d826b24e27f71de0cd6 INFO: start
+2024-10-27T10:44:46.784Z pid=5641 tid=ukd class=CalculateInterestJob jid=c91b4d826b24e27f71de0cd6 INFO: Performing CalculateInterestJob (Job ID: d415983f-ff01-4dd6-8094-3b867d9bd32b) from Sidekiq(default) enqueued at 2024-10-27T10:44:20Z
+2024-10-27T10:44:46.799Z pid=5641 tid=ukd class=CalculateInterestJob jid=c91b4d826b24e27f71de0cd6 INFO: Performed CalculateInterestJob (Job ID: d415983f-ff01-4dd6-8094-3b867d9bd32b) from Sidekiq(default) in 13.9ms
+2024-10-27T10:44:46.800Z pid=5641 tid=ukd class=CalculateInterestJob jid=c91b4d826b24e27f71de0cd6 elapsed=0.024 INFO: done
+2024-10-27T10:45:20.567Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:45:20.570Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5cc4d280-7f7e-4c95-b3f2-f6d74d55fb01) to Sidekiq(default)
+2024-10-27T10:45:43.886Z pid=5641 tid=pjd class=CalculateInterestJob jid=e48249e6b22c28cc04350143 INFO: start
+2024-10-27T10:45:44.064Z pid=5641 tid=pjd class=CalculateInterestJob jid=e48249e6b22c28cc04350143 INFO: Performing CalculateInterestJob (Job ID: 5cc4d280-7f7e-4c95-b3f2-f6d74d55fb01) from Sidekiq(default) enqueued at 2024-10-27T10:45:20Z
+2024-10-27T10:45:44.080Z pid=5641 tid=pjd class=CalculateInterestJob jid=e48249e6b22c28cc04350143 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:45:44.102Z pid=5641 tid=pjd class=CalculateInterestJob jid=e48249e6b22c28cc04350143 INFO: Performed CalculateInterestJob (Job ID: 5cc4d280-7f7e-4c95-b3f2-f6d74d55fb01) from Sidekiq(default) in 38.04ms
+2024-10-27T10:45:44.102Z pid=5641 tid=pjd class=CalculateInterestJob jid=e48249e6b22c28cc04350143 elapsed=0.216 INFO: done
+2024-10-27T10:46:20.383Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:46:20.384Z pid=5641 tid=pjd class=CalculateInterestJob jid=041657b1a90f66fc980b3243 INFO: start
+2024-10-27T10:46:20.385Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b0cda6a1-d11d-447e-a386-52b998316dc6) to Sidekiq(default)
+2024-10-27T10:46:20.387Z pid=5641 tid=pjd class=CalculateInterestJob jid=041657b1a90f66fc980b3243 INFO: Performing CalculateInterestJob (Job ID: b0cda6a1-d11d-447e-a386-52b998316dc6) from Sidekiq(default) enqueued at 2024-10-27T10:46:20Z
+2024-10-27T10:46:20.390Z pid=5641 tid=pjd class=CalculateInterestJob jid=041657b1a90f66fc980b3243 INFO: Performed CalculateInterestJob (Job ID: b0cda6a1-d11d-447e-a386-52b998316dc6) from Sidekiq(default) in 2.89ms
+2024-10-27T10:46:20.391Z pid=5641 tid=pjd class=CalculateInterestJob jid=041657b1a90f66fc980b3243 elapsed=0.006 INFO: done
+2024-10-27T10:47:20.511Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:47:20.512Z pid=5641 tid=pjd class=CalculateInterestJob jid=b1194a58d0c0f18faa22b569 INFO: start
+2024-10-27T10:47:20.512Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a2c6b55b-b7ef-4665-8a14-0c5854cc57d1) to Sidekiq(default)
+2024-10-27T10:47:20.514Z pid=5641 tid=pjd class=CalculateInterestJob jid=b1194a58d0c0f18faa22b569 INFO: Performing CalculateInterestJob (Job ID: a2c6b55b-b7ef-4665-8a14-0c5854cc57d1) from Sidekiq(default) enqueued at 2024-10-27T10:47:20Z
+2024-10-27T10:47:20.518Z pid=5641 tid=pjd class=CalculateInterestJob jid=b1194a58d0c0f18faa22b569 INFO: Performed CalculateInterestJob (Job ID: a2c6b55b-b7ef-4665-8a14-0c5854cc57d1) from Sidekiq(default) in 3.42ms
+2024-10-27T10:47:20.519Z pid=5641 tid=pjd class=CalculateInterestJob jid=b1194a58d0c0f18faa22b569 elapsed=0.007 INFO: done
+2024-10-27T10:48:20.631Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:48:20.637Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4bee63a1-f37b-4f15-b9a5-c7a1ce6160d4) to Sidekiq(default)
+2024-10-27T10:48:20.638Z pid=5641 tid=h85 class=CalculateInterestJob jid=b24a2a043e65f1713e753e79 INFO: start
+2024-10-27T10:48:20.807Z pid=5641 tid=h85 class=CalculateInterestJob jid=b24a2a043e65f1713e753e79 INFO: Performing CalculateInterestJob (Job ID: 4bee63a1-f37b-4f15-b9a5-c7a1ce6160d4) from Sidekiq(default) enqueued at 2024-10-27T10:48:20Z
+2024-10-27T10:48:20.812Z pid=5641 tid=h85 class=CalculateInterestJob jid=b24a2a043e65f1713e753e79 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:48:20.831Z pid=5641 tid=h85 class=CalculateInterestJob jid=b24a2a043e65f1713e753e79 INFO: Performed CalculateInterestJob (Job ID: 4bee63a1-f37b-4f15-b9a5-c7a1ce6160d4) from Sidekiq(default) in 24.06ms
+2024-10-27T10:48:20.832Z pid=5641 tid=h85 class=CalculateInterestJob jid=b24a2a043e65f1713e753e79 elapsed=0.193 INFO: done
+2024-10-27T10:49:20.446Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:49:20.451Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5a893057-0566-4d82-85dc-e9c3da2542e0) to Sidekiq(default)
+2024-10-27T10:49:30.668Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: start
+2024-10-27T10:49:30.675Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Performing CalculateInterestJob (Job ID: db548d08-1f6f-483c-b718-50b679e25d55) from Sidekiq(default) enqueued at 2024-10-27T10:48:41Z with arguments: 22
+2024-10-27T10:49:30.694Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Started calculation for Loan #21
+2024-10-27T10:49:30.752Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1059.94
+2024-10-27T10:49:30.758Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Started calculation for Loan #22
+2024-10-27T10:49:30.769Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Interest calculated for Loan #22: Added 1.67, New total: 1001.67
+2024-10-27T10:49:30.772Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 INFO: Performed CalculateInterestJob (Job ID: db548d08-1f6f-483c-b718-50b679e25d55) from Sidekiq(default) in 96.56ms
+2024-10-27T10:49:30.773Z pid=5641 tid=ukd class=CalculateInterestJob jid=6c4a475ed1a604cf45fb8265 elapsed=0.105 INFO: done
+2024-10-27T10:49:43.280Z pid=5641 tid=h85 class=CalculateInterestJob jid=456ee07e4f53e3bbfc2b84d1 INFO: start
+2024-10-27T10:49:43.284Z pid=5641 tid=h85 class=CalculateInterestJob jid=456ee07e4f53e3bbfc2b84d1 INFO: Performing CalculateInterestJob (Job ID: 5a893057-0566-4d82-85dc-e9c3da2542e0) from Sidekiq(default) enqueued at 2024-10-27T10:49:20Z
+2024-10-27T10:49:43.299Z pid=5641 tid=h85 class=CalculateInterestJob jid=456ee07e4f53e3bbfc2b84d1 INFO: Performed CalculateInterestJob (Job ID: 5a893057-0566-4d82-85dc-e9c3da2542e0) from Sidekiq(default) in 13.91ms
+2024-10-27T10:49:43.301Z pid=5641 tid=h85 class=CalculateInterestJob jid=456ee07e4f53e3bbfc2b84d1 elapsed=0.021 INFO: done
+2024-10-27T10:50:20.595Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:50:20.597Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 35f2fb25-d74a-42fc-aa70-9e5c20093693) to Sidekiq(default)
+2024-10-27T10:50:20.598Z pid=5641 tid=ur1 class=CalculateInterestJob jid=eef58487aadf9c379c8eb69f INFO: start
+2024-10-27T10:50:20.788Z pid=5641 tid=ur1 class=CalculateInterestJob jid=eef58487aadf9c379c8eb69f INFO: Performing CalculateInterestJob (Job ID: 35f2fb25-d74a-42fc-aa70-9e5c20093693) from Sidekiq(default) enqueued at 2024-10-27T10:50:20Z
+2024-10-27T10:50:20.795Z pid=5641 tid=ur1 class=CalculateInterestJob jid=eef58487aadf9c379c8eb69f WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:50:20.814Z pid=5641 tid=ur1 class=CalculateInterestJob jid=eef58487aadf9c379c8eb69f INFO: Performed CalculateInterestJob (Job ID: 35f2fb25-d74a-42fc-aa70-9e5c20093693) from Sidekiq(default) in 26.44ms
+2024-10-27T10:50:20.815Z pid=5641 tid=ur1 class=CalculateInterestJob jid=eef58487aadf9c379c8eb69f elapsed=0.217 INFO: done
+2024-10-27T10:51:20.422Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:51:20.432Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 7713485a-430d-43bc-9b82-d25fd7b806eb) to Sidekiq(default)
+2024-10-27T10:51:45.465Z pid=5641 tid=qm1 class=CalculateInterestJob jid=6b2856e26fc4c8418eac70eb INFO: start
+2024-10-27T10:51:45.726Z pid=5641 tid=qm1 class=CalculateInterestJob jid=6b2856e26fc4c8418eac70eb INFO: Performing CalculateInterestJob (Job ID: 7713485a-430d-43bc-9b82-d25fd7b806eb) from Sidekiq(default) enqueued at 2024-10-27T10:51:20Z
+2024-10-27T10:51:45.731Z pid=5641 tid=qm1 class=CalculateInterestJob jid=6b2856e26fc4c8418eac70eb WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:51:45.748Z pid=5641 tid=qm1 class=CalculateInterestJob jid=6b2856e26fc4c8418eac70eb INFO: Performed CalculateInterestJob (Job ID: 7713485a-430d-43bc-9b82-d25fd7b806eb) from Sidekiq(default) in 22.39ms
+2024-10-27T10:51:45.749Z pid=5641 tid=qm1 class=CalculateInterestJob jid=6b2856e26fc4c8418eac70eb elapsed=0.284 INFO: done
+2024-10-27T10:52:20.587Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:52:20.588Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 2de2decb-de60-4fbf-8abc-13af8d5589ea) to Sidekiq(default)
+2024-10-27T10:52:40.324Z pid=5641 tid=h85 class=CalculateInterestJob jid=3b254f564d804084701d78d8 INFO: start
+2024-10-27T10:52:40.331Z pid=5641 tid=h85 class=CalculateInterestJob jid=3b254f564d804084701d78d8 INFO: Performing CalculateInterestJob (Job ID: 2de2decb-de60-4fbf-8abc-13af8d5589ea) from Sidekiq(default) enqueued at 2024-10-27T10:52:20Z
+2024-10-27T10:52:40.347Z pid=5641 tid=h85 class=CalculateInterestJob jid=3b254f564d804084701d78d8 INFO: Performed CalculateInterestJob (Job ID: 2de2decb-de60-4fbf-8abc-13af8d5589ea) from Sidekiq(default) in 14.65ms
+2024-10-27T10:52:40.350Z pid=5641 tid=h85 class=CalculateInterestJob jid=3b254f564d804084701d78d8 elapsed=0.026 INFO: done
+2024-10-27T10:53:20.435Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:53:20.438Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b4fd73fea28ccf30db3cf794 INFO: start
+2024-10-27T10:53:20.439Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e4a07cf6-9315-4328-85ca-36bbf74b1834) to Sidekiq(default)
+2024-10-27T10:53:20.610Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b4fd73fea28ccf30db3cf794 INFO: Performing CalculateInterestJob (Job ID: e4a07cf6-9315-4328-85ca-36bbf74b1834) from Sidekiq(default) enqueued at 2024-10-27T10:53:20Z
+2024-10-27T10:53:20.616Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b4fd73fea28ccf30db3cf794 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:53:20.634Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b4fd73fea28ccf30db3cf794 INFO: Performed CalculateInterestJob (Job ID: e4a07cf6-9315-4328-85ca-36bbf74b1834) from Sidekiq(default) in 24.48ms
+2024-10-27T10:53:20.635Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b4fd73fea28ccf30db3cf794 elapsed=0.197 INFO: done
+2024-10-27T10:54:20.603Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:54:20.608Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4b6a4369-2a41-4381-ace1-8f27dd11b138) to Sidekiq(default)
+2024-10-27T10:54:39.859Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 INFO: start
+2024-10-27T10:54:40.036Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 INFO: Performing CalculateInterestJob (Job ID: 4b6a4369-2a41-4381-ace1-8f27dd11b138) from Sidekiq(default) enqueued at 2024-10-27T10:54:20Z
+2024-10-27T10:54:40.042Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:54:40.065Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 INFO: Started calculation for Loan #21
+2024-10-27T10:54:40.094Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1063.27
+2024-10-27T10:54:40.098Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 INFO: Performed CalculateInterestJob (Job ID: 4b6a4369-2a41-4381-ace1-8f27dd11b138) from Sidekiq(default) in 61.36ms
+2024-10-27T10:54:40.098Z pid=5641 tid=pjd class=CalculateInterestJob jid=503d202c8d08bec5df9dd5d5 elapsed=0.24 INFO: done
+2024-10-27T10:55:20.432Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:55:20.435Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 993c62c9-0a1c-44ee-a12f-235be1b799fe) to Sidekiq(default)
+2024-10-27T10:55:20.436Z pid=5641 tid=pjd class=CalculateInterestJob jid=148cad7a16abf7fd9c37b7ad INFO: start
+2024-10-27T10:55:20.439Z pid=5641 tid=pjd class=CalculateInterestJob jid=148cad7a16abf7fd9c37b7ad INFO: Performing CalculateInterestJob (Job ID: 993c62c9-0a1c-44ee-a12f-235be1b799fe) from Sidekiq(default) enqueued at 2024-10-27T10:55:20Z
+2024-10-27T10:55:20.450Z pid=5641 tid=pjd class=CalculateInterestJob jid=148cad7a16abf7fd9c37b7ad INFO: Performed CalculateInterestJob (Job ID: 993c62c9-0a1c-44ee-a12f-235be1b799fe) from Sidekiq(default) in 10.52ms
+2024-10-27T10:55:20.451Z pid=5641 tid=pjd class=CalculateInterestJob jid=148cad7a16abf7fd9c37b7ad elapsed=0.015 INFO: done
+2024-10-27T10:56:20.569Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:56:20.573Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a25e8598-9777-4c2b-8088-cb87d813ce11) to Sidekiq(default)
+2024-10-27T10:57:20.378Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:57:20.381Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5afc505e-c9bd-4cae-b55f-f85dd28c3c9f) to Sidekiq(default)
+2024-10-27T10:57:20.696Z pid=5641 tid=h85 class=CalculateInterestJob jid=65a060853714aac856aa8b81 INFO: start
+2024-10-27T10:57:20.876Z pid=5641 tid=h85 class=CalculateInterestJob jid=65a060853714aac856aa8b81 INFO: Performing CalculateInterestJob (Job ID: a25e8598-9777-4c2b-8088-cb87d813ce11) from Sidekiq(default) enqueued at 2024-10-27T10:56:20Z
+2024-10-27T10:57:20.881Z pid=5641 tid=h85 class=CalculateInterestJob jid=65a060853714aac856aa8b81 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T10:57:20.899Z pid=5641 tid=h85 class=CalculateInterestJob jid=65a060853714aac856aa8b81 INFO: Performed CalculateInterestJob (Job ID: a25e8598-9777-4c2b-8088-cb87d813ce11) from Sidekiq(default) in 22.67ms
+2024-10-27T10:57:20.899Z pid=5641 tid=h85 class=CalculateInterestJob jid=65a060853714aac856aa8b81 elapsed=0.204 INFO: done
+2024-10-27T10:57:44.335Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f64850bd1d3eacb025a743d9 INFO: start
+2024-10-27T10:57:44.343Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f64850bd1d3eacb025a743d9 INFO: Performing CalculateInterestJob (Job ID: 5afc505e-c9bd-4cae-b55f-f85dd28c3c9f) from Sidekiq(default) enqueued at 2024-10-27T10:57:20Z
+2024-10-27T10:57:44.357Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f64850bd1d3eacb025a743d9 INFO: Performed CalculateInterestJob (Job ID: 5afc505e-c9bd-4cae-b55f-f85dd28c3c9f) from Sidekiq(default) in 12.04ms
+2024-10-27T10:57:44.360Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f64850bd1d3eacb025a743d9 elapsed=0.025 INFO: done
+2024-10-27T10:58:20.487Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:58:20.488Z pid=5641 tid=ur1 class=CalculateInterestJob jid=277eaf6e0182f62294bf8b1f INFO: start
+2024-10-27T10:58:20.489Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8bce6deb-db5d-4d6a-9e20-a58ef31a096d) to Sidekiq(default)
+2024-10-27T10:58:20.490Z pid=5641 tid=ur1 class=CalculateInterestJob jid=277eaf6e0182f62294bf8b1f INFO: Performing CalculateInterestJob (Job ID: 8bce6deb-db5d-4d6a-9e20-a58ef31a096d) from Sidekiq(default) enqueued at 2024-10-27T10:58:20Z
+2024-10-27T10:58:20.495Z pid=5641 tid=ur1 class=CalculateInterestJob jid=277eaf6e0182f62294bf8b1f INFO: Performed CalculateInterestJob (Job ID: 8bce6deb-db5d-4d6a-9e20-a58ef31a096d) from Sidekiq(default) in 3.58ms
+2024-10-27T10:58:20.496Z pid=5641 tid=ur1 class=CalculateInterestJob jid=277eaf6e0182f62294bf8b1f elapsed=0.007 INFO: done
+2024-10-27T10:59:20.632Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T10:59:20.636Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 585dd5d1-b1d2-4695-a86a-5d9a65d1b4c7) to Sidekiq(default)
+2024-10-27T11:00:03.890Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 INFO: start
+2024-10-27T11:00:03.895Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 INFO: Performing CalculateInterestJob (Job ID: 585dd5d1-b1d2-4695-a86a-5d9a65d1b4c7) from Sidekiq(default) enqueued at 2024-10-27T10:59:20Z
+2024-10-27T11:00:03.907Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 INFO: Started calculation for Loan #21
+2024-10-27T11:00:04.000Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 INFO: Interest calculated for Loan #21: Added 3.33, New total: 1066.6
+2024-10-27T11:00:04.007Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 INFO: Performed CalculateInterestJob (Job ID: 585dd5d1-b1d2-4695-a86a-5d9a65d1b4c7) from Sidekiq(default) in 111.08ms
+2024-10-27T11:00:04.007Z pid=5641 tid=qm1 class=CalculateInterestJob jid=b286ec99393bfffc3c4fac88 elapsed=0.118 INFO: done
+2024-10-27T11:00:20.465Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:00:20.468Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 2bc0b0d2-8153-41f7-bfd5-17acfe7670fe) to Sidekiq(default)
+2024-10-27T11:00:47.860Z pid=5641 tid=qm1 class=CalculateInterestJob jid=d70d5ddb60554ab9e761f95b INFO: start
+2024-10-27T11:00:47.864Z pid=5641 tid=qm1 class=CalculateInterestJob jid=d70d5ddb60554ab9e761f95b INFO: Performing CalculateInterestJob (Job ID: 2bc0b0d2-8153-41f7-bfd5-17acfe7670fe) from Sidekiq(default) enqueued at 2024-10-27T11:00:20Z
+2024-10-27T11:00:47.879Z pid=5641 tid=qm1 class=CalculateInterestJob jid=d70d5ddb60554ab9e761f95b INFO: Performed CalculateInterestJob (Job ID: 2bc0b0d2-8153-41f7-bfd5-17acfe7670fe) from Sidekiq(default) in 13.95ms
+2024-10-27T11:00:47.881Z pid=5641 tid=qm1 class=CalculateInterestJob jid=d70d5ddb60554ab9e761f95b elapsed=0.022 INFO: done
+2024-10-27T11:01:20.612Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:01:20.613Z pid=5641 tid=ukd class=CalculateInterestJob jid=46b9d7deb6a9799c68fedd10 INFO: start
+2024-10-27T11:01:20.614Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 2e97c3d0-7c4c-4885-b9fe-cf77a0ee6a42) to Sidekiq(default)
+2024-10-27T11:01:20.618Z pid=5641 tid=ukd class=CalculateInterestJob jid=46b9d7deb6a9799c68fedd10 INFO: Performing CalculateInterestJob (Job ID: 2e97c3d0-7c4c-4885-b9fe-cf77a0ee6a42) from Sidekiq(default) enqueued at 2024-10-27T11:01:20Z
+2024-10-27T11:01:20.621Z pid=5641 tid=ukd class=CalculateInterestJob jid=46b9d7deb6a9799c68fedd10 INFO: Performed CalculateInterestJob (Job ID: 2e97c3d0-7c4c-4885-b9fe-cf77a0ee6a42) from Sidekiq(default) in 3.23ms
+2024-10-27T11:01:20.622Z pid=5641 tid=ukd class=CalculateInterestJob jid=46b9d7deb6a9799c68fedd10 elapsed=0.008 INFO: done
+2024-10-27T11:02:20.457Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:02:20.458Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5e255091-cfd2-4e53-8e88-306692fc0d26) to Sidekiq(default)
+2024-10-27T11:02:45.051Z pid=5641 tid=ukd class=CalculateInterestJob jid=d473913ccea014bb2bfff8e5 INFO: start
+2024-10-27T11:02:45.056Z pid=5641 tid=ukd class=CalculateInterestJob jid=d473913ccea014bb2bfff8e5 INFO: Performing CalculateInterestJob (Job ID: 5e255091-cfd2-4e53-8e88-306692fc0d26) from Sidekiq(default) enqueued at 2024-10-27T11:02:20Z
+2024-10-27T11:02:45.063Z pid=5641 tid=ukd class=CalculateInterestJob jid=d473913ccea014bb2bfff8e5 INFO: Performed CalculateInterestJob (Job ID: 5e255091-cfd2-4e53-8e88-306692fc0d26) from Sidekiq(default) in 7.15ms
+2024-10-27T11:02:45.064Z pid=5641 tid=ukd class=CalculateInterestJob jid=d473913ccea014bb2bfff8e5 elapsed=0.013 INFO: done
+2024-10-27T11:03:20.554Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:03:20.555Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8e61730a-c49f-493e-bedd-dbb1a9932d62) to Sidekiq(default)
+2024-10-27T11:03:20.555Z pid=5641 tid=ur1 class=CalculateInterestJob jid=12e12d7985358a5adf061bd9 INFO: start
+2024-10-27T11:03:20.556Z pid=5641 tid=ur1 class=CalculateInterestJob jid=12e12d7985358a5adf061bd9 INFO: Performing CalculateInterestJob (Job ID: 8e61730a-c49f-493e-bedd-dbb1a9932d62) from Sidekiq(default) enqueued at 2024-10-27T11:03:20Z
+2024-10-27T11:03:20.565Z pid=5641 tid=ur1 class=CalculateInterestJob jid=12e12d7985358a5adf061bd9 INFO: Performed CalculateInterestJob (Job ID: 8e61730a-c49f-493e-bedd-dbb1a9932d62) from Sidekiq(default) in 8.62ms
+2024-10-27T11:03:20.566Z pid=5641 tid=ur1 class=CalculateInterestJob jid=12e12d7985358a5adf061bd9 elapsed=0.01 INFO: done
+2024-10-27T11:04:20.361Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:04:20.362Z pid=5641 tid=pjd class=CalculateInterestJob jid=ac7c988207be02efd5d7b2cc INFO: start
+2024-10-27T11:04:20.362Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b5b23c16-6b9a-4db7-bf85-1129c7c5b0b6) to Sidekiq(default)
+2024-10-27T11:04:20.365Z pid=5641 tid=pjd class=CalculateInterestJob jid=ac7c988207be02efd5d7b2cc INFO: Performing CalculateInterestJob (Job ID: b5b23c16-6b9a-4db7-bf85-1129c7c5b0b6) from Sidekiq(default) enqueued at 2024-10-27T11:04:20Z
+2024-10-27T11:04:20.369Z pid=5641 tid=pjd class=CalculateInterestJob jid=ac7c988207be02efd5d7b2cc INFO: Performed CalculateInterestJob (Job ID: b5b23c16-6b9a-4db7-bf85-1129c7c5b0b6) from Sidekiq(default) in 3.55ms
+2024-10-27T11:04:20.369Z pid=5641 tid=pjd class=CalculateInterestJob jid=ac7c988207be02efd5d7b2cc elapsed=0.007 INFO: done
+2024-10-27T11:05:20.517Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:05:20.518Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 INFO: start
+2024-10-27T11:05:20.518Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 76bf024e-0516-4cda-804e-fe38f91eb30b) to Sidekiq(default)
+2024-10-27T11:05:20.520Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 INFO: Performing CalculateInterestJob (Job ID: 76bf024e-0516-4cda-804e-fe38f91eb30b) from Sidekiq(default) enqueued at 2024-10-27T11:05:20Z
+2024-10-27T11:05:20.523Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 INFO: Started calculation for Loan #21
+2024-10-27T11:05:20.532Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 INFO: Interest calculated for Loan #21: Added 3.33, New total: 969.93
+2024-10-27T11:05:20.537Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 INFO: Performed CalculateInterestJob (Job ID: 76bf024e-0516-4cda-804e-fe38f91eb30b) from Sidekiq(default) in 17.07ms
+2024-10-27T11:05:20.538Z pid=5641 tid=h85 class=CalculateInterestJob jid=1e97b4f59abbce942aff6433 elapsed=0.02 INFO: done
+2024-10-27T11:06:20.639Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:06:20.643Z pid=5641 tid=ukd class=CalculateInterestJob jid=ea2560df0becd0d76f0aa5f3 INFO: start
+2024-10-27T11:06:20.644Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: cc446571-f5c5-416d-a4d3-66ac3c149eb7) to Sidekiq(default)
+2024-10-27T11:06:20.650Z pid=5641 tid=ukd class=CalculateInterestJob jid=ea2560df0becd0d76f0aa5f3 INFO: Performing CalculateInterestJob (Job ID: cc446571-f5c5-416d-a4d3-66ac3c149eb7) from Sidekiq(default) enqueued at 2024-10-27T11:06:20Z
+2024-10-27T11:06:20.668Z pid=5641 tid=ukd class=CalculateInterestJob jid=ea2560df0becd0d76f0aa5f3 INFO: Performed CalculateInterestJob (Job ID: cc446571-f5c5-416d-a4d3-66ac3c149eb7) from Sidekiq(default) in 13.9ms
+2024-10-27T11:06:20.668Z pid=5641 tid=ukd class=CalculateInterestJob jid=ea2560df0becd0d76f0aa5f3 elapsed=0.025 INFO: done
+2024-10-27T11:07:20.460Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:07:20.464Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26eee6296600942939cfb9b5 INFO: start
+2024-10-27T11:07:20.464Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 7367bc20-f59c-4c60-89f7-0cba928f39ae) to Sidekiq(default)
+2024-10-27T11:07:20.478Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26eee6296600942939cfb9b5 INFO: Performing CalculateInterestJob (Job ID: 7367bc20-f59c-4c60-89f7-0cba928f39ae) from Sidekiq(default) enqueued at 2024-10-27T11:07:20Z
+2024-10-27T11:07:20.492Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26eee6296600942939cfb9b5 INFO: Performed CalculateInterestJob (Job ID: 7367bc20-f59c-4c60-89f7-0cba928f39ae) from Sidekiq(default) in 12.6ms
+2024-10-27T11:07:20.493Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26eee6296600942939cfb9b5 elapsed=0.029 INFO: done
+2024-10-27T11:08:20.615Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:08:20.616Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: f39bf810-046b-4d44-9291-3ddee8737bfc) to Sidekiq(default)
+2024-10-27T11:08:39.964Z pid=5641 tid=h85 class=CalculateInterestJob jid=6ea4714c439dc870934974c0 INFO: start
+2024-10-27T11:08:39.972Z pid=5641 tid=h85 class=CalculateInterestJob jid=6ea4714c439dc870934974c0 INFO: Performing CalculateInterestJob (Job ID: f39bf810-046b-4d44-9291-3ddee8737bfc) from Sidekiq(default) enqueued at 2024-10-27T11:08:20Z
+2024-10-27T11:08:39.990Z pid=5641 tid=h85 class=CalculateInterestJob jid=6ea4714c439dc870934974c0 INFO: Performed CalculateInterestJob (Job ID: f39bf810-046b-4d44-9291-3ddee8737bfc) from Sidekiq(default) in 17.08ms
+2024-10-27T11:08:39.991Z pid=5641 tid=h85 class=CalculateInterestJob jid=6ea4714c439dc870934974c0 elapsed=0.027 INFO: done
+2024-10-27T11:09:20.490Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:09:20.493Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a01110e6-759b-4803-b7a1-b0afb85e5f1a) to Sidekiq(default)
+2024-10-27T11:10:20.631Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:10:20.634Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 INFO: start
+2024-10-27T11:10:20.635Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: edd7ef9d-532f-4e83-b0cb-7efab2ae99d1) to Sidekiq(default)
+2024-10-27T11:10:20.647Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 INFO: Performing CalculateInterestJob (Job ID: edd7ef9d-532f-4e83-b0cb-7efab2ae99d1) from Sidekiq(default) enqueued at 2024-10-27T11:10:20Z
+2024-10-27T11:10:20.661Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 INFO: Started calculation for Loan #21
+2024-10-27T11:10:20.703Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 INFO: Interest calculated for Loan #21: Added 3.33, New total: 973.26
+2024-10-27T11:10:20.718Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 INFO: Performed CalculateInterestJob (Job ID: edd7ef9d-532f-4e83-b0cb-7efab2ae99d1) from Sidekiq(default) in 69.13ms
+2024-10-27T11:10:20.720Z pid=5641 tid=h85 class=CalculateInterestJob jid=db145ca1fec7afc82a7ecef9 elapsed=0.086 INFO: done
+2024-10-27T11:10:49.518Z pid=5641 tid=pjd class=CalculateInterestJob jid=5412fb3549a4cddef1cd3ae6 INFO: start
+2024-10-27T11:10:49.523Z pid=5641 tid=pjd class=CalculateInterestJob jid=5412fb3549a4cddef1cd3ae6 INFO: Performing CalculateInterestJob (Job ID: a01110e6-759b-4803-b7a1-b0afb85e5f1a) from Sidekiq(default) enqueued at 2024-10-27T11:09:20Z
+2024-10-27T11:10:49.542Z pid=5641 tid=pjd class=CalculateInterestJob jid=5412fb3549a4cddef1cd3ae6 INFO: Performed CalculateInterestJob (Job ID: a01110e6-759b-4803-b7a1-b0afb85e5f1a) from Sidekiq(default) in 17.48ms
+2024-10-27T11:10:49.543Z pid=5641 tid=pjd class=CalculateInterestJob jid=5412fb3549a4cddef1cd3ae6 elapsed=0.025 INFO: done
+2024-10-27T11:11:20.439Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:11:20.445Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: fcab397b-f95e-48c5-a40c-b900aa23979e) to Sidekiq(default)
+2024-10-27T11:12:20.530Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:12:20.534Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 6d5691df-0650-4302-8dc8-1671742a5a02) to Sidekiq(default)
+2024-10-27T11:12:43.476Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cd05ab72044e399a78dd34b1 INFO: start
+2024-10-27T11:12:43.482Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cd05ab72044e399a78dd34b1 INFO: Performing CalculateInterestJob (Job ID: 6d5691df-0650-4302-8dc8-1671742a5a02) from Sidekiq(default) enqueued at 2024-10-27T11:12:20Z
+2024-10-27T11:12:43.498Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cd05ab72044e399a78dd34b1 INFO: Performed CalculateInterestJob (Job ID: 6d5691df-0650-4302-8dc8-1671742a5a02) from Sidekiq(default) in 15.0ms
+2024-10-27T11:12:43.499Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cd05ab72044e399a78dd34b1 elapsed=0.024 INFO: done
+2024-10-27T11:12:54.063Z pid=5641 tid=h85 class=CalculateInterestJob jid=287a655cb4cd7348ce0f73ae INFO: start
+2024-10-27T11:12:54.075Z pid=5641 tid=h85 class=CalculateInterestJob jid=287a655cb4cd7348ce0f73ae INFO: Performing CalculateInterestJob (Job ID: fcab397b-f95e-48c5-a40c-b900aa23979e) from Sidekiq(default) enqueued at 2024-10-27T11:11:20Z
+2024-10-27T11:12:54.088Z pid=5641 tid=h85 class=CalculateInterestJob jid=287a655cb4cd7348ce0f73ae INFO: Performed CalculateInterestJob (Job ID: fcab397b-f95e-48c5-a40c-b900aa23979e) from Sidekiq(default) in 11.89ms
+2024-10-27T11:12:54.090Z pid=5641 tid=h85 class=CalculateInterestJob jid=287a655cb4cd7348ce0f73ae elapsed=0.027 INFO: done
+2024-10-27T11:13:20.377Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:13:20.381Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: af97210e-cde1-4eb6-8dac-b380914d87a2) to Sidekiq(default)
+2024-10-27T11:13:41.764Z pid=5641 tid=qm1 class=CalculateInterestJob jid=62eed9b87a71f06cac81203f INFO: start
+2024-10-27T11:13:41.769Z pid=5641 tid=qm1 class=CalculateInterestJob jid=62eed9b87a71f06cac81203f INFO: Performing CalculateInterestJob (Job ID: af97210e-cde1-4eb6-8dac-b380914d87a2) from Sidekiq(default) enqueued at 2024-10-27T11:13:20Z
+2024-10-27T11:13:41.786Z pid=5641 tid=qm1 class=CalculateInterestJob jid=62eed9b87a71f06cac81203f INFO: Performed CalculateInterestJob (Job ID: af97210e-cde1-4eb6-8dac-b380914d87a2) from Sidekiq(default) in 16.08ms
+2024-10-27T11:13:41.788Z pid=5641 tid=qm1 class=CalculateInterestJob jid=62eed9b87a71f06cac81203f elapsed=0.024 INFO: done
+2024-10-27T11:14:20.501Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:14:20.504Z pid=5641 tid=ukd class=CalculateInterestJob jid=d7d95413ee789cfccfa17d0e INFO: start
+2024-10-27T11:14:20.506Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 12ee6161-8d5c-40c8-a946-111a42a9accb) to Sidekiq(default)
+2024-10-27T11:14:20.515Z pid=5641 tid=ukd class=CalculateInterestJob jid=d7d95413ee789cfccfa17d0e INFO: Performing CalculateInterestJob (Job ID: 12ee6161-8d5c-40c8-a946-111a42a9accb) from Sidekiq(default) enqueued at 2024-10-27T11:14:20Z
+2024-10-27T11:14:20.528Z pid=5641 tid=ukd class=CalculateInterestJob jid=d7d95413ee789cfccfa17d0e INFO: Performed CalculateInterestJob (Job ID: 12ee6161-8d5c-40c8-a946-111a42a9accb) from Sidekiq(default) in 11.58ms
+2024-10-27T11:14:20.529Z pid=5641 tid=ukd class=CalculateInterestJob jid=d7d95413ee789cfccfa17d0e elapsed=0.025 INFO: done
+2024-10-27T11:15:20.618Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:15:20.621Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c INFO: start
+2024-10-27T11:15:20.622Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a0c3d02c-91c0-4894-9049-3b06ed61d5d5) to Sidekiq(default)
+2024-10-27T11:15:20.634Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c INFO: Performing CalculateInterestJob (Job ID: a0c3d02c-91c0-4894-9049-3b06ed61d5d5) from Sidekiq(default) enqueued at 2024-10-27T11:15:20Z
+2024-10-27T11:15:20.647Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c INFO: Started calculation for Loan #21
+2024-10-27T11:15:20.668Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c INFO: Interest calculated for Loan #21: Added 3.33, New total: 976.59
+2024-10-27T11:15:20.672Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c INFO: Performed CalculateInterestJob (Job ID: a0c3d02c-91c0-4894-9049-3b06ed61d5d5) from Sidekiq(default) in 37.02ms
+2024-10-27T11:15:20.672Z pid=5641 tid=qm1 class=CalculateInterestJob jid=3206182f7f96461c50bb088c elapsed=0.052 INFO: done
+2024-10-27T11:16:20.435Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:16:20.440Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0c85ecc8-dc0c-4e28-a1bb-13218889cba2) to Sidekiq(default)
+2024-10-27T11:16:42.564Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c13140c9fb329619dc7de68 INFO: start
+2024-10-27T11:16:42.569Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c13140c9fb329619dc7de68 INFO: Performing CalculateInterestJob (Job ID: 0c85ecc8-dc0c-4e28-a1bb-13218889cba2) from Sidekiq(default) enqueued at 2024-10-27T11:16:20Z
+2024-10-27T11:16:42.582Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c13140c9fb329619dc7de68 INFO: Performed CalculateInterestJob (Job ID: 0c85ecc8-dc0c-4e28-a1bb-13218889cba2) from Sidekiq(default) in 12.18ms
+2024-10-27T11:16:42.584Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c13140c9fb329619dc7de68 elapsed=0.02 INFO: done
+2024-10-27T11:17:20.545Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:17:20.549Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: abac23c8-3de7-4837-ae2c-201d076eeece) to Sidekiq(default)
+2024-10-27T11:18:12.205Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c0c27b6a5055088f410c9cef INFO: start
+2024-10-27T11:18:12.213Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c0c27b6a5055088f410c9cef INFO: Performing CalculateInterestJob (Job ID: abac23c8-3de7-4837-ae2c-201d076eeece) from Sidekiq(default) enqueued at 2024-10-27T11:17:20Z
+2024-10-27T11:18:12.227Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c0c27b6a5055088f410c9cef INFO: Performed CalculateInterestJob (Job ID: abac23c8-3de7-4837-ae2c-201d076eeece) from Sidekiq(default) in 11.8ms
+2024-10-27T11:18:12.228Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c0c27b6a5055088f410c9cef elapsed=0.024 INFO: done
+2024-10-27T11:18:20.366Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:18:20.370Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: dc5fbc99-3b3f-4660-b08f-214a0f431023) to Sidekiq(default)
+2024-10-27T11:18:20.370Z pid=5641 tid=ukd class=CalculateInterestJob jid=c0360c1f15d0f67d3cf526ad INFO: start
+2024-10-27T11:18:20.381Z pid=5641 tid=ukd class=CalculateInterestJob jid=c0360c1f15d0f67d3cf526ad INFO: Performing CalculateInterestJob (Job ID: dc5fbc99-3b3f-4660-b08f-214a0f431023) from Sidekiq(default) enqueued at 2024-10-27T11:18:20Z
+2024-10-27T11:18:20.394Z pid=5641 tid=ukd class=CalculateInterestJob jid=c0360c1f15d0f67d3cf526ad INFO: Performed CalculateInterestJob (Job ID: dc5fbc99-3b3f-4660-b08f-214a0f431023) from Sidekiq(default) in 11.96ms
+2024-10-27T11:18:20.397Z pid=5641 tid=ukd class=CalculateInterestJob jid=c0360c1f15d0f67d3cf526ad elapsed=0.027 INFO: done
+2024-10-27T11:19:20.482Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:19:20.487Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 9ce5d2d0-11a4-4ae9-ba92-e2471241c54d) to Sidekiq(default)
+2024-10-27T11:19:43.254Z pid=5641 tid=h85 class=CalculateInterestJob jid=03c8304d6e336dfc2943ae66 INFO: start
+2024-10-27T11:19:43.264Z pid=5641 tid=h85 class=CalculateInterestJob jid=03c8304d6e336dfc2943ae66 INFO: Performing CalculateInterestJob (Job ID: 9ce5d2d0-11a4-4ae9-ba92-e2471241c54d) from Sidekiq(default) enqueued at 2024-10-27T11:19:20Z
+2024-10-27T11:19:43.278Z pid=5641 tid=h85 class=CalculateInterestJob jid=03c8304d6e336dfc2943ae66 INFO: Performed CalculateInterestJob (Job ID: 9ce5d2d0-11a4-4ae9-ba92-e2471241c54d) from Sidekiq(default) in 12.79ms
+2024-10-27T11:19:43.280Z pid=5641 tid=h85 class=CalculateInterestJob jid=03c8304d6e336dfc2943ae66 elapsed=0.026 INFO: done
+2024-10-27T11:20:20.602Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:20:20.606Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4c753264-fc1a-42eb-8d17-016b41bcced5) to Sidekiq(default)
+2024-10-27T11:20:20.607Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 INFO: start
+2024-10-27T11:20:20.618Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 INFO: Performing CalculateInterestJob (Job ID: 4c753264-fc1a-42eb-8d17-016b41bcced5) from Sidekiq(default) enqueued at 2024-10-27T11:20:20Z
+2024-10-27T11:20:20.632Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 INFO: Started calculation for Loan #21
+2024-10-27T11:20:20.669Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 INFO: Interest calculated for Loan #21: Added 3.33, New total: 979.92
+2024-10-27T11:20:20.679Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 INFO: Performed CalculateInterestJob (Job ID: 4c753264-fc1a-42eb-8d17-016b41bcced5) from Sidekiq(default) in 60.32ms
+2024-10-27T11:20:20.679Z pid=5641 tid=pjd class=CalculateInterestJob jid=bb76187efb1470fdb33107d5 elapsed=0.072 INFO: done
+2024-10-27T11:21:20.406Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:21:20.409Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 7366ea38-a713-4c85-8e0f-8ecbc1611abe) to Sidekiq(default)
+2024-10-27T11:22:20.516Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:22:20.519Z pid=5641 tid=ukd class=CalculateInterestJob jid=5c68b5223d430a6d0cf46d25 INFO: start
+2024-10-27T11:22:20.520Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 392bff43-01ad-4520-9e64-f9a94ea87c97) to Sidekiq(default)
+2024-10-27T11:22:20.530Z pid=5641 tid=ukd class=CalculateInterestJob jid=5c68b5223d430a6d0cf46d25 INFO: Performing CalculateInterestJob (Job ID: 392bff43-01ad-4520-9e64-f9a94ea87c97) from Sidekiq(default) enqueued at 2024-10-27T11:22:20Z
+2024-10-27T11:22:20.542Z pid=5641 tid=ukd class=CalculateInterestJob jid=5c68b5223d430a6d0cf46d25 INFO: Performed CalculateInterestJob (Job ID: 392bff43-01ad-4520-9e64-f9a94ea87c97) from Sidekiq(default) in 12.17ms
+2024-10-27T11:22:20.543Z pid=5641 tid=ukd class=CalculateInterestJob jid=5c68b5223d430a6d0cf46d25 elapsed=0.024 INFO: done
+2024-10-27T11:23:20.643Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:23:20.648Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d3e94264-1e45-499c-a577-3a161fa1b39d) to Sidekiq(default)
+2024-10-27T11:24:03.548Z pid=5641 tid=h85 class=CalculateInterestJob jid=96fe9334ed6344fa77f7bc4f INFO: start
+2024-10-27T11:24:03.553Z pid=5641 tid=h85 class=CalculateInterestJob jid=96fe9334ed6344fa77f7bc4f INFO: Performing CalculateInterestJob (Job ID: d3e94264-1e45-499c-a577-3a161fa1b39d) from Sidekiq(default) enqueued at 2024-10-27T11:23:20Z
+2024-10-27T11:24:03.577Z pid=5641 tid=h85 class=CalculateInterestJob jid=96fe9334ed6344fa77f7bc4f INFO: Performed CalculateInterestJob (Job ID: d3e94264-1e45-499c-a577-3a161fa1b39d) from Sidekiq(default) in 23.41ms
+2024-10-27T11:24:03.579Z pid=5641 tid=h85 class=CalculateInterestJob jid=96fe9334ed6344fa77f7bc4f elapsed=0.032 INFO: done
+2024-10-27T11:24:20.446Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:24:20.450Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 457653cd-8250-43b8-9564-14415448b4b7) to Sidekiq(default)
+2024-10-27T11:25:11.274Z pid=5641 tid=pjd class=CalculateInterestJob jid=0529a79b31f8694de3ef73bc INFO: start
+2024-10-27T11:25:11.279Z pid=5641 tid=pjd class=CalculateInterestJob jid=0529a79b31f8694de3ef73bc INFO: Performing CalculateInterestJob (Job ID: 457653cd-8250-43b8-9564-14415448b4b7) from Sidekiq(default) enqueued at 2024-10-27T11:24:20Z
+2024-10-27T11:25:11.290Z pid=5641 tid=pjd class=CalculateInterestJob jid=0529a79b31f8694de3ef73bc INFO: Performed CalculateInterestJob (Job ID: 457653cd-8250-43b8-9564-14415448b4b7) from Sidekiq(default) in 9.91ms
+2024-10-27T11:25:11.291Z pid=5641 tid=pjd class=CalculateInterestJob jid=0529a79b31f8694de3ef73bc elapsed=0.018 INFO: done
+2024-10-27T11:25:20.605Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:25:20.609Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a5c53726-6fb3-41fc-921b-83213de4cc2a) to Sidekiq(default)
+2024-10-27T11:25:42.022Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 INFO: start
+2024-10-27T11:25:42.033Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 INFO: Performing CalculateInterestJob (Job ID: a5c53726-6fb3-41fc-921b-83213de4cc2a) from Sidekiq(default) enqueued at 2024-10-27T11:25:20Z
+2024-10-27T11:25:42.045Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 INFO: Started calculation for Loan #21
+2024-10-27T11:25:42.083Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 INFO: Interest calculated for Loan #21: Added 3.33, New total: 983.25
+2024-10-27T11:25:42.093Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 INFO: Performed CalculateInterestJob (Job ID: a5c53726-6fb3-41fc-921b-83213de4cc2a) from Sidekiq(default) in 59.01ms
+2024-10-27T11:25:42.093Z pid=5641 tid=ur1 class=CalculateInterestJob jid=056491ceb417ae18a8c3da91 elapsed=0.071 INFO: done
+2024-10-27T11:26:20.442Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:26:20.446Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26a20b029b515572b92ea4f3 INFO: start
+2024-10-27T11:26:20.447Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: cf18d3b2-eac0-42c0-9135-6283ab3e1f76) to Sidekiq(default)
+2024-10-27T11:26:20.456Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26a20b029b515572b92ea4f3 INFO: Performing CalculateInterestJob (Job ID: cf18d3b2-eac0-42c0-9135-6283ab3e1f76) from Sidekiq(default) enqueued at 2024-10-27T11:26:20Z
+2024-10-27T11:26:20.475Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26a20b029b515572b92ea4f3 INFO: Performed CalculateInterestJob (Job ID: cf18d3b2-eac0-42c0-9135-6283ab3e1f76) from Sidekiq(default) in 18.1ms
+2024-10-27T11:26:20.477Z pid=5641 tid=ur1 class=CalculateInterestJob jid=26a20b029b515572b92ea4f3 elapsed=0.031 INFO: done
+2024-10-27T11:27:20.612Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:27:20.615Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 7103f3f9-5cf9-4a7e-a9e8-722c1322aa77) to Sidekiq(default)
+2024-10-27T11:28:20.431Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:28:20.436Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3f980b1f-7eb4-4106-8641-9dea1cb77bd5) to Sidekiq(default)
+2024-10-27T11:28:20.437Z pid=5641 tid=pjd class=CalculateInterestJob jid=881601244a57c47b35a16918 INFO: start
+2024-10-27T11:28:20.448Z pid=5641 tid=pjd class=CalculateInterestJob jid=881601244a57c47b35a16918 INFO: Performing CalculateInterestJob (Job ID: 3f980b1f-7eb4-4106-8641-9dea1cb77bd5) from Sidekiq(default) enqueued at 2024-10-27T11:28:20Z
+2024-10-27T11:28:20.471Z pid=5641 tid=pjd class=CalculateInterestJob jid=881601244a57c47b35a16918 INFO: Performed CalculateInterestJob (Job ID: 3f980b1f-7eb4-4106-8641-9dea1cb77bd5) from Sidekiq(default) in 20.43ms
+2024-10-27T11:28:20.473Z pid=5641 tid=pjd class=CalculateInterestJob jid=881601244a57c47b35a16918 elapsed=0.036 INFO: done
+2024-10-27T11:28:42.508Z pid=5641 tid=pjd class=CalculateInterestJob jid=465e350aa403cd6e1d09b7ea INFO: start
+2024-10-27T11:28:42.513Z pid=5641 tid=pjd class=CalculateInterestJob jid=465e350aa403cd6e1d09b7ea INFO: Performing CalculateInterestJob (Job ID: 7103f3f9-5cf9-4a7e-a9e8-722c1322aa77) from Sidekiq(default) enqueued at 2024-10-27T11:27:20Z
+2024-10-27T11:28:42.528Z pid=5641 tid=pjd class=CalculateInterestJob jid=465e350aa403cd6e1d09b7ea INFO: Performed CalculateInterestJob (Job ID: 7103f3f9-5cf9-4a7e-a9e8-722c1322aa77) from Sidekiq(default) in 13.33ms
+2024-10-27T11:28:42.529Z pid=5641 tid=pjd class=CalculateInterestJob jid=465e350aa403cd6e1d09b7ea elapsed=0.021 INFO: done
+2024-10-27T11:29:20.576Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:29:20.579Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e4061ac0-5f06-4c43-a39d-ce663126626b) to Sidekiq(default)
+2024-10-27T11:29:48.008Z pid=5641 tid=ur1 class=CalculateInterestJob jid=483e72e55c400f09b209afc1 INFO: start
+2024-10-27T11:29:48.016Z pid=5641 tid=ur1 class=CalculateInterestJob jid=483e72e55c400f09b209afc1 INFO: Performing CalculateInterestJob (Job ID: e4061ac0-5f06-4c43-a39d-ce663126626b) from Sidekiq(default) enqueued at 2024-10-27T11:29:20Z
+2024-10-27T11:29:48.031Z pid=5641 tid=ur1 class=CalculateInterestJob jid=483e72e55c400f09b209afc1 INFO: Performed CalculateInterestJob (Job ID: e4061ac0-5f06-4c43-a39d-ce663126626b) from Sidekiq(default) in 14.48ms
+2024-10-27T11:29:48.033Z pid=5641 tid=ur1 class=CalculateInterestJob jid=483e72e55c400f09b209afc1 elapsed=0.025 INFO: done
+2024-10-27T11:30:20.386Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:30:20.395Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: dafce88a-d8eb-4bc6-9a73-6f7ed02b6f04) to Sidekiq(default)
+2024-10-27T11:30:40.582Z pid=5641 tid=qm1 class=CalculateInterestJob jid=faf8974e6a2e98605c1a9096 INFO: start
+2024-10-27T11:30:40.853Z pid=5641 tid=qm1 class=CalculateInterestJob jid=faf8974e6a2e98605c1a9096 INFO: Performing CalculateInterestJob (Job ID: dafce88a-d8eb-4bc6-9a73-6f7ed02b6f04) from Sidekiq(default) enqueued at 2024-10-27T11:30:20Z
+2024-10-27T11:30:40.860Z pid=5641 tid=qm1 class=CalculateInterestJob jid=faf8974e6a2e98605c1a9096 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T11:30:40.875Z pid=5641 tid=qm1 class=CalculateInterestJob jid=faf8974e6a2e98605c1a9096 INFO: Performed CalculateInterestJob (Job ID: dafce88a-d8eb-4bc6-9a73-6f7ed02b6f04) from Sidekiq(default) in 22.26ms
+2024-10-27T11:30:40.876Z pid=5641 tid=qm1 class=CalculateInterestJob jid=faf8974e6a2e98605c1a9096 elapsed=0.294 INFO: done
+2024-10-27T11:31:20.554Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:31:20.566Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4283fcac-f6db-47f3-a75b-96dae835b451) to Sidekiq(default)
+2024-10-27T11:31:41.933Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 INFO: start
+2024-10-27T11:31:41.943Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 INFO: Performing CalculateInterestJob (Job ID: 4283fcac-f6db-47f3-a75b-96dae835b451) from Sidekiq(default) enqueued at 2024-10-27T11:31:20Z
+2024-10-27T11:31:41.959Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 INFO: Started calculation for Loan #21
+2024-10-27T11:31:42.001Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 INFO: Interest calculated for Loan #21: Added 3.33, New total: 986.58
+2024-10-27T11:31:42.005Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 INFO: Performed CalculateInterestJob (Job ID: 4283fcac-f6db-47f3-a75b-96dae835b451) from Sidekiq(default) in 59.18ms
+2024-10-27T11:31:42.005Z pid=5641 tid=pjd class=CalculateInterestJob jid=c60ec9bec1e3115163ed0355 elapsed=0.072 INFO: done
+2024-10-27T11:32:20.386Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:32:20.393Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 76de2be6-0385-4e42-8c8d-1aa300ac99ec) to Sidekiq(default)
+2024-10-27T11:32:20.395Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 INFO: start
+2024-10-27T11:32:20.403Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 INFO: Performing CalculateInterestJob (Job ID: 76de2be6-0385-4e42-8c8d-1aa300ac99ec) from Sidekiq(default) enqueued at 2024-10-27T11:32:20Z
+2024-10-27T11:32:20.419Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 INFO: Started calculation for Loan #23
+2024-10-27T11:32:20.461Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 INFO: Interest calculated for Loan #23: Added 1.67, New total: 2001.67
+2024-10-27T11:32:20.469Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 INFO: Performed CalculateInterestJob (Job ID: 76de2be6-0385-4e42-8c8d-1aa300ac99ec) from Sidekiq(default) in 64.5ms
+2024-10-27T11:32:20.470Z pid=5641 tid=pjd class=CalculateInterestJob jid=bea277a21247fb4eb2c56384 elapsed=0.075 INFO: done
+2024-10-27T11:32:44.649Z pid=5641 tid=pjd class=CalculateInterestJob jid=3d4d265ebf034e4f47d19f16 INFO: start
+2024-10-27T11:32:44.654Z pid=5641 tid=pjd class=CalculateInterestJob jid=3d4d265ebf034e4f47d19f16 INFO: Performing CalculateInterestJob (Job ID: 11dcbc02-4775-4d7e-b8b4-b6cade4b1b56) from Sidekiq(default) enqueued at 2024-10-27T11:31:44Z with arguments: 23
+2024-10-27T11:32:44.672Z pid=5641 tid=pjd class=CalculateInterestJob jid=3d4d265ebf034e4f47d19f16 INFO: Performed CalculateInterestJob (Job ID: 11dcbc02-4775-4d7e-b8b4-b6cade4b1b56) from Sidekiq(default) in 16.62ms
+2024-10-27T11:32:44.673Z pid=5641 tid=pjd class=CalculateInterestJob jid=3d4d265ebf034e4f47d19f16 elapsed=0.024 INFO: done
+2024-10-27T11:33:20.518Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:33:20.526Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e14a2d25-bc39-4ade-8bf7-edf019f86cff) to Sidekiq(default)
+2024-10-27T11:34:09.153Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de INFO: start
+2024-10-27T11:34:09.154Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de INFO: Performing CalculateInterestJob (Job ID: e14a2d25-bc39-4ade-8bf7-edf019f86cff) from Sidekiq(default) enqueued at 2024-10-27T11:33:20Z
+2024-10-27T11:34:09.158Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de INFO: Started calculation for Loan #26
+2024-10-27T11:34:09.167Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de INFO: Interest calculated for Loan #26: Added 2.0, New total: 1232.0
+2024-10-27T11:34:09.173Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de INFO: Performed CalculateInterestJob (Job ID: e14a2d25-bc39-4ade-8bf7-edf019f86cff) from Sidekiq(default) in 18.57ms
+2024-10-27T11:34:09.174Z pid=5641 tid=pjd class=CalculateInterestJob jid=6bfeebd80e47438150b928de elapsed=0.021 INFO: done
+2024-10-27T11:34:20.623Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:34:20.627Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: bc216cdd-31cb-4aa8-9f02-ad88b80a6688) to Sidekiq(default)
+2024-10-27T11:34:20.628Z pid=5641 tid=ukd class=CalculateInterestJob jid=d0668adf5b01fedd28dd1461 INFO: start
+2024-10-27T11:34:20.638Z pid=5641 tid=ukd class=CalculateInterestJob jid=d0668adf5b01fedd28dd1461 INFO: Performing CalculateInterestJob (Job ID: bc216cdd-31cb-4aa8-9f02-ad88b80a6688) from Sidekiq(default) enqueued at 2024-10-27T11:34:20Z
+2024-10-27T11:34:20.662Z pid=5641 tid=ukd class=CalculateInterestJob jid=d0668adf5b01fedd28dd1461 INFO: Performed CalculateInterestJob (Job ID: bc216cdd-31cb-4aa8-9f02-ad88b80a6688) from Sidekiq(default) in 22.83ms
+2024-10-27T11:34:20.664Z pid=5641 tid=ukd class=CalculateInterestJob jid=d0668adf5b01fedd28dd1461 elapsed=0.036 INFO: done
+2024-10-27T11:35:20.466Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:35:20.497Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5ec9258a-1c32-4d8c-8639-fb89ca4c4153) to Sidekiq(default)
+2024-10-27T11:35:41.682Z pid=5641 tid=pjd class=CalculateInterestJob jid=87fbaa112cc64dcc8ec1554c INFO: start
+2024-10-27T11:35:41.694Z pid=5641 tid=pjd class=CalculateInterestJob jid=87fbaa112cc64dcc8ec1554c INFO: Performing CalculateInterestJob (Job ID: 5ec9258a-1c32-4d8c-8639-fb89ca4c4153) from Sidekiq(default) enqueued at 2024-10-27T11:35:20Z
+2024-10-27T11:35:41.707Z pid=5641 tid=pjd class=CalculateInterestJob jid=87fbaa112cc64dcc8ec1554c INFO: Performed CalculateInterestJob (Job ID: 5ec9258a-1c32-4d8c-8639-fb89ca4c4153) from Sidekiq(default) in 12.4ms
+2024-10-27T11:35:41.708Z pid=5641 tid=pjd class=CalculateInterestJob jid=87fbaa112cc64dcc8ec1554c elapsed=0.026 INFO: done
+2024-10-27T11:36:20.571Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:36:20.575Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 52dc92d4-c587-4e81-9ea0-fe8296a36801) to Sidekiq(default)
+2024-10-27T11:37:02.024Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 INFO: start
+2024-10-27T11:37:02.026Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 INFO: Performing CalculateInterestJob (Job ID: 02fe5135-6656-42c9-8a55-efdf44dd2866) from Sidekiq(default) enqueued at 2024-10-27T11:33:28Z with arguments: 26
+2024-10-27T11:37:02.032Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 INFO: Started calculation for Loan #21
+2024-10-27T11:37:02.042Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 INFO: Interest calculated for Loan #21: Added 3.33, New total: 989.91
+2024-10-27T11:37:02.046Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 INFO: Performed CalculateInterestJob (Job ID: 02fe5135-6656-42c9-8a55-efdf44dd2866) from Sidekiq(default) in 19.73ms
+2024-10-27T11:37:02.047Z pid=5641 tid=h85 class=CalculateInterestJob jid=d2a0e6cca27aa46ba1df3011 elapsed=0.023 INFO: done
+2024-10-27T11:37:05.463Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8de84e78e8f35c986f5711db INFO: start
+2024-10-27T11:37:05.690Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8de84e78e8f35c986f5711db INFO: Performing CalculateInterestJob (Job ID: 52dc92d4-c587-4e81-9ea0-fe8296a36801) from Sidekiq(default) enqueued at 2024-10-27T11:36:20Z
+2024-10-27T11:37:05.695Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8de84e78e8f35c986f5711db WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T11:37:05.723Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8de84e78e8f35c986f5711db INFO: Performed CalculateInterestJob (Job ID: 52dc92d4-c587-4e81-9ea0-fe8296a36801) from Sidekiq(default) in 32.18ms
+2024-10-27T11:37:05.723Z pid=5641 tid=ur1 class=CalculateInterestJob jid=8de84e78e8f35c986f5711db elapsed=0.261 INFO: done
+2024-10-27T11:37:20.411Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:37:20.414Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 INFO: start
+2024-10-27T11:37:20.415Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d226eb97-245b-407f-98e2-5592b4430f95) to Sidekiq(default)
+2024-10-27T11:37:20.436Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 INFO: Performing CalculateInterestJob (Job ID: d226eb97-245b-407f-98e2-5592b4430f95) from Sidekiq(default) enqueued at 2024-10-27T11:37:20Z
+2024-10-27T11:37:20.452Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 INFO: Started calculation for Loan #23
+2024-10-27T11:37:20.538Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 INFO: Interest calculated for Loan #23: Added 1.67, New total: 2003.34
+2024-10-27T11:37:20.545Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 INFO: Performed CalculateInterestJob (Job ID: d226eb97-245b-407f-98e2-5592b4430f95) from Sidekiq(default) in 106.24ms
+2024-10-27T11:37:20.545Z pid=5641 tid=pjd class=CalculateInterestJob jid=7a445d09e8cdf8c2292311b3 elapsed=0.131 INFO: done
+2024-10-27T11:38:20.592Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:38:20.597Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 03bfbaa2-d1b8-4e99-b58b-77b1cf1bee2e) to Sidekiq(default)
+2024-10-27T11:38:20.598Z pid=5641 tid=h85 class=CalculateInterestJob jid=c4a9af788c8bbc19da854c37 INFO: start
+2024-10-27T11:38:20.603Z pid=5641 tid=h85 class=CalculateInterestJob jid=c4a9af788c8bbc19da854c37 INFO: Performing CalculateInterestJob (Job ID: 03bfbaa2-d1b8-4e99-b58b-77b1cf1bee2e) from Sidekiq(default) enqueued at 2024-10-27T11:38:20Z
+2024-10-27T11:38:20.610Z pid=5641 tid=h85 class=CalculateInterestJob jid=c4a9af788c8bbc19da854c37 INFO: Performed CalculateInterestJob (Job ID: 03bfbaa2-d1b8-4e99-b58b-77b1cf1bee2e) from Sidekiq(default) in 6.35ms
+2024-10-27T11:38:20.611Z pid=5641 tid=h85 class=CalculateInterestJob jid=c4a9af788c8bbc19da854c37 elapsed=0.013 INFO: done
+2024-10-27T11:39:20.401Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:39:20.404Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 INFO: start
+2024-10-27T11:39:20.405Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: bebe7c7b-5744-4b40-a249-85e79964fa32) to Sidekiq(default)
+2024-10-27T11:39:20.413Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 INFO: Performing CalculateInterestJob (Job ID: bebe7c7b-5744-4b40-a249-85e79964fa32) from Sidekiq(default) enqueued at 2024-10-27T11:39:20Z
+2024-10-27T11:39:20.430Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 INFO: Started calculation for Loan #26
+2024-10-27T11:39:20.471Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 INFO: Interest calculated for Loan #26: Added 2.0, New total: 1234.0
+2024-10-27T11:39:20.485Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 INFO: Performed CalculateInterestJob (Job ID: bebe7c7b-5744-4b40-a249-85e79964fa32) from Sidekiq(default) in 70.41ms
+2024-10-27T11:39:20.490Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bc902fcaf158df9faea9c508 elapsed=0.086 INFO: done
+2024-10-27T11:40:20.492Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:40:20.494Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a31d5369-cef9-403d-b7da-a16f4d2c3b5e) to Sidekiq(default)
+2024-10-27T11:40:45.139Z pid=5641 tid=ur1 class=CalculateInterestJob jid=40052e5b890900c97b7d29b9 INFO: start
+2024-10-27T11:40:45.296Z pid=5641 tid=ur1 class=CalculateInterestJob jid=40052e5b890900c97b7d29b9 INFO: Performing CalculateInterestJob (Job ID: a31d5369-cef9-403d-b7da-a16f4d2c3b5e) from Sidekiq(default) enqueued at 2024-10-27T11:40:20Z
+2024-10-27T11:40:45.301Z pid=5641 tid=ur1 class=CalculateInterestJob jid=40052e5b890900c97b7d29b9 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T11:40:45.321Z pid=5641 tid=ur1 class=CalculateInterestJob jid=40052e5b890900c97b7d29b9 INFO: Performed CalculateInterestJob (Job ID: a31d5369-cef9-403d-b7da-a16f4d2c3b5e) from Sidekiq(default) in 25.27ms
+2024-10-27T11:40:45.322Z pid=5641 tid=ur1 class=CalculateInterestJob jid=40052e5b890900c97b7d29b9 elapsed=0.183 INFO: done
+2024-10-27T11:41:20.650Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:41:20.656Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b8f480f4-58d1-47ba-b462-92905e12936f) to Sidekiq(default)
+2024-10-27T11:41:21.451Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c INFO: start
+2024-10-27T11:41:21.452Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c INFO: Performing CalculateInterestJob (Job ID: 191f27d0-ea54-4c35-95dc-cf97eadadcc4) from Sidekiq(default) enqueued at 2024-10-27T11:41:21Z with arguments: 24
+2024-10-27T11:41:21.458Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c INFO: Started calculation for Loan #24
+2024-10-27T11:41:21.493Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c INFO: Interest calculated for Loan #24: Added 0.87, New total: 1000.87
+2024-10-27T11:41:21.497Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c INFO: Performed CalculateInterestJob (Job ID: 191f27d0-ea54-4c35-95dc-cf97eadadcc4) from Sidekiq(default) in 44.38ms
+2024-10-27T11:41:21.498Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5af285f0af97a0db738c578c elapsed=0.047 INFO: done
+2024-10-27T11:42:12.071Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 INFO: start
+2024-10-27T11:42:12.079Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 INFO: Performing CalculateInterestJob (Job ID: b8f480f4-58d1-47ba-b462-92905e12936f) from Sidekiq(default) enqueued at 2024-10-27T11:41:20Z
+2024-10-27T11:42:12.097Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 INFO: Started calculation for Loan #21
+2024-10-27T11:42:12.138Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 INFO: Interest calculated for Loan #21: Added 3.33, New total: 993.24
+2024-10-27T11:42:12.149Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 INFO: Performed CalculateInterestJob (Job ID: b8f480f4-58d1-47ba-b462-92905e12936f) from Sidekiq(default) in 67.27ms
+2024-10-27T11:42:12.150Z pid=5641 tid=ukd class=CalculateInterestJob jid=b1deef1f59dcae2742efc338 elapsed=0.079 INFO: done
+2024-10-27T11:42:20.534Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:42:20.537Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0392786b-26d6-4b62-a122-981bbe8dc19e) to Sidekiq(default)
+2024-10-27T11:42:42.681Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b INFO: start
+2024-10-27T11:42:42.693Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b INFO: Performing CalculateInterestJob (Job ID: 0392786b-26d6-4b62-a122-981bbe8dc19e) from Sidekiq(default) enqueued at 2024-10-27T11:42:20Z
+2024-10-27T11:42:42.710Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b INFO: Started calculation for Loan #23
+2024-10-27T11:42:42.753Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b INFO: Interest calculated for Loan #23: Added 1.67, New total: 2005.01
+2024-10-27T11:42:42.769Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b INFO: Performed CalculateInterestJob (Job ID: 0392786b-26d6-4b62-a122-981bbe8dc19e) from Sidekiq(default) in 75.47ms
+2024-10-27T11:42:42.771Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0df200771c8318db765ad21b elapsed=0.09 INFO: done
+2024-10-27T11:43:14.782Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 INFO: start
+2024-10-27T11:43:14.783Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 INFO: Performing CalculateInterestJob (Job ID: 694dbc42-0618-428b-a6e7-da2a16546a2c) from Sidekiq(default) enqueued at 2024-10-27T11:42:53Z with arguments: 25
+2024-10-27T11:43:14.789Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 INFO: Started calculation for Loan #25
+2024-10-27T11:43:14.799Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 INFO: Interest calculated for Loan #25: Added 4.0, New total: 1204.0
+2024-10-27T11:43:14.803Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 INFO: Performed CalculateInterestJob (Job ID: 694dbc42-0618-428b-a6e7-da2a16546a2c) from Sidekiq(default) in 19.45ms
+2024-10-27T11:43:14.803Z pid=5641 tid=h85 class=CalculateInterestJob jid=a185e0cf912c619ecb87b798 elapsed=0.021 INFO: done
+2024-10-27T11:43:20.365Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:43:20.368Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e6866002-b49c-41f9-bd73-5b8662cf2f0f) to Sidekiq(default)
+2024-10-27T11:43:20.368Z pid=5641 tid=ur1 class=CalculateInterestJob jid=a6cba6bd0b30eeb5bb4af62f INFO: start
+2024-10-27T11:43:20.377Z pid=5641 tid=ur1 class=CalculateInterestJob jid=a6cba6bd0b30eeb5bb4af62f INFO: Performing CalculateInterestJob (Job ID: e6866002-b49c-41f9-bd73-5b8662cf2f0f) from Sidekiq(default) enqueued at 2024-10-27T11:43:20Z
+2024-10-27T11:43:20.396Z pid=5641 tid=ur1 class=CalculateInterestJob jid=a6cba6bd0b30eeb5bb4af62f INFO: Performed CalculateInterestJob (Job ID: e6866002-b49c-41f9-bd73-5b8662cf2f0f) from Sidekiq(default) in 18.03ms
+2024-10-27T11:43:20.397Z pid=5641 tid=ur1 class=CalculateInterestJob jid=a6cba6bd0b30eeb5bb4af62f elapsed=0.029 INFO: done
+2024-10-27T11:44:20.484Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:44:20.488Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: ed2e8adf-64d7-4223-acb7-dee65660fab5) to Sidekiq(default)
+2024-10-27T11:45:17.368Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5c03db819af1ca94ed697d53 INFO: start
+2024-10-27T11:45:17.372Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5c03db819af1ca94ed697d53 INFO: Performing CalculateInterestJob (Job ID: ed2e8adf-64d7-4223-acb7-dee65660fab5) from Sidekiq(default) enqueued at 2024-10-27T11:44:20Z
+2024-10-27T11:45:17.397Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5c03db819af1ca94ed697d53 INFO: Performed CalculateInterestJob (Job ID: ed2e8adf-64d7-4223-acb7-dee65660fab5) from Sidekiq(default) in 21.86ms
+2024-10-27T11:45:17.402Z pid=5641 tid=ur1 class=CalculateInterestJob jid=5c03db819af1ca94ed697d53 elapsed=0.034 INFO: done
+2024-10-27T11:45:20.609Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:45:20.610Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0f913e88-23fb-49a3-8e11-6b4f5e28cd42) to Sidekiq(default)
+2024-10-27T11:45:38.299Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ee59f488024b29626bcdb81f INFO: start
+2024-10-27T11:45:38.304Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ee59f488024b29626bcdb81f INFO: Performing CalculateInterestJob (Job ID: 0f913e88-23fb-49a3-8e11-6b4f5e28cd42) from Sidekiq(default) enqueued at 2024-10-27T11:45:20Z
+2024-10-27T11:45:38.316Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ee59f488024b29626bcdb81f INFO: Performed CalculateInterestJob (Job ID: 0f913e88-23fb-49a3-8e11-6b4f5e28cd42) from Sidekiq(default) in 10.36ms
+2024-10-27T11:45:38.317Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ee59f488024b29626bcdb81f elapsed=0.018 INFO: done
+2024-10-27T11:46:20.446Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:46:20.456Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d8efbdd1-5006-4bd3-ad7a-5269464a947d) to Sidekiq(default)
+2024-10-27T11:46:20.467Z pid=5641 tid=h85 class=CalculateInterestJob jid=ee6e5752a111b5336b08f95a INFO: start
+2024-10-27T11:46:20.616Z pid=5641 tid=h85 class=CalculateInterestJob jid=ee6e5752a111b5336b08f95a INFO: Performing CalculateInterestJob (Job ID: d8efbdd1-5006-4bd3-ad7a-5269464a947d) from Sidekiq(default) enqueued at 2024-10-27T11:46:20Z
+2024-10-27T11:46:20.621Z pid=5641 tid=h85 class=CalculateInterestJob jid=ee6e5752a111b5336b08f95a WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T11:46:20.628Z pid=5641 tid=h85 class=CalculateInterestJob jid=ee6e5752a111b5336b08f95a INFO: Performed CalculateInterestJob (Job ID: d8efbdd1-5006-4bd3-ad7a-5269464a947d) from Sidekiq(default) in 11.8ms
+2024-10-27T11:46:20.629Z pid=5641 tid=h85 class=CalculateInterestJob jid=ee6e5752a111b5336b08f95a elapsed=0.162 INFO: done
+2024-10-27T11:47:20.571Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:47:20.574Z pid=5641 tid=ukd class=CalculateInterestJob jid=f18c97a202625f0de28fc9a2 INFO: start
+2024-10-27T11:47:20.575Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0ffd53f5-911d-48fd-9aee-3b819a4c3d2b) to Sidekiq(default)
+2024-10-27T11:47:20.589Z pid=5641 tid=ukd class=CalculateInterestJob jid=f18c97a202625f0de28fc9a2 INFO: Performing CalculateInterestJob (Job ID: 0ffd53f5-911d-48fd-9aee-3b819a4c3d2b) from Sidekiq(default) enqueued at 2024-10-27T11:47:20Z
+2024-10-27T11:47:20.599Z pid=5641 tid=ukd class=CalculateInterestJob jid=f18c97a202625f0de28fc9a2 INFO: Performed CalculateInterestJob (Job ID: 0ffd53f5-911d-48fd-9aee-3b819a4c3d2b) from Sidekiq(default) in 9.59ms
+2024-10-27T11:47:20.600Z pid=5641 tid=ukd class=CalculateInterestJob jid=f18c97a202625f0de28fc9a2 elapsed=0.026 INFO: done
+2024-10-27T11:48:20.388Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:48:20.392Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: ba2d3581-fa43-490e-8e35-53bd8533d348) to Sidekiq(default)
+2024-10-27T11:49:00.045Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cf2443979f78d26b4d42e911 INFO: start
+2024-10-27T11:49:00.050Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cf2443979f78d26b4d42e911 INFO: Performing CalculateInterestJob (Job ID: ba2d3581-fa43-490e-8e35-53bd8533d348) from Sidekiq(default) enqueued at 2024-10-27T11:48:20Z
+2024-10-27T11:49:00.064Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cf2443979f78d26b4d42e911 INFO: Performed CalculateInterestJob (Job ID: ba2d3581-fa43-490e-8e35-53bd8533d348) from Sidekiq(default) in 12.26ms
+2024-10-27T11:49:00.065Z pid=5641 tid=qm1 class=CalculateInterestJob jid=cf2443979f78d26b4d42e911 elapsed=0.02 INFO: done
+2024-10-27T11:49:20.496Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:49:20.499Z pid=5641 tid=pjd class=CalculateInterestJob jid=66361bc8873806444db4b9c3 INFO: start
+2024-10-27T11:49:20.500Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 40c8b0a8-0e97-4b39-8c47-5049f23fd732) to Sidekiq(default)
+2024-10-27T11:49:20.510Z pid=5641 tid=pjd class=CalculateInterestJob jid=66361bc8873806444db4b9c3 INFO: Performing CalculateInterestJob (Job ID: 40c8b0a8-0e97-4b39-8c47-5049f23fd732) from Sidekiq(default) enqueued at 2024-10-27T11:49:20Z
+2024-10-27T11:49:20.520Z pid=5641 tid=pjd class=CalculateInterestJob jid=66361bc8873806444db4b9c3 INFO: Performed CalculateInterestJob (Job ID: 40c8b0a8-0e97-4b39-8c47-5049f23fd732) from Sidekiq(default) in 8.67ms
+2024-10-27T11:49:20.521Z pid=5641 tid=pjd class=CalculateInterestJob jid=66361bc8873806444db4b9c3 elapsed=0.021 INFO: done
+2024-10-27T11:50:20.606Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:50:20.610Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 5f3dcc7c-f7df-4268-94aa-52a4ba82ad2e) to Sidekiq(default)
+2024-10-27T11:50:20.611Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1d2eda19e901acf521d7fd39 INFO: start
+2024-10-27T11:50:20.622Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1d2eda19e901acf521d7fd39 INFO: Performing CalculateInterestJob (Job ID: 5f3dcc7c-f7df-4268-94aa-52a4ba82ad2e) from Sidekiq(default) enqueued at 2024-10-27T11:50:20Z
+2024-10-27T11:50:20.634Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1d2eda19e901acf521d7fd39 INFO: Performed CalculateInterestJob (Job ID: 5f3dcc7c-f7df-4268-94aa-52a4ba82ad2e) from Sidekiq(default) in 10.47ms
+2024-10-27T11:50:20.635Z pid=5641 tid=qm1 class=CalculateInterestJob jid=1d2eda19e901acf521d7fd39 elapsed=0.024 INFO: done
+2024-10-27T11:51:20.412Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:51:20.417Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 13394dab-872d-43a7-9a2b-c5918c82173e) to Sidekiq(default)
+2024-10-27T11:51:37.768Z pid=5641 tid=pjd class=CalculateInterestJob jid=00abb4acbf33156941cbe9ab INFO: start
+2024-10-27T11:51:37.770Z pid=5641 tid=pjd class=CalculateInterestJob jid=00abb4acbf33156941cbe9ab INFO: Performing CalculateInterestJob (Job ID: 13394dab-872d-43a7-9a2b-c5918c82173e) from Sidekiq(default) enqueued at 2024-10-27T11:51:20Z
+2024-10-27T11:51:37.772Z pid=5641 tid=pjd class=CalculateInterestJob jid=00abb4acbf33156941cbe9ab INFO: Performed CalculateInterestJob (Job ID: 13394dab-872d-43a7-9a2b-c5918c82173e) from Sidekiq(default) in 2.36ms
+2024-10-27T11:51:37.773Z pid=5641 tid=pjd class=CalculateInterestJob jid=00abb4acbf33156941cbe9ab elapsed=0.004 INFO: done
+2024-10-27T11:52:20.546Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:52:20.553Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0e7cfb13-7685-4506-965d-31fac0a603cc) to Sidekiq(default)
+2024-10-27T11:53:20.406Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:53:20.415Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 139c5b41-806a-47ff-bc00-a177cfe14df4) to Sidekiq(default)
+2024-10-27T11:53:45.885Z pid=5641 tid=ur1 class=CalculateInterestJob jid=98b9f6b33e78584abe902c5d INFO: start
+2024-10-27T11:53:45.891Z pid=5641 tid=ur1 class=CalculateInterestJob jid=98b9f6b33e78584abe902c5d INFO: Performing CalculateInterestJob (Job ID: 139c5b41-806a-47ff-bc00-a177cfe14df4) from Sidekiq(default) enqueued at 2024-10-27T11:53:20Z
+2024-10-27T11:53:45.903Z pid=5641 tid=ur1 class=CalculateInterestJob jid=98b9f6b33e78584abe902c5d INFO: Performed CalculateInterestJob (Job ID: 139c5b41-806a-47ff-bc00-a177cfe14df4) from Sidekiq(default) in 10.74ms
+2024-10-27T11:53:45.904Z pid=5641 tid=ur1 class=CalculateInterestJob jid=98b9f6b33e78584abe902c5d elapsed=0.019 INFO: done
+2024-10-27T11:54:20.515Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:54:20.519Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 89f555ee-e813-4c79-be7b-417ac0248aba) to Sidekiq(default)
+2024-10-27T11:54:20.520Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0dd7ac5f413ea87ee8a3a98c INFO: start
+2024-10-27T11:54:20.743Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0dd7ac5f413ea87ee8a3a98c INFO: Performing CalculateInterestJob (Job ID: 89f555ee-e813-4c79-be7b-417ac0248aba) from Sidekiq(default) enqueued at 2024-10-27T11:54:20Z
+2024-10-27T11:54:20.748Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0dd7ac5f413ea87ee8a3a98c WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T11:54:20.755Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0dd7ac5f413ea87ee8a3a98c INFO: Performed CalculateInterestJob (Job ID: 89f555ee-e813-4c79-be7b-417ac0248aba) from Sidekiq(default) in 11.91ms
+2024-10-27T11:54:20.755Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0dd7ac5f413ea87ee8a3a98c elapsed=0.235 INFO: done
+2024-10-27T11:55:20.616Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:55:20.620Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3cf60404-1afa-4d2e-9eb3-7bc65e9a6f97) to Sidekiq(default)
+2024-10-27T11:55:20.622Z pid=5641 tid=ur1 class=CalculateInterestJob jid=315d44571810f9bda2cc3896 INFO: start
+2024-10-27T11:55:20.631Z pid=5641 tid=ur1 class=CalculateInterestJob jid=315d44571810f9bda2cc3896 INFO: Performing CalculateInterestJob (Job ID: 3cf60404-1afa-4d2e-9eb3-7bc65e9a6f97) from Sidekiq(default) enqueued at 2024-10-27T11:55:20Z
+2024-10-27T11:55:20.645Z pid=5641 tid=ur1 class=CalculateInterestJob jid=315d44571810f9bda2cc3896 INFO: Performed CalculateInterestJob (Job ID: 3cf60404-1afa-4d2e-9eb3-7bc65e9a6f97) from Sidekiq(default) in 12.22ms
+2024-10-27T11:55:20.650Z pid=5641 tid=ur1 class=CalculateInterestJob jid=315d44571810f9bda2cc3896 elapsed=0.028 INFO: done
+2024-10-27T11:56:05.064Z pid=5641 tid=ukd class=CalculateInterestJob jid=3ecad90d565217d739deff27 INFO: start
+2024-10-27T11:56:05.069Z pid=5641 tid=ukd class=CalculateInterestJob jid=3ecad90d565217d739deff27 INFO: Performing CalculateInterestJob (Job ID: 0e7cfb13-7685-4506-965d-31fac0a603cc) from Sidekiq(default) enqueued at 2024-10-27T11:52:20Z
+2024-10-27T11:56:05.083Z pid=5641 tid=ukd class=CalculateInterestJob jid=3ecad90d565217d739deff27 INFO: Performed CalculateInterestJob (Job ID: 0e7cfb13-7685-4506-965d-31fac0a603cc) from Sidekiq(default) in 13.88ms
+2024-10-27T11:56:05.086Z pid=5641 tid=ukd class=CalculateInterestJob jid=3ecad90d565217d739deff27 elapsed=0.022 INFO: done
+2024-10-27T11:56:20.467Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:56:20.471Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d10b43c0-536d-427e-9bc0-58ce6cff12e0) to Sidekiq(default)
+2024-10-27T11:56:43.346Z pid=5641 tid=ukd class=CalculateInterestJob jid=b80c5cc44cc98eb1228c515d INFO: start
+2024-10-27T11:56:43.354Z pid=5641 tid=ukd class=CalculateInterestJob jid=b80c5cc44cc98eb1228c515d INFO: Performing CalculateInterestJob (Job ID: d10b43c0-536d-427e-9bc0-58ce6cff12e0) from Sidekiq(default) enqueued at 2024-10-27T11:56:20Z
+2024-10-27T11:56:43.366Z pid=5641 tid=ukd class=CalculateInterestJob jid=b80c5cc44cc98eb1228c515d INFO: Performed CalculateInterestJob (Job ID: d10b43c0-536d-427e-9bc0-58ce6cff12e0) from Sidekiq(default) in 11.56ms
+2024-10-27T11:56:43.368Z pid=5641 tid=ukd class=CalculateInterestJob jid=b80c5cc44cc98eb1228c515d elapsed=0.022 INFO: done
+2024-10-27T11:57:20.581Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:57:20.584Z pid=5641 tid=pjd class=CalculateInterestJob jid=a336c200fa4158fe0ee7a24e INFO: start
+2024-10-27T11:57:20.585Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: ec874a21-67c9-4cba-8995-9842130a08b2) to Sidekiq(default)
+2024-10-27T11:57:20.595Z pid=5641 tid=pjd class=CalculateInterestJob jid=a336c200fa4158fe0ee7a24e INFO: Performing CalculateInterestJob (Job ID: ec874a21-67c9-4cba-8995-9842130a08b2) from Sidekiq(default) enqueued at 2024-10-27T11:57:20Z
+2024-10-27T11:57:20.614Z pid=5641 tid=pjd class=CalculateInterestJob jid=a336c200fa4158fe0ee7a24e INFO: Performed CalculateInterestJob (Job ID: ec874a21-67c9-4cba-8995-9842130a08b2) from Sidekiq(default) in 17.99ms
+2024-10-27T11:57:20.617Z pid=5641 tid=pjd class=CalculateInterestJob jid=a336c200fa4158fe0ee7a24e elapsed=0.033 INFO: done
+2024-10-27T11:58:20.420Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:58:20.428Z pid=5641 tid=qm1 class=CalculateInterestJob jid=aa2494e256233e74ed29bec3 INFO: start
+2024-10-27T11:58:20.429Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 64280c9a-b4ec-42d8-b502-69ef07156914) to Sidekiq(default)
+2024-10-27T11:58:20.440Z pid=5641 tid=qm1 class=CalculateInterestJob jid=aa2494e256233e74ed29bec3 INFO: Performing CalculateInterestJob (Job ID: 64280c9a-b4ec-42d8-b502-69ef07156914) from Sidekiq(default) enqueued at 2024-10-27T11:58:20Z
+2024-10-27T11:58:20.456Z pid=5641 tid=qm1 class=CalculateInterestJob jid=aa2494e256233e74ed29bec3 INFO: Performed CalculateInterestJob (Job ID: 64280c9a-b4ec-42d8-b502-69ef07156914) from Sidekiq(default) in 14.62ms
+2024-10-27T11:58:20.458Z pid=5641 tid=qm1 class=CalculateInterestJob jid=aa2494e256233e74ed29bec3 elapsed=0.03 INFO: done
+2024-10-27T11:59:20.591Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T11:59:20.593Z pid=5641 tid=ukd class=CalculateInterestJob jid=6b6015160210728b27f50350 INFO: start
+2024-10-27T11:59:20.595Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: bb6c7816-d10a-40c2-85e4-7f5e47716ec8) to Sidekiq(default)
+2024-10-27T11:59:20.602Z pid=5641 tid=ukd class=CalculateInterestJob jid=6b6015160210728b27f50350 INFO: Performing CalculateInterestJob (Job ID: bb6c7816-d10a-40c2-85e4-7f5e47716ec8) from Sidekiq(default) enqueued at 2024-10-27T11:59:20Z
+2024-10-27T11:59:20.611Z pid=5641 tid=ukd class=CalculateInterestJob jid=6b6015160210728b27f50350 INFO: Performed CalculateInterestJob (Job ID: bb6c7816-d10a-40c2-85e4-7f5e47716ec8) from Sidekiq(default) in 8.3ms
+2024-10-27T11:59:20.612Z pid=5641 tid=ukd class=CalculateInterestJob jid=6b6015160210728b27f50350 elapsed=0.019 INFO: done
+2024-10-27T12:00:20.411Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:00:20.415Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3530de38-34b9-471b-8192-a1ec3610c8c2) to Sidekiq(default)
+2024-10-27T12:01:17.995Z pid=5641 tid=h85 class=CalculateInterestJob jid=e927a96c0816846c116c3edd INFO: start
+2024-10-27T12:01:18.150Z pid=5641 tid=h85 class=CalculateInterestJob jid=e927a96c0816846c116c3edd INFO: Performing CalculateInterestJob (Job ID: 3530de38-34b9-471b-8192-a1ec3610c8c2) from Sidekiq(default) enqueued at 2024-10-27T12:00:20Z
+2024-10-27T12:01:18.155Z pid=5641 tid=h85 class=CalculateInterestJob jid=e927a96c0816846c116c3edd WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:01:18.162Z pid=5641 tid=h85 class=CalculateInterestJob jid=e927a96c0816846c116c3edd INFO: Performed CalculateInterestJob (Job ID: 3530de38-34b9-471b-8192-a1ec3610c8c2) from Sidekiq(default) in 11.49ms
+2024-10-27T12:01:18.162Z pid=5641 tid=h85 class=CalculateInterestJob jid=e927a96c0816846c116c3edd elapsed=0.167 INFO: done
+2024-10-27T12:01:20.529Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:01:20.533Z pid=5641 tid=pjd class=CalculateInterestJob jid=0e58d0cf0ee0d2a1c4243f4f INFO: start
+2024-10-27T12:01:20.534Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b7b085cf-49f9-48a7-be58-d839e70267ba) to Sidekiq(default)
+2024-10-27T12:01:20.548Z pid=5641 tid=pjd class=CalculateInterestJob jid=0e58d0cf0ee0d2a1c4243f4f INFO: Performing CalculateInterestJob (Job ID: b7b085cf-49f9-48a7-be58-d839e70267ba) from Sidekiq(default) enqueued at 2024-10-27T12:01:20Z
+2024-10-27T12:01:20.563Z pid=5641 tid=pjd class=CalculateInterestJob jid=0e58d0cf0ee0d2a1c4243f4f INFO: Performed CalculateInterestJob (Job ID: b7b085cf-49f9-48a7-be58-d839e70267ba) from Sidekiq(default) in 12.99ms
+2024-10-27T12:01:20.564Z pid=5641 tid=pjd class=CalculateInterestJob jid=0e58d0cf0ee0d2a1c4243f4f elapsed=0.031 INFO: done
+2024-10-27T12:02:20.358Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:02:20.360Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 088c8aae-5cc3-4be9-bfc7-3f8669f3cfd1) to Sidekiq(default)
+2024-10-27T12:02:59.280Z pid=5641 tid=pjd class=CalculateInterestJob jid=c642063d1820b0af95000205 INFO: start
+2024-10-27T12:02:59.288Z pid=5641 tid=pjd class=CalculateInterestJob jid=c642063d1820b0af95000205 INFO: Performing CalculateInterestJob (Job ID: 7366ea38-a713-4c85-8e0f-8ecbc1611abe) from Sidekiq(default) enqueued at 2024-10-27T11:21:20Z
+2024-10-27T12:02:59.302Z pid=5641 tid=pjd class=CalculateInterestJob jid=c642063d1820b0af95000205 INFO: Performed CalculateInterestJob (Job ID: 7366ea38-a713-4c85-8e0f-8ecbc1611abe) from Sidekiq(default) in 10.79ms
+2024-10-27T12:02:59.306Z pid=5641 tid=pjd class=CalculateInterestJob jid=c642063d1820b0af95000205 elapsed=0.026 INFO: done
+2024-10-27T12:03:06.957Z pid=5641 tid=h85 class=CalculateInterestJob jid=c82e57c9ca4d81a1aa8b62fa INFO: start
+2024-10-27T12:03:06.958Z pid=5641 tid=h85 class=CalculateInterestJob jid=c82e57c9ca4d81a1aa8b62fa INFO: Performing CalculateInterestJob (Job ID: 088c8aae-5cc3-4be9-bfc7-3f8669f3cfd1) from Sidekiq(default) enqueued at 2024-10-27T12:02:20Z
+2024-10-27T12:03:06.961Z pid=5641 tid=h85 class=CalculateInterestJob jid=c82e57c9ca4d81a1aa8b62fa INFO: Performed CalculateInterestJob (Job ID: 088c8aae-5cc3-4be9-bfc7-3f8669f3cfd1) from Sidekiq(default) in 3.08ms
+2024-10-27T12:03:06.962Z pid=5641 tid=h85 class=CalculateInterestJob jid=c82e57c9ca4d81a1aa8b62fa elapsed=0.004 INFO: done
+2024-10-27T12:03:20.519Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:03:20.529Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e9312c4d-da9f-4e8b-9947-af8ad3749da4) to Sidekiq(default)
+2024-10-27T12:03:46.930Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c5c3f9ca46f1759d73955485 INFO: start
+2024-10-27T12:03:47.084Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c5c3f9ca46f1759d73955485 INFO: Performing CalculateInterestJob (Job ID: e9312c4d-da9f-4e8b-9947-af8ad3749da4) from Sidekiq(default) enqueued at 2024-10-27T12:03:20Z
+2024-10-27T12:03:47.089Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c5c3f9ca46f1759d73955485 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:03:47.096Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c5c3f9ca46f1759d73955485 INFO: Performed CalculateInterestJob (Job ID: e9312c4d-da9f-4e8b-9947-af8ad3749da4) from Sidekiq(default) in 11.9ms
+2024-10-27T12:03:47.096Z pid=5641 tid=qm1 class=CalculateInterestJob jid=c5c3f9ca46f1759d73955485 elapsed=0.166 INFO: done
+2024-10-27T12:04:20.607Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:04:20.618Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 1c992ef3-b9de-45de-8520-37fdd801b10e) to Sidekiq(default)
+2024-10-27T12:04:43.677Z pid=5641 tid=h85 class=CalculateInterestJob jid=e47cc1ec11ecd2a5dd294d63 INFO: start
+2024-10-27T12:04:43.842Z pid=5641 tid=h85 class=CalculateInterestJob jid=e47cc1ec11ecd2a5dd294d63 INFO: Performing CalculateInterestJob (Job ID: 1c992ef3-b9de-45de-8520-37fdd801b10e) from Sidekiq(default) enqueued at 2024-10-27T12:04:20Z
+2024-10-27T12:04:43.847Z pid=5641 tid=h85 class=CalculateInterestJob jid=e47cc1ec11ecd2a5dd294d63 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:04:43.855Z pid=5641 tid=h85 class=CalculateInterestJob jid=e47cc1ec11ecd2a5dd294d63 INFO: Performed CalculateInterestJob (Job ID: 1c992ef3-b9de-45de-8520-37fdd801b10e) from Sidekiq(default) in 12.63ms
+2024-10-27T12:04:43.855Z pid=5641 tid=h85 class=CalculateInterestJob jid=e47cc1ec11ecd2a5dd294d63 elapsed=0.178 INFO: done
+2024-10-27T12:05:20.412Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:05:20.417Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c70e13bd522886f2a79ea47 INFO: start
+2024-10-27T12:05:20.418Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8318fc75-2478-44c6-b4af-40e4c7fd3ade) to Sidekiq(default)
+2024-10-27T12:05:20.621Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c70e13bd522886f2a79ea47 INFO: Performing CalculateInterestJob (Job ID: 8318fc75-2478-44c6-b4af-40e4c7fd3ade) from Sidekiq(default) enqueued at 2024-10-27T12:05:20Z
+2024-10-27T12:05:20.626Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c70e13bd522886f2a79ea47 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:05:20.633Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c70e13bd522886f2a79ea47 INFO: Performed CalculateInterestJob (Job ID: 8318fc75-2478-44c6-b4af-40e4c7fd3ade) from Sidekiq(default) in 12.47ms
+2024-10-27T12:05:20.634Z pid=5641 tid=pjd class=CalculateInterestJob jid=1c70e13bd522886f2a79ea47 elapsed=0.217 INFO: done
+2024-10-27T12:06:20.561Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:06:20.567Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3d251cdb-7244-483b-a0ea-1cfe4d8033c5) to Sidekiq(default)
+2024-10-27T12:06:20.571Z pid=5641 tid=h85 class=CalculateInterestJob jid=bf1bd0a467b0ff7b879b76c7 INFO: start
+2024-10-27T12:06:20.574Z pid=5641 tid=h85 class=CalculateInterestJob jid=bf1bd0a467b0ff7b879b76c7 INFO: Performing CalculateInterestJob (Job ID: 3d251cdb-7244-483b-a0ea-1cfe4d8033c5) from Sidekiq(default) enqueued at 2024-10-27T12:06:20Z
+2024-10-27T12:06:20.588Z pid=5641 tid=h85 class=CalculateInterestJob jid=bf1bd0a467b0ff7b879b76c7 INFO: Performed CalculateInterestJob (Job ID: 3d251cdb-7244-483b-a0ea-1cfe4d8033c5) from Sidekiq(default) in 13.6ms
+2024-10-27T12:06:20.589Z pid=5641 tid=h85 class=CalculateInterestJob jid=bf1bd0a467b0ff7b879b76c7 elapsed=0.018 INFO: done
+2024-10-27T12:07:20.394Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:07:20.399Z pid=5641 tid=ur1 class=CalculateInterestJob jid=e3069f4fa19b128c20bbb735 INFO: start
+2024-10-27T12:07:20.400Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 90b270fc-338e-46ea-aff0-2164a6230a85) to Sidekiq(default)
+2024-10-27T12:07:20.414Z pid=5641 tid=ur1 class=CalculateInterestJob jid=e3069f4fa19b128c20bbb735 INFO: Performing CalculateInterestJob (Job ID: 90b270fc-338e-46ea-aff0-2164a6230a85) from Sidekiq(default) enqueued at 2024-10-27T12:07:20Z
+2024-10-27T12:07:20.426Z pid=5641 tid=ur1 class=CalculateInterestJob jid=e3069f4fa19b128c20bbb735 INFO: Performed CalculateInterestJob (Job ID: 90b270fc-338e-46ea-aff0-2164a6230a85) from Sidekiq(default) in 10.93ms
+2024-10-27T12:07:20.428Z pid=5641 tid=ur1 class=CalculateInterestJob jid=e3069f4fa19b128c20bbb735 elapsed=0.028 INFO: done
+2024-10-27T12:08:20.568Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:08:20.569Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: fec74c2d-d1a9-4609-97b1-d7c5edabb6dd) to Sidekiq(default)
+2024-10-27T12:08:43.165Z pid=5641 tid=qm1 class=CalculateInterestJob jid=09193b24a0781a5b91c150d5 INFO: start
+2024-10-27T12:08:43.169Z pid=5641 tid=qm1 class=CalculateInterestJob jid=09193b24a0781a5b91c150d5 INFO: Performing CalculateInterestJob (Job ID: fec74c2d-d1a9-4609-97b1-d7c5edabb6dd) from Sidekiq(default) enqueued at 2024-10-27T12:08:20Z
+2024-10-27T12:08:43.174Z pid=5641 tid=qm1 class=CalculateInterestJob jid=09193b24a0781a5b91c150d5 INFO: Performed CalculateInterestJob (Job ID: fec74c2d-d1a9-4609-97b1-d7c5edabb6dd) from Sidekiq(default) in 4.37ms
+2024-10-27T12:08:43.174Z pid=5641 tid=qm1 class=CalculateInterestJob jid=09193b24a0781a5b91c150d5 elapsed=0.01 INFO: done
+2024-10-27T12:09:20.385Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:09:20.389Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 96c69d5a-140c-4b65-bc6d-ff69f2fd94c4) to Sidekiq(default)
+2024-10-27T12:10:20.479Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:10:20.483Z pid=5641 tid=h85 class=CalculateInterestJob jid=f9b5f31a61f05ddefd056474 INFO: start
+2024-10-27T12:10:20.483Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 9e464292-2899-4067-a77d-49a4ad06a312) to Sidekiq(default)
+2024-10-27T12:10:20.494Z pid=5641 tid=h85 class=CalculateInterestJob jid=f9b5f31a61f05ddefd056474 INFO: Performing CalculateInterestJob (Job ID: 9e464292-2899-4067-a77d-49a4ad06a312) from Sidekiq(default) enqueued at 2024-10-27T12:10:20Z
+2024-10-27T12:10:20.514Z pid=5641 tid=h85 class=CalculateInterestJob jid=f9b5f31a61f05ddefd056474 INFO: Performed CalculateInterestJob (Job ID: 9e464292-2899-4067-a77d-49a4ad06a312) from Sidekiq(default) in 18.83ms
+2024-10-27T12:10:20.516Z pid=5641 tid=h85 class=CalculateInterestJob jid=f9b5f31a61f05ddefd056474 elapsed=0.033 INFO: done
+2024-10-27T12:11:20.638Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:11:20.641Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 67f38751-3979-4df3-91f2-416ab51a491d) to Sidekiq(default)
+2024-10-27T12:11:20.642Z pid=5641 tid=h85 class=CalculateInterestJob jid=f7154ddfd075884906822229 INFO: start
+2024-10-27T12:11:20.655Z pid=5641 tid=h85 class=CalculateInterestJob jid=f7154ddfd075884906822229 INFO: Performing CalculateInterestJob (Job ID: 67f38751-3979-4df3-91f2-416ab51a491d) from Sidekiq(default) enqueued at 2024-10-27T12:11:20Z
+2024-10-27T12:11:20.672Z pid=5641 tid=h85 class=CalculateInterestJob jid=f7154ddfd075884906822229 INFO: Performed CalculateInterestJob (Job ID: 67f38751-3979-4df3-91f2-416ab51a491d) from Sidekiq(default) in 15.98ms
+2024-10-27T12:11:20.674Z pid=5641 tid=h85 class=CalculateInterestJob jid=f7154ddfd075884906822229 elapsed=0.031 INFO: done
+2024-10-27T12:12:20.477Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:12:20.482Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d04fc592-dab0-4dcc-8dd3-17293907a7b4) to Sidekiq(default)
+2024-10-27T12:12:20.483Z pid=5641 tid=ukd class=CalculateInterestJob jid=f156229d63d40ede8fe0057d INFO: start
+2024-10-27T12:12:20.487Z pid=5641 tid=ukd class=CalculateInterestJob jid=f156229d63d40ede8fe0057d INFO: Performing CalculateInterestJob (Job ID: d04fc592-dab0-4dcc-8dd3-17293907a7b4) from Sidekiq(default) enqueued at 2024-10-27T12:12:20Z
+2024-10-27T12:12:20.504Z pid=5641 tid=ukd class=CalculateInterestJob jid=f156229d63d40ede8fe0057d INFO: Performed CalculateInterestJob (Job ID: d04fc592-dab0-4dcc-8dd3-17293907a7b4) from Sidekiq(default) in 11.03ms
+2024-10-27T12:12:20.505Z pid=5641 tid=ukd class=CalculateInterestJob jid=f156229d63d40ede8fe0057d elapsed=0.022 INFO: done
+2024-10-27T12:12:28.736Z pid=5641 tid=ur1 class=CalculateInterestJob jid=57642a8a252f73469098442a INFO: start
+2024-10-27T12:12:28.742Z pid=5641 tid=ur1 class=CalculateInterestJob jid=57642a8a252f73469098442a INFO: Performing CalculateInterestJob (Job ID: 96c69d5a-140c-4b65-bc6d-ff69f2fd94c4) from Sidekiq(default) enqueued at 2024-10-27T12:09:20Z
+2024-10-27T12:12:28.754Z pid=5641 tid=ur1 class=CalculateInterestJob jid=57642a8a252f73469098442a INFO: Performed CalculateInterestJob (Job ID: 96c69d5a-140c-4b65-bc6d-ff69f2fd94c4) from Sidekiq(default) in 10.83ms
+2024-10-27T12:12:28.755Z pid=5641 tid=ur1 class=CalculateInterestJob jid=57642a8a252f73469098442a elapsed=0.019 INFO: done
+2024-10-27T12:13:20.591Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:13:20.592Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3c22a2d0-a265-4bf2-abc9-10483cbe1d97) to Sidekiq(default)
+2024-10-27T12:13:36.401Z pid=5641 tid=pjd class=CalculateInterestJob jid=ea2a1a929d2b512bb973f425 INFO: start
+2024-10-27T12:13:36.588Z pid=5641 tid=pjd class=CalculateInterestJob jid=ea2a1a929d2b512bb973f425 INFO: Performing CalculateInterestJob (Job ID: 3c22a2d0-a265-4bf2-abc9-10483cbe1d97) from Sidekiq(default) enqueued at 2024-10-27T12:13:20Z
+2024-10-27T12:13:36.593Z pid=5641 tid=pjd class=CalculateInterestJob jid=ea2a1a929d2b512bb973f425 WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:13:36.601Z pid=5641 tid=pjd class=CalculateInterestJob jid=ea2a1a929d2b512bb973f425 INFO: Performed CalculateInterestJob (Job ID: 3c22a2d0-a265-4bf2-abc9-10483cbe1d97) from Sidekiq(default) in 12.8ms
+2024-10-27T12:13:36.601Z pid=5641 tid=pjd class=CalculateInterestJob jid=ea2a1a929d2b512bb973f425 elapsed=0.2 INFO: done
+2024-10-27T12:14:20.450Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:14:20.504Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 06d79033-8601-4a67-a1c8-91f23adb6f48) to Sidekiq(default)
+2024-10-27T12:14:38.432Z pid=5641 tid=h85 class=CalculateInterestJob jid=fb2ef6f991a437ee66157b0d INFO: start
+2024-10-27T12:14:38.680Z pid=5641 tid=h85 class=CalculateInterestJob jid=fb2ef6f991a437ee66157b0d INFO: Performing CalculateInterestJob (Job ID: 06d79033-8601-4a67-a1c8-91f23adb6f48) from Sidekiq(default) enqueued at 2024-10-27T12:14:20Z
+2024-10-27T12:14:38.685Z pid=5641 tid=h85 class=CalculateInterestJob jid=fb2ef6f991a437ee66157b0d WARN: Creating scope :open. Overwriting existing method Loan.open.
+2024-10-27T12:14:38.692Z pid=5641 tid=h85 class=CalculateInterestJob jid=fb2ef6f991a437ee66157b0d INFO: Performed CalculateInterestJob (Job ID: 06d79033-8601-4a67-a1c8-91f23adb6f48) from Sidekiq(default) in 11.65ms
+2024-10-27T12:14:38.692Z pid=5641 tid=h85 class=CalculateInterestJob jid=fb2ef6f991a437ee66157b0d elapsed=0.26 INFO: done
+2024-10-27T12:15:20.566Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:15:20.574Z pid=5641 tid=h85 class=CalculateInterestJob jid=e932bc236e2f6b7d41963b36 INFO: start
+2024-10-27T12:15:20.576Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3d765627-93c0-46a9-b014-3989459cdec2) to Sidekiq(default)
+2024-10-27T12:15:20.589Z pid=5641 tid=h85 class=CalculateInterestJob jid=e932bc236e2f6b7d41963b36 INFO: Performing CalculateInterestJob (Job ID: 3d765627-93c0-46a9-b014-3989459cdec2) from Sidekiq(default) enqueued at 2024-10-27T12:15:20Z
+2024-10-27T12:15:20.608Z pid=5641 tid=h85 class=CalculateInterestJob jid=e932bc236e2f6b7d41963b36 INFO: Performed CalculateInterestJob (Job ID: 3d765627-93c0-46a9-b014-3989459cdec2) from Sidekiq(default) in 17.01ms
+2024-10-27T12:15:20.610Z pid=5641 tid=h85 class=CalculateInterestJob jid=e932bc236e2f6b7d41963b36 elapsed=0.036 INFO: done
+2024-10-27T12:16:20.402Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:16:20.406Z pid=5641 tid=ukd class=CalculateInterestJob jid=18e17e79bca87f20ee910f78 INFO: start
+2024-10-27T12:16:20.407Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b2162e2e-5fc7-4171-a78a-b5885fd81574) to Sidekiq(default)
+2024-10-27T12:16:20.417Z pid=5641 tid=ukd class=CalculateInterestJob jid=18e17e79bca87f20ee910f78 INFO: Performing CalculateInterestJob (Job ID: b2162e2e-5fc7-4171-a78a-b5885fd81574) from Sidekiq(default) enqueued at 2024-10-27T12:16:20Z
+2024-10-27T12:16:20.431Z pid=5641 tid=ukd class=CalculateInterestJob jid=18e17e79bca87f20ee910f78 INFO: Performed CalculateInterestJob (Job ID: b2162e2e-5fc7-4171-a78a-b5885fd81574) from Sidekiq(default) in 13.18ms
+2024-10-27T12:16:20.432Z pid=5641 tid=ukd class=CalculateInterestJob jid=18e17e79bca87f20ee910f78 elapsed=0.027 INFO: done
+2024-10-27T12:17:20.509Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:17:20.510Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 3da839c6-e628-4ca8-b2f3-db54107f92d1) to Sidekiq(default)
+2024-10-27T12:18:13.190Z pid=5641 tid=ukd class=CalculateInterestJob jid=8d2123af4f09bf69da7f48ff INFO: start
+2024-10-27T12:18:13.198Z pid=5641 tid=ukd class=CalculateInterestJob jid=8d2123af4f09bf69da7f48ff INFO: Performing CalculateInterestJob (Job ID: 3da839c6-e628-4ca8-b2f3-db54107f92d1) from Sidekiq(default) enqueued at 2024-10-27T12:17:20Z
+2024-10-27T12:18:13.213Z pid=5641 tid=ukd class=CalculateInterestJob jid=8d2123af4f09bf69da7f48ff INFO: Performed CalculateInterestJob (Job ID: 3da839c6-e628-4ca8-b2f3-db54107f92d1) from Sidekiq(default) in 13.77ms
+2024-10-27T12:18:13.215Z pid=5641 tid=ukd class=CalculateInterestJob jid=8d2123af4f09bf69da7f48ff elapsed=0.026 INFO: done
+2024-10-27T12:18:20.391Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:18:20.396Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 63144a2c-e6e2-4211-99c3-b60f2a9d1406) to Sidekiq(default)
+2024-10-27T12:18:20.398Z pid=5641 tid=pjd class=CalculateInterestJob jid=ae09ef50da65be4427047e90 INFO: start
+2024-10-27T12:18:20.407Z pid=5641 tid=pjd class=CalculateInterestJob jid=ae09ef50da65be4427047e90 INFO: Performing CalculateInterestJob (Job ID: 63144a2c-e6e2-4211-99c3-b60f2a9d1406) from Sidekiq(default) enqueued at 2024-10-27T12:18:20Z
+2024-10-27T12:18:20.424Z pid=5641 tid=pjd class=CalculateInterestJob jid=ae09ef50da65be4427047e90 INFO: Performed CalculateInterestJob (Job ID: 63144a2c-e6e2-4211-99c3-b60f2a9d1406) from Sidekiq(default) in 15.02ms
+2024-10-27T12:18:20.425Z pid=5641 tid=pjd class=CalculateInterestJob jid=ae09ef50da65be4427047e90 elapsed=0.027 INFO: done
+2024-10-27T12:19:20.532Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:19:20.535Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4fd1ec70-651a-42ef-8353-ef24d8d7b5e2) to Sidekiq(default)
+2024-10-27T12:20:20.352Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:20:20.355Z pid=5641 tid=ukd class=CalculateInterestJob jid=98c6175976f99f904a129214 INFO: start
+2024-10-27T12:20:20.356Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 85df532d-ed73-4a9b-8ba8-b643ce9d43a1) to Sidekiq(default)
+2024-10-27T12:20:20.368Z pid=5641 tid=ukd class=CalculateInterestJob jid=98c6175976f99f904a129214 INFO: Performing CalculateInterestJob (Job ID: 85df532d-ed73-4a9b-8ba8-b643ce9d43a1) from Sidekiq(default) enqueued at 2024-10-27T12:20:20Z
+2024-10-27T12:20:20.381Z pid=5641 tid=ukd class=CalculateInterestJob jid=98c6175976f99f904a129214 INFO: Performed CalculateInterestJob (Job ID: 85df532d-ed73-4a9b-8ba8-b643ce9d43a1) from Sidekiq(default) in 12.38ms
+2024-10-27T12:20:20.382Z pid=5641 tid=ukd class=CalculateInterestJob jid=98c6175976f99f904a129214 elapsed=0.026 INFO: done
+2024-10-27T12:21:17.150Z pid=5641 tid=ur1 class=CalculateInterestJob jid=818e07948157e0eee651f503 INFO: start
+2024-10-27T12:21:17.155Z pid=5641 tid=ur1 class=CalculateInterestJob jid=818e07948157e0eee651f503 INFO: Performing CalculateInterestJob (Job ID: 4fd1ec70-651a-42ef-8353-ef24d8d7b5e2) from Sidekiq(default) enqueued at 2024-10-27T12:19:20Z
+2024-10-27T12:21:17.166Z pid=5641 tid=ur1 class=CalculateInterestJob jid=818e07948157e0eee651f503 INFO: Performed CalculateInterestJob (Job ID: 4fd1ec70-651a-42ef-8353-ef24d8d7b5e2) from Sidekiq(default) in 10.5ms
+2024-10-27T12:21:17.167Z pid=5641 tid=ur1 class=CalculateInterestJob jid=818e07948157e0eee651f503 elapsed=0.017 INFO: done
+2024-10-27T12:21:20.486Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:21:20.488Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: d55b3529-7d43-4062-90af-59559b03011b) to Sidekiq(default)
+2024-10-27T12:21:41.262Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bf7dcf435996cb31dcefb250 INFO: start
+2024-10-27T12:21:41.270Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bf7dcf435996cb31dcefb250 INFO: Performing CalculateInterestJob (Job ID: d55b3529-7d43-4062-90af-59559b03011b) from Sidekiq(default) enqueued at 2024-10-27T12:21:20Z
+2024-10-27T12:21:41.282Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bf7dcf435996cb31dcefb250 INFO: Performed CalculateInterestJob (Job ID: d55b3529-7d43-4062-90af-59559b03011b) from Sidekiq(default) in 10.9ms
+2024-10-27T12:21:41.283Z pid=5641 tid=ur1 class=CalculateInterestJob jid=bf7dcf435996cb31dcefb250 elapsed=0.021 INFO: done
+2024-10-27T12:22:20.604Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:22:20.607Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4030c29b-a8ae-4c6b-89a5-2dfc3fb4f88a) to Sidekiq(default)
+2024-10-27T12:22:49.539Z pid=5641 tid=ukd class=CalculateInterestJob jid=ed3b22dc52eb93bc610fa161 INFO: start
+2024-10-27T12:22:49.544Z pid=5641 tid=ukd class=CalculateInterestJob jid=ed3b22dc52eb93bc610fa161 INFO: Performing CalculateInterestJob (Job ID: 4030c29b-a8ae-4c6b-89a5-2dfc3fb4f88a) from Sidekiq(default) enqueued at 2024-10-27T12:22:20Z
+2024-10-27T12:22:49.556Z pid=5641 tid=ukd class=CalculateInterestJob jid=ed3b22dc52eb93bc610fa161 INFO: Performed CalculateInterestJob (Job ID: 4030c29b-a8ae-4c6b-89a5-2dfc3fb4f88a) from Sidekiq(default) in 11.19ms
+2024-10-27T12:22:49.559Z pid=5641 tid=ukd class=CalculateInterestJob jid=ed3b22dc52eb93bc610fa161 elapsed=0.021 INFO: done
+2024-10-27T12:23:20.403Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:23:20.406Z pid=5641 tid=h85 class=CalculateInterestJob jid=beba7f21912d82b90611419e INFO: start
+2024-10-27T12:23:20.408Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 2cd9c951-b891-42e6-b864-f8bfab59f0d5) to Sidekiq(default)
+2024-10-27T12:23:20.418Z pid=5641 tid=h85 class=CalculateInterestJob jid=beba7f21912d82b90611419e INFO: Performing CalculateInterestJob (Job ID: 2cd9c951-b891-42e6-b864-f8bfab59f0d5) from Sidekiq(default) enqueued at 2024-10-27T12:23:20Z
+2024-10-27T12:23:20.429Z pid=5641 tid=h85 class=CalculateInterestJob jid=beba7f21912d82b90611419e INFO: Performed CalculateInterestJob (Job ID: 2cd9c951-b891-42e6-b864-f8bfab59f0d5) from Sidekiq(default) in 9.69ms
+2024-10-27T12:23:20.430Z pid=5641 tid=h85 class=CalculateInterestJob jid=beba7f21912d82b90611419e elapsed=0.024 INFO: done
+2024-10-27T12:24:20.515Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:24:20.518Z pid=5641 tid=ur1 class=CalculateInterestJob jid=49a125d6e0e20c94bb97fe2e INFO: start
+2024-10-27T12:24:20.519Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0b012d5e-2bb6-4411-9ef3-a4cc3b0de122) to Sidekiq(default)
+2024-10-27T12:24:20.529Z pid=5641 tid=ur1 class=CalculateInterestJob jid=49a125d6e0e20c94bb97fe2e INFO: Performing CalculateInterestJob (Job ID: 0b012d5e-2bb6-4411-9ef3-a4cc3b0de122) from Sidekiq(default) enqueued at 2024-10-27T12:24:20Z
+2024-10-27T12:24:20.541Z pid=5641 tid=ur1 class=CalculateInterestJob jid=49a125d6e0e20c94bb97fe2e INFO: Performed CalculateInterestJob (Job ID: 0b012d5e-2bb6-4411-9ef3-a4cc3b0de122) from Sidekiq(default) in 10.92ms
+2024-10-27T12:24:20.542Z pid=5641 tid=ur1 class=CalculateInterestJob jid=49a125d6e0e20c94bb97fe2e elapsed=0.024 INFO: done
+2024-10-27T12:25:20.644Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:25:20.648Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 452d83eb-2627-49f3-a49a-be72d5ddcb00) to Sidekiq(default)
+2024-10-27T12:26:20.460Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:26:20.463Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 86d7d1cf-7f52-46b6-8c6a-ebeae20d84b9) to Sidekiq(default)
+2024-10-27T12:26:20.464Z pid=5641 tid=pjd class=CalculateInterestJob jid=42ef3716127646f127264a3c INFO: start
+2024-10-27T12:26:20.474Z pid=5641 tid=pjd class=CalculateInterestJob jid=42ef3716127646f127264a3c INFO: Performing CalculateInterestJob (Job ID: 86d7d1cf-7f52-46b6-8c6a-ebeae20d84b9) from Sidekiq(default) enqueued at 2024-10-27T12:26:20Z
+2024-10-27T12:26:20.485Z pid=5641 tid=pjd class=CalculateInterestJob jid=42ef3716127646f127264a3c INFO: Performed CalculateInterestJob (Job ID: 86d7d1cf-7f52-46b6-8c6a-ebeae20d84b9) from Sidekiq(default) in 10.51ms
+2024-10-27T12:26:20.487Z pid=5641 tid=pjd class=CalculateInterestJob jid=42ef3716127646f127264a3c elapsed=0.023 INFO: done
+2024-10-27T12:27:20.566Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:27:20.569Z pid=5641 tid=h85 class=CalculateInterestJob jid=bad7cb6f9aa710fa0d83907c INFO: start
+2024-10-27T12:27:20.571Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 142ef8a2-8702-4cb0-ac4f-6b5d99bc595d) to Sidekiq(default)
+2024-10-27T12:27:20.581Z pid=5641 tid=h85 class=CalculateInterestJob jid=bad7cb6f9aa710fa0d83907c INFO: Performing CalculateInterestJob (Job ID: 142ef8a2-8702-4cb0-ac4f-6b5d99bc595d) from Sidekiq(default) enqueued at 2024-10-27T12:27:20Z
+2024-10-27T12:27:20.594Z pid=5641 tid=h85 class=CalculateInterestJob jid=bad7cb6f9aa710fa0d83907c INFO: Performed CalculateInterestJob (Job ID: 142ef8a2-8702-4cb0-ac4f-6b5d99bc595d) from Sidekiq(default) in 12.12ms
+2024-10-27T12:27:20.595Z pid=5641 tid=h85 class=CalculateInterestJob jid=bad7cb6f9aa710fa0d83907c elapsed=0.026 INFO: done
+2024-10-27T12:28:20.380Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:28:20.383Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8804c21b-b9f0-49d7-b749-e68adf17c5f7) to Sidekiq(default)
+2024-10-27T12:28:37.061Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ad5a3df1c2665a2a0df0a6c0 INFO: start
+2024-10-27T12:28:37.064Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ad5a3df1c2665a2a0df0a6c0 INFO: Performing CalculateInterestJob (Job ID: 8804c21b-b9f0-49d7-b749-e68adf17c5f7) from Sidekiq(default) enqueued at 2024-10-27T12:28:20Z
+2024-10-27T12:28:37.077Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ad5a3df1c2665a2a0df0a6c0 INFO: Performed CalculateInterestJob (Job ID: 8804c21b-b9f0-49d7-b749-e68adf17c5f7) from Sidekiq(default) in 12.05ms
+2024-10-27T12:28:37.079Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ad5a3df1c2665a2a0df0a6c0 elapsed=0.018 INFO: done
+2024-10-27T12:29:13.050Z pid=5641 tid=ukd class=CalculateInterestJob jid=24643a0ba89859563f1117cd INFO: start
+2024-10-27T12:29:13.057Z pid=5641 tid=ukd class=CalculateInterestJob jid=24643a0ba89859563f1117cd INFO: Performing CalculateInterestJob (Job ID: 452d83eb-2627-49f3-a49a-be72d5ddcb00) from Sidekiq(default) enqueued at 2024-10-27T12:25:20Z
+2024-10-27T12:29:13.068Z pid=5641 tid=ukd class=CalculateInterestJob jid=24643a0ba89859563f1117cd INFO: Performed CalculateInterestJob (Job ID: 452d83eb-2627-49f3-a49a-be72d5ddcb00) from Sidekiq(default) in 10.9ms
+2024-10-27T12:29:13.070Z pid=5641 tid=ukd class=CalculateInterestJob jid=24643a0ba89859563f1117cd elapsed=0.02 INFO: done
+2024-10-27T12:29:20.480Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:29:20.483Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 6921bdcc-6134-4ae5-a72b-8509a1edf8a7) to Sidekiq(default)
+2024-10-27T12:29:39.462Z pid=5641 tid=qm1 class=CalculateInterestJob jid=219a5c6e688bbc4455909b92 INFO: start
+2024-10-27T12:29:39.469Z pid=5641 tid=qm1 class=CalculateInterestJob jid=219a5c6e688bbc4455909b92 INFO: Performing CalculateInterestJob (Job ID: 6921bdcc-6134-4ae5-a72b-8509a1edf8a7) from Sidekiq(default) enqueued at 2024-10-27T12:29:20Z
+2024-10-27T12:29:39.478Z pid=5641 tid=qm1 class=CalculateInterestJob jid=219a5c6e688bbc4455909b92 INFO: Performed CalculateInterestJob (Job ID: 6921bdcc-6134-4ae5-a72b-8509a1edf8a7) from Sidekiq(default) in 8.31ms
+2024-10-27T12:29:39.479Z pid=5641 tid=qm1 class=CalculateInterestJob jid=219a5c6e688bbc4455909b92 elapsed=0.018 INFO: done
+2024-10-27T12:30:20.603Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:30:20.606Z pid=5641 tid=pjd class=CalculateInterestJob jid=e9459f346e8d2af7af70efb0 INFO: start
+2024-10-27T12:30:20.607Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a8925b0f-3063-413f-b5f0-676dbc19a5a8) to Sidekiq(default)
+2024-10-27T12:30:20.617Z pid=5641 tid=pjd class=CalculateInterestJob jid=e9459f346e8d2af7af70efb0 INFO: Performing CalculateInterestJob (Job ID: a8925b0f-3063-413f-b5f0-676dbc19a5a8) from Sidekiq(default) enqueued at 2024-10-27T12:30:20Z
+2024-10-27T12:30:20.632Z pid=5641 tid=pjd class=CalculateInterestJob jid=e9459f346e8d2af7af70efb0 INFO: Performed CalculateInterestJob (Job ID: a8925b0f-3063-413f-b5f0-676dbc19a5a8) from Sidekiq(default) in 14.52ms
+2024-10-27T12:30:20.633Z pid=5641 tid=pjd class=CalculateInterestJob jid=e9459f346e8d2af7af70efb0 elapsed=0.027 INFO: done
+2024-10-27T12:31:20.423Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:31:20.427Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 58d75a98-3473-49c5-b0aa-c0da0be398c9) to Sidekiq(default)
+2024-10-27T12:32:20.541Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:32:20.545Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: efac678c-3e18-4b1f-896b-f2978f608261) to Sidekiq(default)
+2024-10-27T12:33:13.323Z pid=5641 tid=ur1 class=CalculateInterestJob jid=947fa60f421abfe7eba4e82e INFO: start
+2024-10-27T12:33:13.329Z pid=5641 tid=ur1 class=CalculateInterestJob jid=947fa60f421abfe7eba4e82e INFO: Performing CalculateInterestJob (Job ID: efac678c-3e18-4b1f-896b-f2978f608261) from Sidekiq(default) enqueued at 2024-10-27T12:32:20Z
+2024-10-27T12:33:13.341Z pid=5641 tid=ur1 class=CalculateInterestJob jid=947fa60f421abfe7eba4e82e INFO: Performed CalculateInterestJob (Job ID: efac678c-3e18-4b1f-896b-f2978f608261) from Sidekiq(default) in 10.88ms
+2024-10-27T12:33:13.342Z pid=5641 tid=ur1 class=CalculateInterestJob jid=947fa60f421abfe7eba4e82e elapsed=0.019 INFO: done
+2024-10-27T12:33:20.366Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:33:20.370Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b84f8fa2-156f-4788-a71f-6381152f1372) to Sidekiq(default)
+2024-10-27T12:34:06.128Z pid=5641 tid=h85 class=CalculateInterestJob jid=0db62a37e0aea16d6071465e INFO: start
+2024-10-27T12:34:06.136Z pid=5641 tid=h85 class=CalculateInterestJob jid=0db62a37e0aea16d6071465e INFO: Performing CalculateInterestJob (Job ID: b84f8fa2-156f-4788-a71f-6381152f1372) from Sidekiq(default) enqueued at 2024-10-27T12:33:20Z
+2024-10-27T12:34:06.149Z pid=5641 tid=h85 class=CalculateInterestJob jid=0db62a37e0aea16d6071465e INFO: Performed CalculateInterestJob (Job ID: b84f8fa2-156f-4788-a71f-6381152f1372) from Sidekiq(default) in 12.53ms
+2024-10-27T12:34:06.151Z pid=5641 tid=h85 class=CalculateInterestJob jid=0db62a37e0aea16d6071465e elapsed=0.022 INFO: done
+2024-10-27T12:34:20.461Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:34:20.464Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8e5f4dd9-c011-4ed9-8ec4-dcc0c29373b8) to Sidekiq(default)
+2024-10-27T12:35:20.582Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:35:20.586Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 08cfaabb-ce77-4b9f-857a-2f02b8754d81) to Sidekiq(default)
+2024-10-27T12:35:20.589Z pid=5641 tid=qm1 class=CalculateInterestJob jid=41159f8ea791636577ca753c INFO: start
+2024-10-27T12:35:20.598Z pid=5641 tid=qm1 class=CalculateInterestJob jid=41159f8ea791636577ca753c INFO: Performing CalculateInterestJob (Job ID: 08cfaabb-ce77-4b9f-857a-2f02b8754d81) from Sidekiq(default) enqueued at 2024-10-27T12:35:20Z
+2024-10-27T12:35:20.611Z pid=5641 tid=qm1 class=CalculateInterestJob jid=41159f8ea791636577ca753c INFO: Performed CalculateInterestJob (Job ID: 08cfaabb-ce77-4b9f-857a-2f02b8754d81) from Sidekiq(default) in 10.61ms
+2024-10-27T12:35:20.612Z pid=5641 tid=qm1 class=CalculateInterestJob jid=41159f8ea791636577ca753c elapsed=0.023 INFO: done
+2024-10-27T12:36:16.723Z pid=5641 tid=ukd class=CalculateInterestJob jid=d306f77f4af11f4336be977c INFO: start
+2024-10-27T12:36:16.727Z pid=5641 tid=ukd class=CalculateInterestJob jid=d306f77f4af11f4336be977c INFO: Performing CalculateInterestJob (Job ID: 8e5f4dd9-c011-4ed9-8ec4-dcc0c29373b8) from Sidekiq(default) enqueued at 2024-10-27T12:34:20Z
+2024-10-27T12:36:16.739Z pid=5641 tid=ukd class=CalculateInterestJob jid=d306f77f4af11f4336be977c INFO: Performed CalculateInterestJob (Job ID: 8e5f4dd9-c011-4ed9-8ec4-dcc0c29373b8) from Sidekiq(default) in 11.67ms
+2024-10-27T12:36:16.741Z pid=5641 tid=ukd class=CalculateInterestJob jid=d306f77f4af11f4336be977c elapsed=0.019 INFO: done
+2024-10-27T12:36:20.393Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:36:20.397Z pid=5641 tid=ukd class=CalculateInterestJob jid=f0b22f76b465a870095eb422 INFO: start
+2024-10-27T12:36:20.398Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b68df8a1-e647-4391-b2ce-73008672a448) to Sidekiq(default)
+2024-10-27T12:36:20.409Z pid=5641 tid=ukd class=CalculateInterestJob jid=f0b22f76b465a870095eb422 INFO: Performing CalculateInterestJob (Job ID: b68df8a1-e647-4391-b2ce-73008672a448) from Sidekiq(default) enqueued at 2024-10-27T12:36:20Z
+2024-10-27T12:36:20.423Z pid=5641 tid=ukd class=CalculateInterestJob jid=f0b22f76b465a870095eb422 INFO: Performed CalculateInterestJob (Job ID: b68df8a1-e647-4391-b2ce-73008672a448) from Sidekiq(default) in 13.05ms
+2024-10-27T12:36:20.424Z pid=5641 tid=ukd class=CalculateInterestJob jid=f0b22f76b465a870095eb422 elapsed=0.027 INFO: done
+2024-10-27T12:37:20.501Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:37:20.504Z pid=5641 tid=pjd class=CalculateInterestJob jid=20dbe535af72b7ae05c991e3 INFO: start
+2024-10-27T12:37:20.505Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: a9d5add6-6192-468f-a497-7371aba5f2ce) to Sidekiq(default)
+2024-10-27T12:37:20.514Z pid=5641 tid=pjd class=CalculateInterestJob jid=20dbe535af72b7ae05c991e3 INFO: Performing CalculateInterestJob (Job ID: a9d5add6-6192-468f-a497-7371aba5f2ce) from Sidekiq(default) enqueued at 2024-10-27T12:37:20Z
+2024-10-27T12:37:20.528Z pid=5641 tid=pjd class=CalculateInterestJob jid=20dbe535af72b7ae05c991e3 INFO: Performed CalculateInterestJob (Job ID: a9d5add6-6192-468f-a497-7371aba5f2ce) from Sidekiq(default) in 12.12ms
+2024-10-27T12:37:20.529Z pid=5641 tid=pjd class=CalculateInterestJob jid=20dbe535af72b7ae05c991e3 elapsed=0.025 INFO: done
+2024-10-27T12:38:20.610Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:38:20.613Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 9ae86684-3846-4c95-ac10-5b8516c59155) to Sidekiq(default)
+2024-10-27T12:38:43.221Z pid=5641 tid=pjd class=CalculateInterestJob jid=1b3fdfe699b8c49071464fbd INFO: start
+2024-10-27T12:38:43.227Z pid=5641 tid=pjd class=CalculateInterestJob jid=1b3fdfe699b8c49071464fbd INFO: Performing CalculateInterestJob (Job ID: 9ae86684-3846-4c95-ac10-5b8516c59155) from Sidekiq(default) enqueued at 2024-10-27T12:38:20Z
+2024-10-27T12:38:43.240Z pid=5641 tid=pjd class=CalculateInterestJob jid=1b3fdfe699b8c49071464fbd INFO: Performed CalculateInterestJob (Job ID: 9ae86684-3846-4c95-ac10-5b8516c59155) from Sidekiq(default) in 11.7ms
+2024-10-27T12:38:43.241Z pid=5641 tid=pjd class=CalculateInterestJob jid=1b3fdfe699b8c49071464fbd elapsed=0.02 INFO: done
+2024-10-27T12:39:20.416Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:39:20.420Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6c962008460bcc1de9f8c314 INFO: start
+2024-10-27T12:39:20.420Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: e57f28a5-9cab-441a-a5c0-c6891145c929) to Sidekiq(default)
+2024-10-27T12:39:20.430Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6c962008460bcc1de9f8c314 INFO: Performing CalculateInterestJob (Job ID: e57f28a5-9cab-441a-a5c0-c6891145c929) from Sidekiq(default) enqueued at 2024-10-27T12:39:20Z
+2024-10-27T12:39:20.443Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6c962008460bcc1de9f8c314 INFO: Performed CalculateInterestJob (Job ID: e57f28a5-9cab-441a-a5c0-c6891145c929) from Sidekiq(default) in 10.56ms
+2024-10-27T12:39:20.444Z pid=5641 tid=ur1 class=CalculateInterestJob jid=6c962008460bcc1de9f8c314 elapsed=0.024 INFO: done
+2024-10-27T12:40:20.528Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:40:20.532Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 91c2b83e-abd3-4c49-9eab-55d9dc03d253) to Sidekiq(default)
+2024-10-27T12:40:42.796Z pid=5641 tid=ukd class=CalculateInterestJob jid=274189ee990695ddd59901cd INFO: start
+2024-10-27T12:40:42.801Z pid=5641 tid=ukd class=CalculateInterestJob jid=274189ee990695ddd59901cd INFO: Performing CalculateInterestJob (Job ID: 91c2b83e-abd3-4c49-9eab-55d9dc03d253) from Sidekiq(default) enqueued at 2024-10-27T12:40:20Z
+2024-10-27T12:40:42.813Z pid=5641 tid=ukd class=CalculateInterestJob jid=274189ee990695ddd59901cd INFO: Performed CalculateInterestJob (Job ID: 91c2b83e-abd3-4c49-9eab-55d9dc03d253) from Sidekiq(default) in 11.18ms
+2024-10-27T12:40:42.818Z pid=5641 tid=ukd class=CalculateInterestJob jid=274189ee990695ddd59901cd elapsed=0.022 INFO: done
+2024-10-27T12:41:20.635Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:41:20.638Z pid=5641 tid=pjd class=CalculateInterestJob jid=6467a508d0647bf348e7a348 INFO: start
+2024-10-27T12:41:20.639Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: fdb5daff-91a6-409b-9db4-2e59b0e71b72) to Sidekiq(default)
+2024-10-27T12:41:20.652Z pid=5641 tid=pjd class=CalculateInterestJob jid=6467a508d0647bf348e7a348 INFO: Performing CalculateInterestJob (Job ID: fdb5daff-91a6-409b-9db4-2e59b0e71b72) from Sidekiq(default) enqueued at 2024-10-27T12:41:20Z
+2024-10-27T12:41:20.663Z pid=5641 tid=pjd class=CalculateInterestJob jid=6467a508d0647bf348e7a348 INFO: Performed CalculateInterestJob (Job ID: fdb5daff-91a6-409b-9db4-2e59b0e71b72) from Sidekiq(default) in 10.54ms
+2024-10-27T12:41:20.665Z pid=5641 tid=pjd class=CalculateInterestJob jid=6467a508d0647bf348e7a348 elapsed=0.026 INFO: done
+2024-10-27T12:42:20.445Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:42:20.451Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ca0695d204424bedcd53167e INFO: start
+2024-10-27T12:42:20.452Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4b69dc72-ddfe-4faf-8c02-8a641d5110a5) to Sidekiq(default)
+2024-10-27T12:42:20.459Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ca0695d204424bedcd53167e INFO: Performing CalculateInterestJob (Job ID: 4b69dc72-ddfe-4faf-8c02-8a641d5110a5) from Sidekiq(default) enqueued at 2024-10-27T12:42:20Z
+2024-10-27T12:42:20.466Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ca0695d204424bedcd53167e INFO: Performed CalculateInterestJob (Job ID: 4b69dc72-ddfe-4faf-8c02-8a641d5110a5) from Sidekiq(default) in 5.77ms
+2024-10-27T12:42:20.467Z pid=5641 tid=qm1 class=CalculateInterestJob jid=ca0695d204424bedcd53167e elapsed=0.016 INFO: done
+2024-10-27T12:43:20.554Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:43:20.558Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 78300d97-df6a-43e8-a6f4-15e0098e6564) to Sidekiq(default)
+2024-10-27T12:43:20.559Z pid=5641 tid=ur1 class=CalculateInterestJob jid=d72fb23885b08a2c859c8ccd INFO: start
+2024-10-27T12:43:20.564Z pid=5641 tid=ur1 class=CalculateInterestJob jid=d72fb23885b08a2c859c8ccd INFO: Performing CalculateInterestJob (Job ID: 78300d97-df6a-43e8-a6f4-15e0098e6564) from Sidekiq(default) enqueued at 2024-10-27T12:43:20Z
+2024-10-27T12:43:20.585Z pid=5641 tid=ur1 class=CalculateInterestJob jid=d72fb23885b08a2c859c8ccd INFO: Performed CalculateInterestJob (Job ID: 78300d97-df6a-43e8-a6f4-15e0098e6564) from Sidekiq(default) in 19.69ms
+2024-10-27T12:43:20.586Z pid=5641 tid=ur1 class=CalculateInterestJob jid=d72fb23885b08a2c859c8ccd elapsed=0.028 INFO: done
+2024-10-27T12:44:20.350Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:44:20.355Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 29260b4d-6e4a-4b1c-8bdc-474db0e9d280) to Sidekiq(default)
+2024-10-27T12:44:51.097Z pid=5641 tid=ur1 class=CalculateInterestJob jid=c2d49fbc5f85415120b0da57 INFO: start
+2024-10-27T12:44:51.105Z pid=5641 tid=ur1 class=CalculateInterestJob jid=c2d49fbc5f85415120b0da57 INFO: Performing CalculateInterestJob (Job ID: 29260b4d-6e4a-4b1c-8bdc-474db0e9d280) from Sidekiq(default) enqueued at 2024-10-27T12:44:20Z
+2024-10-27T12:44:51.124Z pid=5641 tid=ur1 class=CalculateInterestJob jid=c2d49fbc5f85415120b0da57 INFO: Performed CalculateInterestJob (Job ID: 29260b4d-6e4a-4b1c-8bdc-474db0e9d280) from Sidekiq(default) in 18.26ms
+2024-10-27T12:44:51.125Z pid=5641 tid=ur1 class=CalculateInterestJob jid=c2d49fbc5f85415120b0da57 elapsed=0.029 INFO: done
+2024-10-27T12:45:20.467Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:45:20.468Z pid=5641 tid=pjd class=CalculateInterestJob jid=67159be873b077e267e08613 INFO: start
+2024-10-27T12:45:20.468Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 0f342ad5-dd7c-4f88-bdb1-62c18e8e0633) to Sidekiq(default)
+2024-10-27T12:45:20.471Z pid=5641 tid=pjd class=CalculateInterestJob jid=67159be873b077e267e08613 INFO: Performing CalculateInterestJob (Job ID: 0f342ad5-dd7c-4f88-bdb1-62c18e8e0633) from Sidekiq(default) enqueued at 2024-10-27T12:45:20Z
+2024-10-27T12:45:20.473Z pid=5641 tid=pjd class=CalculateInterestJob jid=67159be873b077e267e08613 INFO: Performed CalculateInterestJob (Job ID: 0f342ad5-dd7c-4f88-bdb1-62c18e8e0633) from Sidekiq(default) in 2.08ms
+2024-10-27T12:45:20.474Z pid=5641 tid=pjd class=CalculateInterestJob jid=67159be873b077e267e08613 elapsed=0.006 INFO: done
+2024-10-27T12:46:20.603Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:46:20.606Z pid=5641 tid=h85 class=CalculateInterestJob jid=3be4a5b3561bf4d3c637b9ff INFO: start
+2024-10-27T12:46:20.607Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 21dbba15-ff58-46f4-8a40-40968a1b740c) to Sidekiq(default)
+2024-10-27T12:46:20.617Z pid=5641 tid=h85 class=CalculateInterestJob jid=3be4a5b3561bf4d3c637b9ff INFO: Performing CalculateInterestJob (Job ID: 21dbba15-ff58-46f4-8a40-40968a1b740c) from Sidekiq(default) enqueued at 2024-10-27T12:46:20Z
+2024-10-27T12:46:20.629Z pid=5641 tid=h85 class=CalculateInterestJob jid=3be4a5b3561bf4d3c637b9ff INFO: Performed CalculateInterestJob (Job ID: 21dbba15-ff58-46f4-8a40-40968a1b740c) from Sidekiq(default) in 10.71ms
+2024-10-27T12:46:20.630Z pid=5641 tid=h85 class=CalculateInterestJob jid=3be4a5b3561bf4d3c637b9ff elapsed=0.024 INFO: done
+2024-10-27T12:47:20.383Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:47:20.384Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4acba4c5-eb89-4d5f-829b-af2838cc46ae) to Sidekiq(default)
+2024-10-27T12:47:20.385Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f70c95fc05c4888afb44ac98 INFO: start
+2024-10-27T12:47:20.386Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f70c95fc05c4888afb44ac98 INFO: Performing CalculateInterestJob (Job ID: 4acba4c5-eb89-4d5f-829b-af2838cc46ae) from Sidekiq(default) enqueued at 2024-10-27T12:47:20Z
+2024-10-27T12:47:20.390Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f70c95fc05c4888afb44ac98 INFO: Performed CalculateInterestJob (Job ID: 4acba4c5-eb89-4d5f-829b-af2838cc46ae) from Sidekiq(default) in 3.7ms
+2024-10-27T12:47:20.391Z pid=5641 tid=ur1 class=CalculateInterestJob jid=f70c95fc05c4888afb44ac98 elapsed=0.006 INFO: done
+2024-10-27T12:48:20.501Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:48:20.502Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 8ab7c1bb-b4ca-4c03-b157-9614dc112cd3) to Sidekiq(default)
+2024-10-27T12:49:17.572Z pid=5641 tid=qm1 class=CalculateInterestJob jid=19f124704985d1c5d20a72bc INFO: start
+2024-10-27T12:49:17.573Z pid=5641 tid=qm1 class=CalculateInterestJob jid=19f124704985d1c5d20a72bc INFO: Performing CalculateInterestJob (Job ID: 8ab7c1bb-b4ca-4c03-b157-9614dc112cd3) from Sidekiq(default) enqueued at 2024-10-27T12:48:20Z
+2024-10-27T12:49:17.577Z pid=5641 tid=qm1 class=CalculateInterestJob jid=19f124704985d1c5d20a72bc INFO: Performed CalculateInterestJob (Job ID: 8ab7c1bb-b4ca-4c03-b157-9614dc112cd3) from Sidekiq(default) in 3.5ms
+2024-10-27T12:49:17.577Z pid=5641 tid=qm1 class=CalculateInterestJob jid=19f124704985d1c5d20a72bc elapsed=0.006 INFO: done
+2024-10-27T12:49:20.646Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:49:20.651Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: abdf77e3-2b62-42ce-a01c-0b80c2675c26) to Sidekiq(default)
+2024-10-27T12:50:00.730Z pid=5641 tid=pjd class=CalculateInterestJob jid=516d8ecce12fd5994e291955 INFO: start
+2024-10-27T12:50:00.731Z pid=5641 tid=pjd class=CalculateInterestJob jid=516d8ecce12fd5994e291955 INFO: Performing CalculateInterestJob (Job ID: abdf77e3-2b62-42ce-a01c-0b80c2675c26) from Sidekiq(default) enqueued at 2024-10-27T12:49:20Z
+2024-10-27T12:50:00.733Z pid=5641 tid=pjd class=CalculateInterestJob jid=516d8ecce12fd5994e291955 INFO: Performed CalculateInterestJob (Job ID: abdf77e3-2b62-42ce-a01c-0b80c2675c26) from Sidekiq(default) in 2.43ms
+2024-10-27T12:50:00.734Z pid=5641 tid=pjd class=CalculateInterestJob jid=516d8ecce12fd5994e291955 elapsed=0.004 INFO: done
+2024-10-27T12:50:20.460Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:50:20.463Z pid=5641 tid=h85 class=CalculateInterestJob jid=36f74aa08658612cdceeb0da INFO: start
+2024-10-27T12:50:20.464Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 4a5c42f4-9994-4d8f-bc39-1d4a78ca8d5d) to Sidekiq(default)
+2024-10-27T12:50:20.473Z pid=5641 tid=h85 class=CalculateInterestJob jid=36f74aa08658612cdceeb0da INFO: Performing CalculateInterestJob (Job ID: 4a5c42f4-9994-4d8f-bc39-1d4a78ca8d5d) from Sidekiq(default) enqueued at 2024-10-27T12:50:20Z
+2024-10-27T12:50:20.490Z pid=5641 tid=h85 class=CalculateInterestJob jid=36f74aa08658612cdceeb0da INFO: Performed CalculateInterestJob (Job ID: 4a5c42f4-9994-4d8f-bc39-1d4a78ca8d5d) from Sidekiq(default) in 16.26ms
+2024-10-27T12:50:20.492Z pid=5641 tid=h85 class=CalculateInterestJob jid=36f74aa08658612cdceeb0da elapsed=0.029 INFO: done
+2024-10-27T12:51:20.552Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:51:20.556Z pid=5641 tid=qm1 class=CalculateInterestJob jid=66a57c983877fcfd90203b7d INFO: start
+2024-10-27T12:51:20.557Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 1cd3a703-e826-4287-88ee-8d4c5eba2c8d) to Sidekiq(default)
+2024-10-27T12:51:20.568Z pid=5641 tid=qm1 class=CalculateInterestJob jid=66a57c983877fcfd90203b7d INFO: Performing CalculateInterestJob (Job ID: 1cd3a703-e826-4287-88ee-8d4c5eba2c8d) from Sidekiq(default) enqueued at 2024-10-27T12:51:20Z
+2024-10-27T12:51:20.579Z pid=5641 tid=qm1 class=CalculateInterestJob jid=66a57c983877fcfd90203b7d INFO: Performed CalculateInterestJob (Job ID: 1cd3a703-e826-4287-88ee-8d4c5eba2c8d) from Sidekiq(default) in 10.18ms
+2024-10-27T12:51:20.580Z pid=5641 tid=qm1 class=CalculateInterestJob jid=66a57c983877fcfd90203b7d elapsed=0.025 INFO: done
+2024-10-27T12:52:20.391Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:52:20.392Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: bad4ede1-9183-4503-bfb3-487d21d3c709) to Sidekiq(default)
+2024-10-27T12:52:45.557Z pid=5641 tid=h85 class=CalculateInterestJob jid=5a287287cf534c1e979ceced INFO: start
+2024-10-27T12:52:45.559Z pid=5641 tid=h85 class=CalculateInterestJob jid=5a287287cf534c1e979ceced INFO: Performing CalculateInterestJob (Job ID: bad4ede1-9183-4503-bfb3-487d21d3c709) from Sidekiq(default) enqueued at 2024-10-27T12:52:20Z
+2024-10-27T12:52:45.563Z pid=5641 tid=h85 class=CalculateInterestJob jid=5a287287cf534c1e979ceced INFO: Performed CalculateInterestJob (Job ID: bad4ede1-9183-4503-bfb3-487d21d3c709) from Sidekiq(default) in 3.59ms
+2024-10-27T12:52:45.564Z pid=5641 tid=h85 class=CalculateInterestJob jid=5a287287cf534c1e979ceced elapsed=0.007 INFO: done
+2024-10-27T12:53:20.552Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:53:20.555Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 1c7637b5-ab20-46b8-bbfb-dad1374a8a36) to Sidekiq(default)
+2024-10-27T12:53:43.590Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0cc36cace41f8755a8c08296 INFO: start
+2024-10-27T12:53:43.599Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0cc36cace41f8755a8c08296 INFO: Performing CalculateInterestJob (Job ID: 1c7637b5-ab20-46b8-bbfb-dad1374a8a36) from Sidekiq(default) enqueued at 2024-10-27T12:53:20Z
+2024-10-27T12:53:43.614Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0cc36cace41f8755a8c08296 INFO: Performed CalculateInterestJob (Job ID: 1c7637b5-ab20-46b8-bbfb-dad1374a8a36) from Sidekiq(default) in 14.68ms
+2024-10-27T12:53:43.616Z pid=5641 tid=qm1 class=CalculateInterestJob jid=0cc36cace41f8755a8c08296 elapsed=0.026 INFO: done
+2024-10-27T12:54:20.404Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:54:20.409Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: 69e9940d-fc90-4914-9904-77d2b3296381) to Sidekiq(default)
+2024-10-27T12:55:12.914Z pid=5641 tid=pjd class=CalculateInterestJob jid=3fb8a82aab8b38c156825a6a INFO: start
+2024-10-27T12:55:12.919Z pid=5641 tid=pjd class=CalculateInterestJob jid=3fb8a82aab8b38c156825a6a INFO: Performing CalculateInterestJob (Job ID: 69e9940d-fc90-4914-9904-77d2b3296381) from Sidekiq(default) enqueued at 2024-10-27T12:54:20Z
+2024-10-27T12:55:12.932Z pid=5641 tid=pjd class=CalculateInterestJob jid=3fb8a82aab8b38c156825a6a INFO: Performed CalculateInterestJob (Job ID: 69e9940d-fc90-4914-9904-77d2b3296381) from Sidekiq(default) in 11.67ms
+2024-10-27T12:55:12.933Z pid=5641 tid=pjd class=CalculateInterestJob jid=3fb8a82aab8b38c156825a6a elapsed=0.019 INFO: done
+2024-10-27T12:55:20.535Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:55:20.536Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: b07b6a62-f76d-4fb1-9db3-d3c796f269c3) to Sidekiq(default)
+2024-10-27T12:55:20.536Z pid=5641 tid=h85 class=CalculateInterestJob jid=f391f494200e0ce88cca67ee INFO: start
+2024-10-27T12:55:20.540Z pid=5641 tid=h85 class=CalculateInterestJob jid=f391f494200e0ce88cca67ee INFO: Performing CalculateInterestJob (Job ID: b07b6a62-f76d-4fb1-9db3-d3c796f269c3) from Sidekiq(default) enqueued at 2024-10-27T12:55:20Z
+2024-10-27T12:55:20.542Z pid=5641 tid=h85 class=CalculateInterestJob jid=f391f494200e0ce88cca67ee INFO: Performed CalculateInterestJob (Job ID: b07b6a62-f76d-4fb1-9db3-d3c796f269c3) from Sidekiq(default) in 2.35ms
+2024-10-27T12:55:20.542Z pid=5641 tid=h85 class=CalculateInterestJob jid=f391f494200e0ce88cca67ee elapsed=0.006 INFO: done
+2024-10-27T12:56:20.354Z pid=5641 tid=7y1 INFO: queueing CalculateInterestJob (interest_calculator)
+2024-10-27T12:56:20.358Z pid=5641 tid=7y1 INFO: Enqueued CalculateInterestJob (Job ID: cb750ec4-0dcc-48a3-9b5e-afd2c0516754) to Sidekiq(default)
+2024-10-27T12:56:49.248Z pid=5641 tid=h85 class=CalculateInterestJob jid=f8bc56eb11b244647b5d44d5 INFO: start
+2024-10-27T12:56:49.253Z pid=5641 tid=h85 class=CalculateInterestJob jid=f8bc56eb11b244647b5d44d5 INFO: Performing CalculateInterestJob (Job ID: cb750ec4-0dcc-48a3-9b5e-afd2c0516754) from Sidekiq(default) enqueued at 2024-10-27T12:56:20Z
+2024-10-27T12:56:49.265Z pid=5641 tid=h85 class=CalculateInterestJob jid=f8bc56eb11b244647b5d44d5 INFO: Performed CalculateInterestJob (Job ID: cb750ec4-0dcc-48a3-9b5e-afd2c0516754) from Sidekiq(default) in 11.15ms
+2024-10-27T12:56:49.266Z pid=5641 tid=h85 class=CalculateInterestJob jid=f8bc56eb11b244647b5d44d5 elapsed=0.018 INFO: done

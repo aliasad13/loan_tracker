@@ -7,20 +7,30 @@ class LoansController < ApplicationController
     if current_user.admin?
       redirect_to admin_index_loans_path
     else
-      @loans = current_user.loans.page(params[:page]).per(5)
+      @loans = current_user.loans.page(params[:page]).per(10)
     end
   end
 
   def admin_index
-    authorize! :manage, Loan #what does this do
+    authorize! :manage, Loan
+    @loans = Loan.all
     filter = params[:filter]
-    if filter == 'requested'
-      @loans = Loan.where(state: 'requested')
-    elsif filter == 'readjustment_requested'
-      @loans = Loan.where(state: 'readjustment_requested')
-    elsif filter == 'open'
-      @loans = Loan.where(state: 'open')
-    end.paginate(page: params[:page], per_page: 5)
+    @loans = case filter
+             when 'requested'
+               @loans.where(state: 'requested')
+             when 'readjustment_requested'
+               @loans.where(state: 'readjustment_requested')
+             when 'open'
+               @loans.where(state: 'open')
+             else
+               @loans
+             end
+
+    @loans = @loans.page(params[:page]).per(5)
+  end
+
+  def active_loans
+    @active_loans = current_user.loans.where(state: Loan::ACTIVE_STATES).page(params[:page]).per(10)
   end
 
   def show
@@ -59,7 +69,7 @@ class LoansController < ApplicationController
 
   def accept_adjustment
     if @loan and @loan.accept_adjustment!
-      CalculateInterestJob.perform_later(@loan.id)
+      changes_on_opening_loan
       redirect_to loans_path, notice: 'Loan accepted successfully.'
     else
       redirect_to loans_path, alert: 'Unable to accept loan.'
@@ -68,9 +78,7 @@ class LoansController < ApplicationController
 
   def open_loan
     if @loan and @loan.open_loan!
-      new_wallet_balance = @loan.user.wallet.balance + @loan.amount
-      @loan.user.wallet.update(balance: new_wallet_balance)
-      CalculateInterestJob.perform_later(@loan.id)
+      changes_on_opening_loan
       redirect_to loans_path, notice: 'Loan opened successfully. Amount Credited to account'
     else
       redirect_to loans_path, alert: 'Unable to open loan.'
@@ -93,6 +101,7 @@ class LoansController < ApplicationController
         new_interest_rate: params[:loan][:interest_rate]
       )
       @loan.amount = loan_params[:amount]
+      @loan.total_amount_due = loan_params[:amount]
       @loan.interest_rate = loan_params[:interest_rate]
       if @loan.save!
         redirect_to admin_index_loans_path, notice: 'Loan accepted successfully.'
@@ -160,6 +169,15 @@ class LoansController < ApplicationController
 
   def set_loan
     @loan = Loan.find_by(id: params[:id])
+  end
+
+  def changes_on_opening_loan
+    new_wallet_balance = @loan.user.wallet.balance + @loan.amount
+    @loan.user.wallet.update(balance: new_wallet_balance)
+    admin_user = User.where(role: 'admin').first
+    new_admin_balance = admin_user.wallet.balance - @loan.amount
+    admin_user.wallet.update(balance: new_admin_balance)
+    CalculateInterestJob.perform_later(@loan.id)
   end
 
 end

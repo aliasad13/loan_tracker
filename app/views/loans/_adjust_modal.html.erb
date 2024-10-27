@@ -1,19 +1,53 @@
-<div id="adjustModal-<%= loan.id %>" class="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75 hidden">
-  <div class="bg-white rounded-lg p-6 w-full max-w-md mx-auto">
-    <h3 class="text-xl font-semibold mb-4">Adjust Loan</h3>
-    <%= form_with(model: loan, url: accept_with_adjustment_loan_path(loan), method: :patch, local: true) do |f| %>
-      <div class="mb-4">
-        <%= f.label :amount, "Loan Amount", class: "block text-sm font-medium text-gray-700" %>
-        <%= f.number_field :amount, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm" %>
+<div id="adjustModal-<%= loan.id %>" class="hidden fixed inset-0 z-50">
+  <div class="absolute inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-50 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-md sm:p-6">
+        <div class="absolute right-0 top-0 pr-4 pt-4">
+          <button
+            type="button"
+            onclick="toggleModal(<%= loan.id %>)"
+            class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none">
+            <span class="sr-only">Close</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <h3 class="text-2xl font-semibold leading-6 text-gray-900 mb-6">Adjust Loan</h3>
+        </div>
+
+        <%= form_with(model: loan, url: accept_with_adjustment_loan_path(loan), method: :patch, local: true) do |f| %>
+          <div class="mb-4">
+            <%= f.label :amount, "Loan Amount", class: "block text-sm font-medium text-gray-700" %>
+            <%= f.number_field :amount,
+                               class: "mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" %>
+          </div>
+
+          <div class="mb-4">
+            <%= f.label :interest_rate, "Interest Rate (%)", class: "block text-sm font-medium text-gray-700" %>
+            <%= f.number_field :interest_rate,
+                               step: 0.01,
+                               class: "mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" %>
+          </div>
+
+          <%= f.hidden_field :total_amount_due, id: "total_amount_due" %>
+
+          <div class="mt-6 flex justify-end gap-3">
+            <button
+              type="button"
+              onclick="toggleModal(<%= loan.id %>)"
+              class="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              Cancel
+            </button>
+            <%= f.submit "Save Changes",
+                         class: "inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" %>
+          </div>
+        <% end %>
       </div>
-      <div class="mb-4">
-        <%= f.label :interest_rate, "Interest Rate (%)", class: "block text-sm font-medium text-gray-700" %>
-        <%= f.number_field :interest_rate, step: 0.01, class: "mt-1 block w-full border border-gray-300 rounded-md shadow-sm" %>
-      </div>
-      <div class="flex justify-end">
-        <button type="button" class="px-4 py-2 bg-gray-300 text-gray-700 rounded mr-2" onclick="toggleModal(<%= loan.id %>)">Cancel</button>
-        <%= f.submit "Save Changes", class: "px-4 py-2 bg-blue-600 text-white rounded" %>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>

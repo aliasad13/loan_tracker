@@ -14,6 +14,7 @@ class Ability
       can :request_readjustment, Loan, user_id: user.id  # Users can update loans they own
       can :repay, Loan, user_id: user.id  # Users can update loans they own
       can :transaction_history, Loan, user_id: user.id  # Users can update loans they own
+      can :active_loans, Loan, user_id: user.id  # Users can update loans they own
     end
   end
 end

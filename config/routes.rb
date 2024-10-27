@@ -27,7 +27,8 @@ Rails.application.routes.draw do
       get :transaction_history
     end
     collection do
-      get :admin_index  # For admin to see all loans
+      get :admin_index
+      get :active_loans
     end
   end
 
