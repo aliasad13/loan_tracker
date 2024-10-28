@@ -136,7 +136,6 @@ class LoansController < ApplicationController
     payment_amount = loan_params[:payment_amount].to_f
 
     if @loan
-      byebug
       if payment_amount > @loan.total_amount_due.to_f
         redirect_to loan_path(@loan), alert: "Payment should be lower than the due amount"
       else
