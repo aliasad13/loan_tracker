@@ -1,5 +1,5 @@
 class LoansController < ApplicationController
-  load_and_authorize_resource  #what does this do
+  load_and_authorize_resource  #
   before_action :set_loan, only: [:show, :reject, :accept_adjustment, :accept_with_adjustment,
                                   :request_readjustment, :open_loan, :close_loan, :repay]
 
@@ -7,23 +7,23 @@ class LoansController < ApplicationController
     if current_user.admin?
       redirect_to admin_index_loans_path
     else
-      @loans = current_user.loans.page(params[:page]).per(5)
+      @loans = current_user.loans.order('created_at DESC').page(params[:page]).per(5)
     end
   end
 
   def admin_index
-    authorize! :manage, Loan
+    authorize! :manage, Loan #
     @loans = Loan.all
     filter = params[:filter]
     @loans = case filter
              when 'requested'
-               @loans.where(state: 'requested')
+               @loans.where(state: 'requested').order('created_at DESC')
              when 'readjustment_requested'
-               @loans.where(state: 'readjustment_requested')
+               @loans.where(state: 'readjustment_requested').order('created_at DESC')
              when 'open'
-               @loans.where(state: 'open')
+               @loans.where(state: 'open').order('created_at DESC')
              else
-               @loans
+               @loans.order('created_at DESC')
              end
 
     @loans = @loans.page(params[:page]).per(5)
@@ -38,7 +38,11 @@ class LoansController < ApplicationController
   end
 
   def new
-    @loan = current_user.loans.build
+    if current_user.can_request_loan?
+      @loan = current_user.loans.build
+    else
+      redirect_to root_path, alert: 'Sorry You cannot apply for any loans at the moment. Your wallet balance is zero'
+    end
   end
 
   def create
@@ -46,7 +50,7 @@ class LoansController < ApplicationController
     if @loan.save
       redirect_to @loan, notice: 'Loan request submitted successfully.'
     else
-      redirect_to loans_path, notice: 'Loan request exists.'
+      redirect_to loans_path, alert: @loan.errors.full_messages.to_sentence
     end
   end
 
@@ -103,10 +107,10 @@ class LoansController < ApplicationController
       @loan.amount = loan_params[:amount]
       @loan.total_amount_due = loan_params[:amount]
       @loan.interest_rate = loan_params[:interest_rate]
-      if @loan.save!
+      if @loan.save
         redirect_to admin_index_loans_path, notice: 'Loan accepted successfully.'
       else
-        redirect_to admin_index_loans_path, alert: 'error while saving record.'
+        redirect_to admin_index_loans_path, alert: @loan.errors.full_messages.to_sentence
       end
     else
       redirect_to admin_index_loans_path, alert: 'Unable to accept loan.'
@@ -123,31 +127,37 @@ class LoansController < ApplicationController
 
   def repay
     payment_amount = loan_params[:payment_amount].to_f
+
     if @loan
       loan_user = @loan.user
-      admin_user = User.where(role: 'admin').first
-      user_wallet_balance = loan_user.wallet.balance
-      user_wallet_balance_after_pay = user_wallet_balance - payment_amount
-      if user_wallet_balance_after_pay <= 0.0
-        loan_user.wallet.update(balance: 0.0)
-        admin_new_balance = admin_user.wallet.balance + user_wallet_balance
-        admin_user.wallet.update(balance: admin_new_balance)
-        @loan.update(total_amount_due: 0.00)
-        @loan.loan_transactions.create(transaction_amount: user_wallet_balance)
-        @loan.close!
-        redirect_to loan_path(@loan), notice: 'We have closed the loan, congratulations'
-      else
-        @loan.user.wallet.update(balance: user_wallet_balance_after_pay)
-        admin_new_balance = admin_user.wallet.balance + payment_amount
-        admin_user.wallet.update(balance: admin_new_balance)
-        balance_loan_due_amount = @loan.total_amount_due - payment_amount
-        @loan.update(total_amount_due: balance_loan_due_amount)
-        @loan.loan_transactions.create(transaction_amount: payment_amount)
-        if @loan.total_amount_due.zero?
+      admin_user = User.find_by(role: 'admin')
+
+      ApplicationRecord.transaction do
+        user_wallet_balance = loan_user.wallet.balance
+        user_wallet_balance_after_pay = user_wallet_balance - payment_amount
+
+        if user_wallet_balance_after_pay <= 0.0
+          loan_user.wallet.update!(balance: 0.0)
+          admin_new_balance = admin_user.wallet.balance + user_wallet_balance
+          admin_user.wallet.update!(balance: admin_new_balance)
+          @loan.update!(total_amount_due: 0.00)
+          @loan.loan_transactions.create!(transaction_amount: user_wallet_balance)
           @loan.close!
-          redirect_to loan_path(@loan), notice: "Congratulations, full amount paid and Loan closed"
+          redirect_to loan_path(@loan), notice: 'We are sorry to inform you we have cleared your wallet and closed the loan'
         else
-          redirect_to loan_path(@loan), notice: "#{payment_amount} deducted from your wallet. Loan Balance: #{balance_loan_due_amount}"
+          loan_user.wallet.update!(balance: user_wallet_balance_after_pay)
+          admin_new_balance = admin_user.wallet.balance + payment_amount
+          admin_user.wallet.update!(balance: admin_new_balance)
+          balance_loan_due_amount = @loan.total_amount_due - payment_amount
+          @loan.update!(total_amount_due: balance_loan_due_amount)
+          @loan.loan_transactions.create!(transaction_amount: payment_amount)
+
+          if @loan.total_amount_due.zero?
+            @loan.close!
+            redirect_to loan_path(@loan), notice: "Congratulations, full amount paid and loan closed"
+          else
+            redirect_to loan_path(@loan), notice: "#{payment_amount} deducted from your wallet. Loan Balance: #{balance_loan_due_amount}"
+          end
         end
       end
     else
@@ -178,6 +188,7 @@ class LoansController < ApplicationController
     admin_user = User.where(role: 'admin').first
     new_admin_balance = admin_user.wallet.balance - @loan.amount
     admin_user.wallet.update(balance: new_admin_balance)
+    @loan.update(last_interest_calculation_at: DateTime.now)
     CalculateInterestJob.perform_later(@loan.id)
   end
 

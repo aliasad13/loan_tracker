@@ -44,7 +44,8 @@ class User < ApplicationRecord
   end
 
   def can_request_loan?
-    !active_loan.present?
+    # !active_loan.present?
+    wallet.balance > 0
   end
 
   private

@@ -4,8 +4,9 @@ class Loan < ApplicationRecord
   has_many :loan_transactions, dependent: :destroy
 
   validates :amount, presence: true, numericality: { greater_than: 0 }
-  validates :interest_rate, presence: true, numericality: { greater_than: 0 }
+  validates :interest_rate, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 99 }
   # validate :no_active_loan, on: :create
+  validate :have_wallet_balance, on: :create
 
   include AASM
 
@@ -84,6 +85,12 @@ class Loan < ApplicationRecord
   end
 
   private
+
+  def have_wallet_balance
+    if user.wallet.balance <= 0
+      errors.add(:base, 'Sorry You cannot apply for any loans at the moment. Your wallet balance is zero')
+    end
+  end
 
   def no_active_loan
     if user.loans.where(state: ACTIVE_STATES).exists?

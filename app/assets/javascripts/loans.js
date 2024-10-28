@@ -74,7 +74,7 @@ function validatePaymentAmount(loanId, walletBalance) {
     const errorMessage = document.getElementById(`error-message-${loanId}`);
     const submitButton = document.querySelector(`#repay-form-${loanId} input[type="submit"]`);
 
-    if (parseFloat(input.value) > walletBalance) {
+    if (parseFloat(input.value) > walletBalance || parseFloat(input.value) === 0) {
         errorMessage.classList.remove('hidden');
         submitButton.disabled = true;
     } else {

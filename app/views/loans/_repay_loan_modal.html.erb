@@ -31,7 +31,7 @@
               id: "payment-amount-#{loan.id}",
           oninput: "validatePaymentAmount(#{loan.id}, #{loan.user.wallet.balance})" %>
         </div>
-        <p id="error-message-<%= loan.id %>" class="text-red-500 text-sm hidden">Payment amount cannot exceed your wallet balance.</p>
+        <p id="error-message-<%= loan.id %>" class="text-red-500 text-sm hidden">Payment amount cannot be zero or exceed your wallet balance.</p>
         <%= hidden_field_tag :id, loan.id %>
 
           <div class="mt-6 flex justify-end gap-3">
