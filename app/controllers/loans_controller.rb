@@ -97,20 +97,27 @@ class LoansController < ApplicationController
     end
   end
   def accept_with_adjustment
-    if @loan and @loan.accept_with_adjustment!
-      @loan.loan_adjustments.build(
-        previous_amount: @loan.amount,
-        new_amount: params[:loan][:amount],
-        previous_interest_rate: @loan.interest_rate,
-        new_interest_rate: params[:loan][:interest_rate]
-      )
-      @loan.amount = loan_params[:amount]
-      @loan.total_amount_due = loan_params[:amount]
-      @loan.interest_rate = loan_params[:interest_rate]
-      if @loan.save
-        redirect_to admin_index_loans_path, notice: 'Loan accepted successfully.'
+    if @loan
+      if @loan.amount.to_f == params[:loan][:amount].to_f and @loan.interest_rate.to_f == params[:loan][:interest_rate].to_f
+        redirect_to admin_index_loans_path, alert: 'Make sure to change parameters before submitting'
       else
-        redirect_to admin_index_loans_path, alert: @loan.errors.full_messages.to_sentence
+        ApplicationRecord.transaction do
+          @loan.accept_with_adjustment!
+          @loan.loan_adjustments.build(
+            previous_amount: @loan.amount,
+            new_amount: params[:loan][:amount],
+            previous_interest_rate: @loan.interest_rate,
+            new_interest_rate: params[:loan][:interest_rate]
+          )
+          @loan.amount = loan_params[:amount]
+          @loan.total_amount_due = loan_params[:amount]
+          @loan.interest_rate = loan_params[:interest_rate]
+          if @loan.save
+            redirect_to admin_index_loans_path, notice: 'Loan accepted successfully.'
+          else
+            redirect_to admin_index_loans_path, alert: @loan.errors.full_messages.to_sentence
+          end
+        end
       end
     else
       redirect_to admin_index_loans_path, alert: 'Unable to accept loan.'
