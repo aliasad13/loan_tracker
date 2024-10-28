@@ -58,7 +58,7 @@ function toggleRepayModal(loanId, walletBalance) {
     }
 }
 
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const modals = document.querySelectorAll('[id^="repayModal-"]');
 
     modals.forEach((modal) => {

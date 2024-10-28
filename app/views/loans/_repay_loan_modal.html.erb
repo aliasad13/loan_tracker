@@ -25,10 +25,10 @@
         <%= form_with(url: repay_loan_path, method: :patch, scope: :loan, local: true, id: "repay-form-#{loan.id}") do |f| %>
         <div class="mb-4">
           <%= f.label :payment_amount, "Payment Amount", class: "block text-sm font-medium text-gray-300" %>
-          <%= f.text_field :payment_amount,
+          <%= f.number_field :payment_amount,
               class: "mt-1 block w-full rounded-md border border-gray-600 bg-gray-700 text-gray-100 py-2 px-3 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 placeholder-gray-400",
-              value: loan.total_amount_due > loan.user.wallet.balance ? loan.user.wallet.balance : loan.total_amount_due || '',
-              id: "payment-amount-#{loan.id}",
+              value: payment_amount_value(loan),
+              id: "payment-amount-#{loan.id}",step: "0.01",
           oninput: "validatePaymentAmount(#{loan.id}, #{loan.user.wallet.balance})" %>
         </div>
         <p id="error-message-<%= loan.id %>" class="text-red-500 text-sm hidden">Payment amount cannot be zero or exceed your wallet balance.</p>

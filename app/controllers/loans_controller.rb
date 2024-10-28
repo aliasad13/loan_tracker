@@ -136,34 +136,39 @@ class LoansController < ApplicationController
     payment_amount = loan_params[:payment_amount].to_f
 
     if @loan
-      loan_user = @loan.user
-      admin_user = User.find_by(role: 'admin')
+      byebug
+      if payment_amount > @loan.total_amount_due.to_f
+        redirect_to loan_path(@loan), alert: "Payment should be lower than the due amount"
+      else
+        loan_user = @loan.user
+        admin_user = User.find_by(role: 'admin')
 
-      ApplicationRecord.transaction do
-        user_wallet_balance = loan_user.wallet.balance
-        user_wallet_balance_after_pay = user_wallet_balance - payment_amount
+        ApplicationRecord.transaction do
+          user_wallet_balance = loan_user.wallet.balance
+          user_wallet_balance_after_pay = user_wallet_balance - payment_amount
 
-        if user_wallet_balance_after_pay <= 0.0
-          loan_user.wallet.update!(balance: 0.0)
-          admin_new_balance = admin_user.wallet.balance + user_wallet_balance
-          admin_user.wallet.update!(balance: admin_new_balance)
-          @loan.update!(total_amount_due: 0.00)
-          @loan.loan_transactions.create!(transaction_amount: user_wallet_balance)
-          @loan.close!
-          redirect_to loan_path(@loan), notice: 'We are sorry to inform you we have cleared your wallet and closed the loan'
-        else
-          loan_user.wallet.update!(balance: user_wallet_balance_after_pay)
-          admin_new_balance = admin_user.wallet.balance + payment_amount
-          admin_user.wallet.update!(balance: admin_new_balance)
-          balance_loan_due_amount = @loan.total_amount_due - payment_amount
-          @loan.update!(total_amount_due: balance_loan_due_amount)
-          @loan.loan_transactions.create!(transaction_amount: payment_amount)
-
-          if @loan.total_amount_due.zero?
+          if user_wallet_balance_after_pay <= 0.0
+            loan_user.wallet.update!(balance: 0.0)
+            admin_new_balance = admin_user.wallet.balance + user_wallet_balance
+            admin_user.wallet.update!(balance: admin_new_balance)
+            @loan.update!(total_amount_due: 0.00)
+            @loan.loan_transactions.create!(transaction_amount: user_wallet_balance)
             @loan.close!
-            redirect_to loan_path(@loan), notice: "Congratulations, full amount paid and loan closed"
+            redirect_to loan_path(@loan), notice: 'We are sorry to inform you we have cleared your wallet and closed the loan'
           else
-            redirect_to loan_path(@loan), notice: "#{payment_amount} deducted from your wallet. Loan Balance: #{balance_loan_due_amount}"
+            loan_user.wallet.update!(balance: user_wallet_balance_after_pay)
+            admin_new_balance = admin_user.wallet.balance + payment_amount
+            admin_user.wallet.update!(balance: admin_new_balance)
+            balance_loan_due_amount = @loan.total_amount_due - payment_amount
+            @loan.update!(total_amount_due: balance_loan_due_amount)
+            @loan.loan_transactions.create!(transaction_amount: payment_amount)
+
+            if @loan.total_amount_due.zero?
+              @loan.close!
+              redirect_to loan_path(@loan), notice: "Congratulations, full amount paid and loan closed"
+            else
+              redirect_to loan_path(@loan), notice: "#{payment_amount} deducted from your wallet. Loan Balance: #{balance_loan_due_amount}"
+            end
           end
         end
       end
@@ -171,7 +176,6 @@ class LoansController < ApplicationController
       redirect_to loans_path, alert: 'Unable to repay.'
     end
   end
-
   def transaction_history
     if @loan
       @loan_transactions = @loan.loan_transactions
