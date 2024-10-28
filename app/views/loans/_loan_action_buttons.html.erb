@@ -45,7 +45,7 @@
 
 <% end %>
 
-  <% if loan.requested? || loan.readjustment_requested? %>
+  <% if current_user.admin? and (loan.requested? || loan.readjustment_requested?) %>
     <button onclick="toggleModal(<%= loan.id %>)" class="w-32 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors">Adjust</button>
   <% end %>
 </div>

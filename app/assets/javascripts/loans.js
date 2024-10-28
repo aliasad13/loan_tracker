@@ -46,3 +46,40 @@ function toggleRepayModal(loanId) {
 }
 
 
+function toggleRepayModal(loanId, walletBalance) {
+    const modal = document.getElementById(`repayModal-${loanId}`);
+    const isHidden = modal.classList.contains('hidden');
+
+    if (isHidden) {
+        modal.classList.remove('hidden');
+        validatePaymentAmount(loanId, walletBalance);
+    } else {
+        modal.classList.add('hidden');
+    }
+}
+
+document.addEventListener('turbolinks:load', () => {
+    const modals = document.querySelectorAll('[id^="repayModal-"]');
+
+    modals.forEach((modal) => {
+        const loanId = modal.id.split('-')[1];
+        const walletBalance = parseFloat(document.querySelector(`#user-wallet-balance-${loanId}`).textContent);
+
+        validatePaymentAmount(loanId, walletBalance);
+    });
+});
+
+function validatePaymentAmount(loanId, walletBalance) {
+    const input = document.getElementById(`payment-amount-${loanId}`);
+    const errorMessage = document.getElementById(`error-message-${loanId}`);
+    const submitButton = document.querySelector(`#repay-form-${loanId} input[type="submit"]`);
+
+    if (parseFloat(input.value) > walletBalance) {
+        errorMessage.classList.remove('hidden');
+        submitButton.disabled = true;
+    } else {
+        errorMessage.classList.add('hidden');
+        submitButton.disabled = false;
+    }
+}
+

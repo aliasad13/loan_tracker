@@ -42,7 +42,7 @@
             <div id="userDropdown"
                  class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-gray-800 ring-1 ring-black ring-opacity-5">
               <div class="py-1">
-                <%#= link_to "Profile Settings", edit_user_registration_path,
+                <%= link_to "Profile Settings", edit_user_registration_path,
                             class: "block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-gray-100" %>
                 <%= link_to "Sign Out", destroy_user_session_path, method: :delete,
                             class: "block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-gray-100" %>
@@ -80,7 +80,7 @@
 
         <div class="border-t border-gray-700"></div>
 
-        <%#= link_to "Profile Settings", edit_user_registration_path,
+        <%= link_to "Profile Settings", edit_user_registration_path,
                     class: "block pl-3 pr-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-gray-100" %>
 
         <%= button_to "Sign Out", destroy_user_session_path, method: :delete,

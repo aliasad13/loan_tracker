@@ -26,10 +26,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'cancancan'
-gem 'aasm'
+gem 'aasm' #act as state machine
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 gem 'kaminari'
+gem "tailwindcss-rails", "~> 2.5"
+
 
 
 group :development, :test do
@@ -59,4 +61,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "tailwindcss-rails", "~> 2.5"

@@ -7,7 +7,7 @@ class LoansController < ApplicationController
     if current_user.admin?
       redirect_to admin_index_loans_path
     else
-      @loans = current_user.loans.page(params[:page]).per(10)
+      @loans = current_user.loans.page(params[:page]).per(5)
     end
   end
 
@@ -131,7 +131,7 @@ class LoansController < ApplicationController
       if user_wallet_balance_after_pay <= 0.0
         loan_user.wallet.update(balance: 0.0)
         admin_new_balance = admin_user.wallet.balance + user_wallet_balance
-        admin.wallet.update(balance: admin_new_balance)
+        admin_user.wallet.update(balance: admin_new_balance)
         @loan.update(total_amount_due: 0.00)
         @loan.loan_transactions.create(transaction_amount: user_wallet_balance)
         @loan.close!
@@ -158,6 +158,7 @@ class LoansController < ApplicationController
   def transaction_history
     if @loan
       @loan_transactions = @loan.loan_transactions
+      @total_amount_paid = @loan.total_amount_paid
     end
   end
 

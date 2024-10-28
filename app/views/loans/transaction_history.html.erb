@@ -24,6 +24,22 @@
           <% end %>
           </tbody>
         </table>
+
+        <table class="min-w-full bg-gray-800 rounded-lg">
+          <thead>
+          <tr class="border-b border-gray-700 bg-gray-700/50">
+            <th class="text-left py-3 px-4 font-semibold text-gray-200">Total Paid</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-700 hover:bg-gray-700/30 transition-colors duration-150">
+              <td class="py-3 px-4 text-gray-100">
+                <%= number_to_currency(@total_amount_paid) %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
     <% else %>
       <p class="text-gray-400">No transactions available for this loan.</p>

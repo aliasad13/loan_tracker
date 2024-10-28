@@ -72,7 +72,7 @@ class Loan < ApplicationRecord
 
   def total_interest_accrued
     return 0 unless open?
-    total_amount_due - (amount - total_amount_paid)
+    (total_amount_due || amount) - amount
   end
 
   def formatted_total_interest

@@ -30,13 +30,16 @@
         <% end %>
         </tbody>
       </table>
-      <div class="px-6 py-4 bg-gray-900 border-t border-gray-700">
-        <%= paginate @loans %>
-      </div>
     <% else %>
       <div class="p-6 text-center text-gray-400">
         <p>You haven't requested any loans yet.</p>
       </div>
     <% end %>
   </div>
+  <% if @loans.any? %>
+  <div class="px-6 py-4 bg-gray-900 border-t border-gray-700">
+    <%= paginate @loans %>
+  </div>
+  <% end %>
+
 </div>

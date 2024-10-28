@@ -21,21 +21,38 @@
       </div>
 
       <!-- New section for Total Interest and Total Amount with Interest -->
+      <%# if @loan.closed? %>
+<!--        <div class="bg-gray-900 p-4 rounded border border-gray-700">-->
+<!--          <p class="text-gray-400">Total Interest Accrued</p>-->
+<!--          <p class="text-2xl font-bold text-gray-100">$<%#= @loan.total_amount_paid - @loan.amount %></p>-->
+<!--          <p class="text-gray-400">last calculation: <%#= @loan.last_interest_calculation_at ? @loan.last_interest_calculation_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") : '' %></p>-->
+<!--        </div>-->
+      <%# else %>
+        <div class="bg-gray-900 p-4 rounded border border-gray-700">
+          <p class="text-gray-400">Total Interest Accrued</p>
+          <p class="text-2xl font-bold text-gray-100">$<%= @loan.formatted_total_interest %></p>
+          <p class="text-gray-400">last calculation: <%= @loan.last_interest_calculation_at ? @loan.last_interest_calculation_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") : ''  %></p>
+        </div>
+      <%# end %>
       <div class="bg-gray-900 p-4 rounded border border-gray-700">
-        <p class="text-gray-400">Total Interest Accrued</p>
-        <p class="text-2xl font-bold text-gray-100">$<%= @loan.formatted_total_interest %></p>
-      </div>
-      <div class="bg-gray-900 p-4 rounded border border-gray-700">
-        <p class="text-gray-400">Total Amount with Interest</p>
+        <p class="text-gray-400">Total Amount Due with Interest</p>
         <p class="text-2xl font-bold text-gray-100">$<%= @loan.formatted_total_amount %></p>
       </div>
       <div class="bg-gray-900 p-4 rounded border border-gray-700">
         <p class="text-gray-400">Created at</p>
         <p class="text-2xl font-bold text-gray-100"><%= @loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
       </div>
+
+      <%# if @loan.open? %>
+<!--        <div class="bg-gray-900 p-4 rounded border border-gray-700">-->
+<!--          <p class="text-gray-400">Opened at</p>-->
+<!--          <p class="text-2xl font-bold text-gray-100"><%#= @loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>-->
+<!--        </div>-->
+      <%# end %>
       <div class="bg-gray-900 p-4 rounded border border-gray-700">
         <p class="text-gray-400">Actions</p>
         <%= render 'loan_action_buttons', loan: @loan %>
+        <%= render 'adjust_modal', loan: @loan %>
       </div>
     </div>
 
@@ -47,7 +64,7 @@
             <div class="mb-4 last:mb-0">
               <p class="font-medium text-gray-200"><%= adjustment.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></p>
               <p class="text-gray-400">Amount adjusted from $<%= number_with_precision(adjustment.previous_amount, precision: 2) %> to $<%= number_with_precision(adjustment.new_amount, precision: 2) %></p>
-              <p class="text-gray-400">Interest adjusted from $<%= adjustment.previous_interest_rate %> to $<%= number_with_precision(adjustment.new_interest_rate, precision: 2) %></p>
+              <p class="text-gray-400">Interest adjusted from <%= adjustment.previous_interest_rate %>% to <%= number_with_precision(adjustment.new_interest_rate, precision: 2) %>%</p>
             </div>
           <% end %>
         </div>
@@ -60,9 +77,13 @@
         <button onclick="toggleRepayModal(<%= @loan.id %>)" class="inline-block px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition duration-150">Repay</button>
         <%= render 'repay_loan_modal', loan: @loan, name: 'Repay Loan' %>
           <% end %>
+
+      <% end %>
+      <% if @loan.state == 'open' || @loan.state == 'closed' %>
         <%= link_to "View Transaction History", transaction_history_loan_path(@loan),
                     class: "inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-150" %>
       <% end %>
     </div>
   </div>
 </div>
+

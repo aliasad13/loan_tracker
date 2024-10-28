@@ -2,7 +2,7 @@
   <h1 class="text-3xl font-bold mb-8 text-white">Loan Management</h1>
 
   <div class="mb-8">
-    <h2 class="text-xl font-semibold mb-4 text-gray-200">Pending Requests</h2>
+    <h2 class="text-xl font-semibold mb-4 text-gray-200"></h2>
     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden border border-gray-700">
       <% if @loans.any? %>
         <table class="min-w-full">
@@ -18,8 +18,15 @@
           </thead>
           <tbody class="bg-gray-800 divide-y divide-gray-700">
           <% @loans.each do |loan| %>
-            <tr class="hover:bg-gray-700 transition-colors cursor-pointer" data-url="<%= loan_path(loan) %>" onclick="window.location = this.dataset.url">
-              <td class="px-6 py-4 text-gray-200"><%= loan.user.email %></td>
+
+
+            <tr class="hover:bg-gray-700 transition-colors">
+              <td class="px-6 py-4 text-blue-600 font-medium">
+                <%= link_to loan_path(loan) do %>
+                  <%= loan.user.username %>
+                <% end %>
+
+                  </td>
               <td class="px-6 py-4 text-gray-200">$<%= number_with_precision(loan.amount, precision: 2) %></td>
               <td class="px-6 py-4 text-gray-200"><%= loan.interest_rate %>%</td>
               <td class="px-6 py-4 text-gray-200"><%= loan.created_at.in_time_zone("Asia/Kolkata").strftime("%B %d, %Y %I:%M %p") %></td>
@@ -31,16 +38,18 @@
             <%= render 'adjust_modal', loan: loan %>
           <% end %>
           </tbody>
-
         </table>
-        <div class="px-6 py-4 border-t border-gray-700">
-          <%= paginate @loans %>
-        </div>
+
 
       <% else %>
         <div class="p-6 text-center text-gray-400">
           <p>No pending loan requests.</p>
         </div>
+      <% end %>
+    </div>
+    <% if @loans.any? %>
+    <div class="px-6 py-4 border-t border-gray-700">
+      <%= paginate @loans %>
       <% end %>
     </div>
   </div>

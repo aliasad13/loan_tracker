@@ -17,7 +17,7 @@ class CalculateInterestJob < ApplicationJob
     ApplicationRecord.transaction do
       annual_rate = BigDecimal(loan.interest_rate.to_s) / 100
       monthly_rate = annual_rate / BigDecimal('12')
-      interest = BigDecimal(loan.amount.to_s) * monthly_rate
+      interest = BigDecimal(loan.amount.to_s) * monthly_rate #calculate on principle amount
       new_total = BigDecimal((loan.total_amount_due || loan.amount).to_s) + interest
       loan.update!(total_amount_due: new_total, last_interest_calculation_at: Time.now)
       Rails.logger.info "Interest calculated for Loan ##{loan.id}: Added #{interest.round(2)}, New total: #{new_total.round(2)}"
