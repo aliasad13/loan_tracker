@@ -25,6 +25,7 @@ Rails.application.routes.draw do
       patch :open_loan
       patch :close_loan
       get :transaction_history
+      get :state_logs #sending get with a member id
     end
     collection do
       get :admin_index

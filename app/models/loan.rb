@@ -2,11 +2,14 @@ class Loan < ApplicationRecord
   belongs_to :user
   has_many :loan_adjustments, dependent: :destroy
   has_many :loan_transactions, dependent: :destroy
+  has_many :loan_state_change_logs, dependent: :destroy
 
   validates :amount, presence: true, numericality: { greater_than: 0 }
   validates :interest_rate, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 99 }
   # validate :no_active_loan, on: :create
   validate :have_wallet_balance, on: :create
+
+  after_save :add_state_change_log
 
   include AASM
 
@@ -69,6 +72,13 @@ class Loan < ApplicationRecord
 
   def total_amount_paid
     loan_transactions ? loan_transactions.sum(&:transaction_amount) : 0.0
+  end
+
+  def add_state_change_log
+    # if state_changed? saved_change_to_attribute? method, which specifically checks if an attribute has changed after it has been saved
+    if saved_change_to_state?
+      loan_state_change_logs.create!(state: state)
+    end
   end
 
   def total_interest_accrued

@@ -1,7 +1,7 @@
 class LoansController < ApplicationController
-  load_and_authorize_resource  #
+  load_and_authorize_resource  #cancancan
   before_action :set_loan, only: [:show, :reject, :accept_adjustment, :accept_with_adjustment,
-                                  :request_readjustment, :open_loan, :close_loan, :repay]
+                                  :request_readjustment, :open_loan, :close_loan, :repay, :state_logs]
 
   def index
     if current_user.admin?
@@ -12,7 +12,7 @@ class LoansController < ApplicationController
   end
 
   def admin_index
-    authorize! :manage, Loan #
+    authorize! :manage, Loan #cancancan, current user can manage loan?
     @loans = Loan.all
     filter = params[:filter]
     @loans = case filter
@@ -65,9 +65,9 @@ class LoansController < ApplicationController
 
   def reject
     if @loan and @loan.reject!
-      redirect_to admin_index_loans_path, notice: 'Loan rejected successfully.'
+      redirect_to loan_path(@loan), notice: 'Loan rejected.'
     else
-      redirect_to admin_index_loans_path, alert: 'Unable to reject loan.'
+      redirect_to loan_path(@loan), alert: 'Unable to reject loan.'
     end
   end
 
@@ -181,6 +181,10 @@ class LoansController < ApplicationController
       @loan_transactions = @loan.loan_transactions
       @total_amount_paid = @loan.total_amount_paid
     end
+  end
+
+  def state_logs
+    @loan_states = @loan.loan_state_change_logs
   end
 
   private
