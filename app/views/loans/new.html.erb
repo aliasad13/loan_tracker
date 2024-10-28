@@ -1,4 +1,4 @@
-<div class="container mx-auto px-4 py-8 bg-gray-900">
+<div class="container mx-auto px-4 py-8 bg-gray-900 max-w-3xl">
   <h1 class="text-3xl font-bold mb-8">Request a New Loan</h1>
 
   <div class="bg-gray-800 rounded-lg shadow p-6 text-gray-100">
@@ -35,8 +35,8 @@
       </div>
 
       <div class="mt-6">
-        <%= form.submit "Request Loan", class: "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
-        <%= link_to "Cancel", loans_path, class: "ml-4 inline-block text-blue-600 hover:text-blue-900" %>
+        <%= form.submit "Request Loan", class: "px-4 py-2 bg-gray-900 text-white rounded hover:bg-blue-700 cursor-pointer" %>
+        <%= link_to "Cancel", loans_path, class: "ml-4 inline-block text-blue-600 hover:text-blue-900 cursor-pointer" %>
       </div>
     <% end %>
   </div>

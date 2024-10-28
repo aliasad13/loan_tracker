@@ -1,11 +1,11 @@
-<div class="flex flex-wrap gap-2">
+<div class="mt-2 flex flex-wrap gap-2">
 
   <% if (current_user.admin? and !loan.waiting_for_adjustment_acceptance?) || (!current_user.admin? and loan.waiting_for_adjustment_acceptance?) %>
     <% if loan.may_reject? %>
       <%= button_to "Reject",
                     reject_loan_path(loan),
                     method: :patch,
-                    class: "w-32 px-4 py-2 text-sm font-medium bg-red-500 hover:bg-red-600 text-white rounded transition-colors" %>
+                    class: "w-32 px-4 py-2 text-sm font-medium bg-red-500 hover:bg-red-600 text-white rounded transition-colors cursor-pointer" %>
     <% end %>
   <% end %>
 
@@ -16,7 +16,7 @@
       <%= button_to "Confirm",
                     open_loan_loan_path(loan),
                     method: :patch,
-                    class: "w-32 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors" %>
+                    class: "w-32 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors cursor-pointer" %>
     <% end %>
   <% end %>
 
@@ -25,7 +25,7 @@
       <%= button_to "Approve",
                     approve_loan_path(loan),
                     method: :patch,
-                    class: "w-32 px-4 py-2 text-sm font-medium bg-emerald-500 hover:bg-emerald-600 text-white rounded transition-colors" %>
+                    class: "w-32 px-4 py-2 text-sm font-medium bg-emerald-500 hover:bg-emerald-600 text-white rounded transition-colors cursor-pointer" %>
     <% end %>
 
   <% else %>
@@ -33,19 +33,19 @@
       <%= button_to "Readjust",
                     request_readjustment_loan_path(loan),
                     method: :patch,
-                    class: "w-32 px-4 py-2 text-sm font-medium bg-amber-500 hover:bg-amber-600 text-white rounded transition-colors" %>
+                    class: "w-32 px-4 py-2 text-sm font-medium bg-amber-500 hover:bg-amber-600 text-white rounded transition-colors cursor-pointer" %>
     <% end %>
 
     <% if loan.may_accept_adjustment? %>
       <%= button_to "Accept \n Adjustment",
                     accept_adjustment_loan_path(loan),
                     method: :patch,
-                    class: "w-32 px-4 py-2 text-sm font-medium bg-emerald-500 hover:bg-emerald-600 text-white rounded transition-colors" %>
+                    class: "w-32 px-4 py-2 text-sm font-medium bg-emerald-500 hover:bg-emerald-600 text-white rounded transition-colors cursor-pointer" %>
     <% end %>
 
 <% end %>
 
   <% if current_user.admin? and (loan.requested? || loan.readjustment_requested?) %>
-    <button onclick="toggleModal(<%= loan.id %>)" class="w-32 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors">Adjust</button>
+    <button onclick="toggleModal(<%= loan.id %>)" class="w-32 px-4 py-2 text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors cursor-pointer">Adjust</button>
   <% end %>
 </div>

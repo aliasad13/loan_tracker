@@ -7,7 +7,7 @@ class LoansController < ApplicationController
     if current_user.admin?
       redirect_to admin_index_loans_path
     else
-      @loans = current_user.loans.order('created_at DESC').page(params[:page]).per(5)
+      @loans = current_user.loans.order('created_at DESC').page(params[:page]).per(10)
     end
   end
 
@@ -17,16 +17,22 @@ class LoansController < ApplicationController
     filter = params[:filter]
     @loans = case filter
              when 'requested'
-               @loans.where(state: 'requested').order('created_at DESC')
+               @loans.where(state: 'requested')
              when 'readjustment_requested'
-               @loans.where(state: 'readjustment_requested').order('created_at DESC')
+               @loans.where(state: 'readjustment_requested')
              when 'open'
-               @loans.where(state: 'open').order('created_at DESC')
+               @loans.where(state: 'open')
+             when 'closed'
+               @loans.where(state: 'closed')
+             when 'rejected'
+               @loans.where(state: 'rejected')
+             when 'waiting_for_adjustment_acceptance'
+               @loans.where(state: 'waiting_for_adjustment_acceptance')
              else
-               @loans.order('created_at DESC')
+               @loans
              end
 
-    @loans = @loans.page(params[:page]).per(5)
+    @loans = @loans.order('created_at DESC').page(params[:page]).per(10)
   end
 
   def active_loans
@@ -99,7 +105,7 @@ class LoansController < ApplicationController
   def accept_with_adjustment
     if @loan
       if @loan.amount.to_f == params[:loan][:amount].to_f and @loan.interest_rate.to_f == params[:loan][:interest_rate].to_f
-        redirect_to admin_index_loans_path, alert: 'Make sure to change parameters before submitting'
+        redirect_to @loan, alert: 'Make sure to adjust parameters before submitting'
       else
         ApplicationRecord.transaction do
           @loan.accept_with_adjustment!
@@ -113,14 +119,14 @@ class LoansController < ApplicationController
           @loan.total_amount_due = loan_params[:amount]
           @loan.interest_rate = loan_params[:interest_rate]
           if @loan.save
-            redirect_to admin_index_loans_path, notice: 'Loan accepted successfully.'
+            redirect_to @loan, notice: 'Loan send for acceptance confirmation.'
           else
-            redirect_to admin_index_loans_path, alert: @loan.errors.full_messages.to_sentence
+            redirect_to @loan, alert: @loan.errors.full_messages.to_sentence
           end
         end
       end
     else
-      redirect_to admin_index_loans_path, alert: 'Unable to accept loan.'
+      redirect_to @loan, alert: 'Unable to accept loan.'
     end
   end
 

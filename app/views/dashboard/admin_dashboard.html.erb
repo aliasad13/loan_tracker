@@ -3,26 +3,39 @@
 
   <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
     <h2 class="text-xl font-semibold mb-4 text-gray-200">Wallet Balance</h2>
-    <p class="text-2xl font-bold text-white">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
+    <p class="text-2xl font-bold text-green-400">$<%= number_with_precision(@wallet_balance, precision: 2) %></p>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'requested') %>" onclick="window.location = this.dataset.url">
       <h3 class="text-lg font-semibold mb-2 text-gray-200">Pending Requests</h3>
       <p class="text-3xl font-bold text-blue-400"><%= Loan.where(state: 'requested').count %></p>
-      <%= link_to "View All", admin_index_loans_path(filter: 'requested'), class: "mt-4 text-sm text-blue-400 hover:text-blue-300" %>
     </div>
 
-    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'open') %>" onclick="window.location = this.dataset.url">
       <h3 class="text-lg font-semibold mb-2 text-gray-200">Active Loans</h3>
       <p class="text-3xl font-bold text-green-400"><%= Loan.where(state: 'open').count %></p>
-      <%= link_to "View All", admin_index_loans_path(filter: 'open'), class: "mt-4 text-sm text-blue-400 hover:text-blue-300" %>
     </div>
 
-    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'readjustment_requested') %>" onclick="window.location = this.dataset.url">
       <h3 class="text-lg font-semibold mb-2 text-gray-200">Adjustment Requests</h3>
       <p class="text-3xl font-bold text-yellow-400"><%= Loan.where(state: 'readjustment_requested').count %></p>
-      <%= link_to "View All", admin_index_loans_path(filter: 'readjustment_requested'), class: "mt-4 text-sm text-blue-400 hover:text-blue-300" %>
     </div>
+
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'rejected') %>" onclick="window.location = this.dataset.url">
+      <h3 class="text-lg font-semibold mb-2 text-gray-200">Rejected</h3>
+      <p class="text-3xl font-bold text-red-600"><%= Loan.where(state: 'rejected').count %></p>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'closed') %>" onclick="window.location = this.dataset.url">
+      <h3 class="text-lg font-semibold mb-2 text-gray-200">Closed</h3>
+      <p class="text-3xl font-bold text-white-400"><%= Loan.where(state: 'closed').count %></p>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700 cursor-pointer" data-url="<%= admin_index_loans_path(filter: 'waiting_for_adjustment_acceptance') %>" onclick="window.location = this.dataset.url">
+      <h3 class="text-lg font-semibold mb-2 text-gray-200">Waiting For Adjustment Acceptance</h3>
+      <p class="text-3xl font-bold text-blue-600"><%= Loan.where(state: 'waiting_for_adjustment_acceptance').count %></p>
+    </div>
+
   </div>
 </div>
