@@ -138,6 +138,8 @@ class LoansController < ApplicationController
     if @loan
       if payment_amount > @loan.total_amount_due.to_f
         redirect_to loan_path(@loan), alert: "Payment should be lower than the due amount"
+      elsif payment_amount <= 0
+        redirect_to loan_path(@loan), alert: "You can't pay zero or negative amount"
       else
         loan_user = @loan.user
         admin_user = User.find_by(role: 'admin')
