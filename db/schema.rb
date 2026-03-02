@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2025_01_10_122108) do
 
-  create_table "dummies", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "dummies", force: :cascade do |t|
     t.string "name"
     t.integer "age"
     t.datetime "born_at"
@@ -22,7 +25,7 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.index ["email"], name: "index_dummies_on_email", unique: true
   end
 
-  create_table "loan_adjustments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "loan_adjustments", force: :cascade do |t|
     t.bigint "loan_id", null: false
     t.decimal "previous_amount", precision: 15, scale: 2
     t.decimal "new_amount", precision: 15, scale: 2
@@ -33,7 +36,7 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.index ["loan_id"], name: "index_loan_adjustments_on_loan_id"
   end
 
-  create_table "loan_state_change_logs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "loan_state_change_logs", force: :cascade do |t|
     t.bigint "loan_id"
     t.string "state"
     t.datetime "created_at", precision: 6, null: false
@@ -41,7 +44,7 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.index ["loan_id"], name: "index_loan_state_change_logs_on_loan_id"
   end
 
-  create_table "loan_transactions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "loan_transactions", force: :cascade do |t|
     t.bigint "loan_id", null: false
     t.decimal "transaction_amount", precision: 15, scale: 2
     t.datetime "created_at", precision: 6, null: false
@@ -49,7 +52,7 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.index ["loan_id"], name: "index_loan_transactions_on_loan_id"
   end
 
-  create_table "loans", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "loans", force: :cascade do |t|
     t.decimal "amount", precision: 15, scale: 2
     t.decimal "interest_rate", precision: 6, scale: 4
     t.string "state"
@@ -57,11 +60,11 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.decimal "total_amount_due", precision: 15, scale: 2
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.timestamp "last_interest_calculation_at"
+    t.datetime "last_interest_calculation_at"
     t.index ["user_id"], name: "index_loans_on_user_id"
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -76,7 +79,7 @@ ActiveRecord::Schema.define(version: 2025_01_10_122108) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
-  create_table "wallets", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "wallets", force: :cascade do |t|
     t.decimal "balance", precision: 15, scale: 2
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
