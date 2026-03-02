@@ -55,7 +55,7 @@
     background-color: #07142e;
     color: white;
     border-color: #353537;
-    box-shadow: 0 2px 8px rgb(117 104 104 / 0.78);
+    box-shadow: 0 2px 8px rgba(117, 104, 104, 0.78);
 }
 
 .pagination .disabled {
