@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_one :wallet, dependent: :destroy
   has_many :loans, dependent: :destroy
   validates :username, presence: true, uniqueness: {case_sensitive: true}
+  validates :email, presence: true, uniqueness: {case_sensitive: true}
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable

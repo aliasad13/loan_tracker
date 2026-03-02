@@ -90,6 +90,10 @@ class Loan < ApplicationRecord
     total_interest_accrued.round(2)
   end
 
+  def buy?
+    true
+  end
+
   def formatted_total_amount
     (total_amount_due || amount).round(2)
   end
