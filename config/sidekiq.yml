@@ -1,8 +1,8 @@
-:queues:
-  - default
+#:queues:
+#  - default
 
-:scheduler:
-  :schedule:
-    interest_calculator:
-      every: '1m'
-      class: 'CalculateInterestJob'
+#:scheduler:
+#  :schedule:
+#    interest_calculator:
+#      every: '1m'
+#      class: 'CalculateInterestJob'
